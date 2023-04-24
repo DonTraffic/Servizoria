@@ -70,6 +70,7 @@
 .section-list {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .section-list__content {
   display: flex;
@@ -77,6 +78,21 @@
   gap: 50px;
   position: relative;
   padding: 84px 0;
+  z-index: 2;
+}
+.section-list__background {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.section-list__background * {
+  transition: 0.1s ease;
 }
 .section-list__title {
   font-weight: 800;
@@ -153,19 +169,6 @@
 .section-list__item-btn:hover-icon {
   fill: #fff;
 }
-.section-list__background {
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  right: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-list__background * {
-  transition: 0.1s ease;
-}
 .section-list--right {
   background-color: #2E2735;
 }
@@ -235,25 +238,29 @@
   width: 100%;
   height: 100%;
   top: 90px;
-  left: -30%;
   position: absolute;
+  transform: translate(-25%, 0%);
 }
 .section-list__background-bird-img {
   position: absolute;
+  right: 20px;
   top: calc(0% - var(--scrollTop) / 10);
-  width: 100%;
+  width: 1343px;
   height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
           mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
   -webkit-mask-size: contain;
           mask-size: contain;
-  -webkit-mask-position: 10% calc(0% + var(--scrollTop) / 10);
-          mask-position: 10% calc(0% + var(--scrollTop) / 10);
+  -webkit-mask-position: right calc(0% + var(--scrollTop) / 10);
+          mask-position: right calc(0% + var(--scrollTop) / 10);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
 }
 .section-list__background-ellipses {
   position: absolute;
+  transform: translate(-25%, 0%);
 }
 .section-list__background-ellipses-left {
   transform: translate(0, calc(0% - var(--scrollTop) / 15));

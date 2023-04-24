@@ -94,6 +94,7 @@
 .section-list{
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
     &__content{
         display: flex;
@@ -101,7 +102,29 @@
         gap: 50px;
         position: relative;
         padding: 84px 0;
+        z-index: 2;
     }
+
+    &__background{
+        position: absolute;
+        height: 100%;
+        width: 60%;
+        right: 0;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 1;
+
+        *{
+            transition: .1s ease;
+        }
+
+    }
+
+    
 
     &__title {
         font-weight: 800;
@@ -191,23 +214,6 @@
                 }
             }
 
-        }
-
-    }
-
-    &__background{
-        position: absolute;
-        height: 100%;
-        width: 60%;
-        right: 0;
-        top: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        *{
-            transition: .1s ease;
         }
 
     }
@@ -308,18 +314,21 @@
             height: 100%;
 
             top: 90px;
-            left: -30%;
             position: absolute;
+            transform: translate(-25%, 0% );
 
             &-img{
                 position: absolute;
+                right: 20px;
                 top: calc( 0% - ( var( --scrollTop  ) / 10 ) );
-                width: 100%;
+                width: 1343px;
                 height: 900px;
+
+                object-fit: cover;
 
                 mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
                 mask-size: contain;
-                mask-position: 10% calc( 0% + (var( --scrollTop  ) / 10 ) );
+                mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
                 mask-repeat: no-repeat;
 
             }
@@ -328,6 +337,7 @@
 
         &-ellipses{
             position: absolute;
+            transform: translate(-25%, 0% );
 
             &-left{
                 transform: translate(0, calc( 0% - (var( --scrollTop  ) / 15 ) ) );
