@@ -3,7 +3,6 @@
   background-attachment: fixed;
   height: 648px;
   overflow: hidden;
-  margin-bottom: 96px;
 }
 .section-ecosystem-wrap {
   max-width: 1920px;
@@ -263,10 +262,10 @@
   transform: translate(-25%, 0%);
 }
 .section-list__background-ellipses-left {
-  transform: translate(0, calc(0% - var(--scrollTop) / 15));
+  transform: translate(0, calc(15% - var(--scrollTop) / 11));
 }
 .section-list__background-ellipses-right {
-  transform: translate(0, calc(0% + var(--scrollTop) / 15));
+  transform: translate(0, calc(-15% + var(--scrollTop) / 11));
 }
 
 .block-long {
