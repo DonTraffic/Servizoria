@@ -8,9 +8,32 @@
 
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/pages/page-main.css">
+    <link rel="stylesheet" href="./styles/components/parallax.css">
 </head>
 <body>
-    <!-- <header class="header"> </header> -->
+    <header class="header">
+        <div class="header__content wrapper">
+            <img
+                class="header__content-logo"
+                src="./assets/svg/logo-header.svg" 
+                alt="logo-header"
+            >
+            <ol class="header__content-list">
+                <li class="header__content-list-item">Услуги</li>
+                <li class="header__content-list-item">О компании</li>
+                <li class="header__content-list-item">Кейсы</li>
+                <li class="header__content-list-item">Для кого</li>
+                <li class="header__content-list-item">Блог</li>
+                <li class="header__content-list-item">FAQ</li>
+                <li class="header__content-list-item">Контакты</li>
+            </ol>
+            <div class="header__content-tel">
+                <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <p class="header__content-tel-p">Обратный звонок</p>
+            </div>
+        </div>
+    </header>
+    <div class="header-plug"></div>
 
     <main>
         <section class="section-ecosystem">
@@ -60,20 +83,22 @@
 
             </div>
 
-            <div class="section-list__background">
-                <div class="section-list__background-img-wrap">
-                    <img 
-                        class="section-list__background-img" 
-                        src="./assets/image/section-ecosystem-list-1.jpg" 
-                        alt="section-ecosystem-list-1"
+            <div class="section-list__background parallax-circle-1 wrapper">
+                <div class="parallax-circle-1__wrap">
+                    <div class="parallax-circle-1__img-wrap">
+                        <img 
+                            class="parallax-circle-1__img" 
+                            src="./assets/image/section-ecosystem-list-1.jpg" 
+                            alt="section-ecosystem-list-1"
+                        >
+                        <div class="parallax-circle-1__circle"></div>
+                    </div>
+                    <img
+                        class="parallax-circle-1__ellipse"
+                        src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
+                        alt="section-ecosystem-list-1-ellipse"
                     >
-                    <div class="section-list__background-circle"></div>
                 </div>
-                <img
-                    class="section-list__background-ellipse"
-                    src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
-                    alt="section-ecosystem-list-1-ellipse"
-                >
             </div>
         </section>
 
@@ -111,22 +136,22 @@
 
             </div>
 
-            <div class="section-list__background">
-                <div class="section-list__background-ellipses">
+            <div class="section-list__background parallax-bird wrapper">
+                <div class="parallax-bird__ellipses">
                     <img
-                        class="section-list__background-ellipses-left"
+                        class="parallax-bird__ellipses-left"
                         src="./assets/svg/section-ecosystem-list-2-ellipse-left.svg"
                         alt="section-ecosystem-list-2-ellipse-left"
                     >
                     <img
-                        class="section-list__background-ellipses-right"
+                        class="parallax-bird__ellipses-right"
                         src="./assets/svg/section-ecosystem-list-2-ellipse-right.svg"
                         alt="section-ecosystem-list-2-ellipse-right"
                     >
                 </div>
-                <div class="section-list__background-bird">
+                <div class="parallax-bird__mask">
                     <img
-                        class="section-list__background-bird-img"
+                        class="parallax-bird__mask-img"
                         src="./assets/image/section-ecosystem-list-2.jpg"
                         alt="section-ecosystem-list-2"
                     >
@@ -134,11 +159,566 @@
             </div>
         </section>
 
-        <section class="block-long"></section>
+        <section class="section-list section-list--left">
+            <div class="section-list__content wrapper">
+                <div class="section-list__item" list-count="05">
+                    <div class="section-list__item-title">Персонал</div>
+                    <div class="section-list__item-text">Развитие линейного персонала и руководителей среднего звена, директоров магазинов. Сделаем аудит процесса подбора и адаптации персонала с помощью метода <b>Тайный соискатель</b>. Измерим в динамике удовлетворенность, лояльность и вовлеченность сотрудников. Автоматизируем обучение и адаптацию персонала на онлайн платформе <b>Среда</b>.</div>
+                    <div class="section-list__item-btn-wrap">
+                        <a class="section-list__item-btn" href="#">
+                            Тайный соискатель
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                        <a class="section-list__item-btn" href="#">
+                            Среда
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-list__item" list-count="06">
+                    <div class="section-list__item-title">Брендинг и BTL</div>
+                    <div class="section-list__item-text">Определение стратегии развития бренда, активные BTL кампании. Проведем <b>оценку здоровья бренда</b>. Организуем программы повышения узнаваемости бренда и стимулирования продаж. Предоставим данные для планирования общей ценовой политики (<b>ценовой мониторинг</b> в онлайн магазинах и рознице), оценим эффективность наружных рекламных кампаний.</div>
+                    <div class="section-list__item-btn-wrap">
+                        <a class="section-list__item-btn" href="#">
+                            Здоровье бренда
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                        <a class="section-list__item-btn" href="#">
+                            Ценовой мониторинг
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                        <a class="section-list__item-btn" href="#">
+                            Торговый аудит
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-list__background parallax-circle-2 wrapper">
+                <div class="parallax-circle-2__mask">
+                    <div class="parallax-circle-2__ellipses">
+                        
+                    </div>
+                    <img
+                        class="parallax-circle-2__mask-img"
+                        src="./assets/image/section-ecosystem-list-3.jpg"
+                        alt="section-ecosystem-list-3"
+                    >
+                </div>
+                <img
+                    class="parallax-circle-2__circle"
+                    src="./assets/svg/section-ecosystem-list-3-circle.svg"
+                    alt="section-ecosystem-list-3-circle"
+                >
+            </div>
+        </section>
+
+        <section class="section-list section-list--right">
+            <div class="section-list__content wrapper">
+                <div class="section-list__item" list-count="07">
+                    <div class="section-list__item-title">Продукты и сервисы</div>
+                    <div class="section-list__item-text">Разработка и вывод на рынок новых продуктов, сервисов и услуг. Быстро и точно измерим отношение потребителей к определенному продукту/сервису/услуге, оценим их рыночный потенциал, сравним с конкурентами, определим явные и скрытые мотивы использования применяя <b>Комплексные технологии маркетинговых исследований</b>.</div>
+                    <div class="section-list__item-btn-wrap">
+                        <a class="section-list__item-btn" href="#">
+                            Лаборатория качественных исследований “мир”
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-list__item" list-count="08">
+                    <div class="section-list__item-title">Коммуникации и сообщества</div>
+                    <div class="section-list__item-text">Работа с <b>репутацией бренда в сети Интернет</b>. Изучим и проанализируем репутацию бренда в сети Интернет, организуем SMM-продвижение, оценим эффективность коммуникационных кампаний. На базе платформы Спектра организуем сообщество клиентов.</div>
+                    <div class="section-list__item-btn-wrap">
+                        <a class="section-list__item-btn" href="#">
+                            online reputation management
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                        <a class="section-list__item-btn" href="#">
+                            Геомаркетинг
+                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-list__background parallax-circle-3 wrapper">
+                <div class="parallax-circle-3__wrap">
+                    <div class="parallax-circle-3__img-wrap">
+                        <img 
+                            class="parallax-circle-3__img" 
+                            src="./assets/image/section-ecosystem-list-4.jpg" 
+                            alt="section-ecosystem-list-4"
+                        >
+                    </div>
+                    <img
+                        class="parallax-circle-3__ellipse"
+                        src="./assets/svg/section-ecosystem-list-4-ellipse.svg"
+                        alt="section-ecosystem-list-4-ellipse"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="section-help-link">
+            <div class="section-help-link__content wrapper">
+                <div class="section-help-link__text">
+                    <h2 class="section-help-link__text-h2">Свяжитесь с нами</h2>
+                    <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
+                </div>
+    
+                <a class="section-help-link__btn" href="#">Получить консультацию</a>
+            </div>
+
+            <div class="section-help-link__background-wrap wrapper-max parallax-help-link" >
+                <img
+                    style="--parallax-val: -70%;"
+                    class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link.svg"
+                    alt="section-help-link"
+                >
+            </div>
+        </section>
+
+        <section class="section-tools">
+            <div class="section-tools__wrap wrapper-max">
+                <div class="section-tools__header wrapper">
+                    <h2 class="section-tools__title">Инструменты</h2>
+
+                    <label class="section-tools__input-label">
+                        <svg class="section-tools__input-search" id="search-search">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-search"></use>
+                        </svg>
+
+                        <input class="section-tools__input" type="text" id="search-input">
+
+                        <svg class="section-tools__input-clear" id="search-clear">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
+                        </svg>
+                    </label>
+                </div>
+
+                <div class="section-tools__items wrapper">
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">Качественные исследования</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Глубинные интервью (in-depth interview)</li>
+                            <li class="section-tools__item-list-item search-item">Этнография</li>
+                            <li class="section-tools__item-list-item search-item">Фокус-группы</li>
+                            <li class="section-tools__item-list-item search-item">Наблюдения</li>
+                            <li class="section-tools__item-list-item search-item">Accompanied Checking</li>
+                            <li class="section-tools__item-list-item search-item">Фасилитационные сессии</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">ТРЕКИНГ И АНАЛИТИКА HR-ИНДЕКСОВ</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">ENPS – Индекс удовлетворенности и вовлеченности персонала </li>
+                            <li class="section-tools__item-list-item search-item">EJM – Карта пути соискателя </li>
+                            <li class="section-tools__item-list-item search-item">Эмоциональная компетентность и ментальное здоровье сотрудников</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">Трекинг И АНАЛИТИКА CX-индексов</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">CSI – Индекс удовлетворенности потребителей</li>
+                            <li class="section-tools__item-list-item search-item">CES – Индекс усилий клиента </li>
+                            <li class="section-tools__item-list-item search-item">NPS – Индекс потребительской лояльности </li>
+                            <li class="section-tools__item-list-item search-item">PAS – Индекс персонализации сервиса</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">SERVICE DESIGN И DESIGN THINKING</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Определение персон</li>
+                            <li class="section-tools__item-list-item search-item">Карта клиентского пути (CJM)и Jobs-to-be-Done</li>
+                            <li class="section-tools__item-list-item search-item">Сбор и приоритезация идей</li>
+                            <li class="section-tools__item-list-item search-item">Прототипирование</li>
+                            <li class="section-tools__item-list-item search-item">Тестирование решений</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">Тайный покупатель</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Программа менеджмента сервиса "Тайный покупатель"</li>
+                            <li class="section-tools__item-list-item search-item">Конкурентный Mystery Shopping</li>
+                            <li class="section-tools__item-list-item search-item">Мотивационный Mystery Shopping</li>
+                            <li class="section-tools__item-list-item search-item">Тайный соискатель</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">Колличественные исследования</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Опросы «face to face»</li>
+                            <li class="section-tools__item-list-item search-item">Опросы телефонные</li>
+                            <li class="section-tools__item-list-item search-item">Опросы онлайн</li>
+                            <li class="section-tools__item-list-item search-item">Валидация аудио-, фото-, видеоконтента</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">АУДИТЫ</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Открытый аудит</li>
+                            <li class="section-tools__item-list-item search-item">Закрытый аудит</li>
+                            <li class="section-tools__item-list-item search-item">Ревизии</li>
+                            <li class="section-tools__item-list-item search-item">Инвентаризация</li>
+                            <li class="section-tools__item-list-item search-item">Мониторинг цен в сети Интернет</li>
+                            <li class="section-tools__item-list-item search-item">Мониторинг цен в рознице</li>
+                        </ul>
+                    </div>
+                    <div class="section-tools__item">
+                        <h3 class="section-tools__item-title search-item">КАБИНЕТНЫЕ ИССЛЕДОВАНИЯ</h3>
+                        <ul class="section-tools__item-list">
+                            <li class="section-tools__item-list-item search-item">Анализ вторичной информации из открытых источников</li>
+                            <li class="section-tools__item-list-item search-item">Web Social Media мониторинг</li>
+                            <li class="section-tools__item-list-item search-item">Мониторинг медиа</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-tools__background parallax-tools">
+                    <img 
+                        class="section-tools__background-circle-1 parallax-tools__circle-1"
+                        src="./assets/svg/section-tools-circle-1.svg"
+                        alt="section-tools-circle-1"
+                    >
+                    <img 
+                        class="section-tools__background-circle-2 parallax-tools__circle-2"
+                        src="./assets/svg/section-tools-circle-2.svg"
+                        alt="section-tools-circle-2"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+        <script>
+            document.querySelector('#search-input').addEventListener( 'change', () => paintText() )
+            document.querySelector('#search-clear').addEventListener( 'click', () => {
+                document.querySelector('#search-input').value = ''
+                paintText()
+            })
+
+            function paintText(clear) {
+                let input = document.querySelector('#search-input')
+                document.querySelectorAll('.search-item').forEach( event => {
+                    event.innerHTML = event.innerHTML.replace('<b>', '')
+                    event.innerHTML = event.innerHTML.replace(input.value, `<b>${input.value}</b>`)
+                })
+            }
+        </script>
+
+        <section class="section-resources">
+            <div class="section-resources-wrap wrapper">
+                <h2 class="section-resources__title">Ресурсы</h2>
+
+                <div class="section-resources__list-wrap">
+                    <ol class="section-resources__list">
+                        <li class="section-resources__list-item" list-counter="01"> МОДЕРАТОРЫ И ИНТЕРВЬЮЕРЫ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">5-20 супервайзеров в каждом регионе РФ</li>
+                                <li class="resources__list-item">450+ интервьюеров</li>
+                                <li class="resources__list-item">100% аудио запись, валидация, геочекинг, опросы на планшетах</li>
+                                <li class="resources__list-item">30 опытных модераторов</li>
+                                <li class="resources__list-item">Составление гайдов ФГ и интервью</li>
+                                <li class="resources__list-item">Оnline комнаты для проведения фокус-групповыхдискуссий и глубинных интервью</li>
+                            </ul>
+                        </li>
+                        <li class="section-resources__list-item" list-counter="02"> ПАТЕНТЫ НА ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">Субъективный индекс</li>
+                                <li class="resources__list-item">Путь Тайного покупателя Remote Accompaniment</li>
+                                <li class="resources__list-item">Индекс персонализированного сервиса</li>
+                                <li class="resources__list-item">Методика вовлеченности персонала</li>
+                            </ul>
+                        </li>
+                        <li class="section-resources__list-item" list-counter="03"> МЕТОДИСТЫ И АНАЛИТИКИ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">Собственный штат аналитиков</li>
+                                <li class="resources__list-item">Отчеты в xlsx, spss, ppt Power BI, Tablue, QlikView</li>
+                                <li class="resources__list-item">Big Data</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section-resources__background wrapper-max parallax-resources">
+                <div class="section-resources__background-img parallax-resources__img"></div>
+                <img
+                    class="section-resources__background-small"
+                    src="./assets/svg/section-resources-small-1.svg"
+                    alt="section-resources-small"
+                >
+                <img
+                    class="section-resources__background-medium"
+                    src="./assets/svg/section-resources-medium-1.svg"
+                    alt="section-resources-medium"
+                >
+                <img
+                    class="section-resources__background-circle"
+                    src="./assets/svg/section-resources-circle-1.svg"
+                    alt="section-resources-circle"
+                >
+            </div>
+        </section>
+
+        <section class="section-resources section-resources--black">
+            <div class="section-resources-wrap wrapper">
+                <div class="section-resources__list-wrap">
+                    <ol class="section-resources__list">
+                        <li class="section-resources__list-item" list-counter="01"> МОДЕРАТОРЫ И ИНТЕРВЬЮЕРЫ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">5-20 супервайзеров в каждом регионе РФ</li>
+                                <li class="resources__list-item">450+ интервьюеров</li>
+                                <li class="resources__list-item">100% аудио запись, валидация, геочекинг, опросы на планшетах</li>
+                                <li class="resources__list-item">30 опытных модераторов</li>
+                                <li class="resources__list-item">Составление гайдов ФГ и интервью</li>
+                                <li class="resources__list-item">Оnline комнаты для проведения фокус-групповыхдискуссий и глубинных интервью</li>
+                            </ul>
+                        </li>
+                        <li class="section-resources__list-item" list-counter="02"> ПАТЕНТЫ НА ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">Субъективный индекс</li>
+                                <li class="resources__list-item">Путь Тайного покупателя Remote Accompaniment</li>
+                                <li class="resources__list-item">Индекс персонализированного сервиса</li>
+                                <li class="resources__list-item">Методика вовлеченности персонала</li>
+                            </ul>
+                        </li>
+                        <li class="section-resources__list-item" list-counter="03"> МЕТОДИСТЫ И АНАЛИТИКИ
+                            <ul class="section-resources__list">
+                                <li class="resources__list-item">Собственный штат аналитиков</li>
+                                <li class="resources__list-item">Отчеты в xlsx, spss, ppt Power BI, Tablue, QlikView</li>
+                                <li class="resources__list-item">Big Data</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section-resources__background wrapper-max parallax-resources--reverse">
+                <div class="section-resources__background-img parallax-resources__img"></div>
+                <img
+                    class="section-resources__background-small"
+                    src="./assets/svg/section-resources-small-2.svg"
+                    alt="section-resources-small"
+                >
+                <img
+                    class="section-resources__background-medium"
+                    src="./assets/svg/section-resources-medium-2.svg"
+                    alt="section-resources-medium"
+                >
+                <img
+                    class="section-resources__background-circle"
+                    src="./assets/svg/section-resources-circle-2.svg"
+                    alt="section-resources-circle"
+                >
+            </div>
+        </section>
+
+        <section class="section-help-form">
+            <div class="section-help-form__content wrapper">
+                <h2 class="section-help-form__content-h2">Не нашли нужные ресурсы?</h2>
+                <p class="section-help-form__content-p">Задайте нам вопрос и опишите вашу потребность</p>
+                <form class="section-help-form__content-form">
+                    <div class="section-help-form__content-form-wrap">
+                        <input class="section-help-form__content-form-name" type="text" placeholder="Имя">
+                        <input class="section-help-form__content-form-email" type="text" placeholder="Email">
+                        <textarea 
+                            class="section-help-form__content-form-text" 
+                            cols="30" 
+                            rows="5" 
+                            placeholder="Напишите ваш вопрос..."
+                        ></textarea>
+                    </div>
+                    <button class="section-help-form__content-form-btn"  type="submit">Спросить</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="section-customers">
+            <h2>Клиенты</h2>
+        </section>
+
+        <section class="section-help-link section-help-link--black">
+            <div class="section-help-link__content wrapper">
+                <div class="section-help-link__text">
+                    <h2 class="section-help-link__text-h2">Расскажите о своей задаче</h2>
+                    <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
+                </div>
+    
+                <a class="section-help-link__btn" href="#">Заказать бесплатный пилотный проект</a>
+            </div>
+
+            <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
+                <img
+                    style="--parallax-val: -100%;"
+                    class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link-1.svg"
+                    alt="section-help-link-1"
+                >
+            </div>
+        </section>
+
+        <section class="section-company">
+            <div class="section-company__content wrapper">
+                <h2 class="section-company__title">о компании</h2>
+                <img 
+                    class="section-company__diagram" 
+                    src="./assets/svg/section-company-diagram.svg" 
+                    alt="section-company-diagram"
+                >
+                <!-- <div class="section-company__diagram">
+                    <img 
+                        class="section-company__diagram-img" 
+                        src="./assets/svg/section-company-diagram.svg" 
+                        alt="section-company-diagram"
+                    >
+                    <div class="section-company__diagram-content">
+                        <p class="section-company__diagram-content-name">Стандарты и ассоциации</p>
+                        <div class="section-company__diagram-content-imgs">
+                            <img 
+                                class="section-company__diagram-content-img"
+                                src="./assets/image/section-company-group-1.png" 
+                                alt="section-company-group-1"
+                            >
+                            <img 
+                                class="section-company__diagram-content-img"
+                                src="./assets/image/section-company-group-2.png" 
+                                alt="section-company-group-2"
+                            >
+                            <img 
+                                class="section-company__diagram-content-img"
+                                src="./assets/image/section-company-group-3.png" 
+                                alt="section-company-group-3"
+                            >
+                            <img 
+                                class="section-company__diagram-content-img"
+                                src="./assets/image/section-company-group-4.png" 
+                                alt="section-company-group-4"
+                            >
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="section-info">
+            <div class="section-info__wrap wrapper-max">
+                <img 
+                    class="section-info__map"
+                    src="./assets/image/section-info-map.png" 
+                    alt="section-info-map"
+                >
+                <div class="section-info__content wrapper">
+                    <h2 class="section-info__content-h2">Компания Сервизория</h2>
+                    <p class="section-info__content-p">
+                        Является членом международной ассоциации провайдеров услуги Тайный Покупатель MSPA, эксперты компании являются членами международной ассоциации компаний – участников рынка маркетинговых исследований ESOMAR, а также мы проходим ежегодную сертификацию менеджмента качества ISO 20292:2019 и 9001:2015. <br>
+                        Наша большая идея – открыть нашим клиентам новые возможности для роста и развития бизнеса, опираясь на безупречные данные о потребителях и рынках
+                    </p>
+
+                    <h2 class="section-info__content-h2">Наши ключевые партнеры</h2>
+                    <p class="section-info__content-p">Это российские телекоммуникационные компании, банки, страховые, продовольственные и непродовольственные розничные сети, интернет-агрегаторы и экосистемы, сети медицинских лабораторий и клиник, производители товаров ежедневного спроса и промышленный сектор</p>
+
+                    <h2 class="section-info__content-h2">НАС МНОГО – В КАЖДОМ УГОЛКЕ РФ</h2>
+                    <p class="section-info__content-p">Сервизория – это экосистема маркетинговых исследований и продуктов. С 2016 года наша компания занимается:</p>
+                
+                    <ul class="section-info__content-list">
+                        <li class="section-info__content-list-item">маркетинговыми исследованиями</li>
+                        <li class="section-info__content-list-item">исследованиями клиентского опыта</li>
+                        <li class="section-info__content-list-item">исследованием пути клиента  в цифровых сервисах </li>
+                        <li class="section-info__content-list-item">аудитом бизнес-процессов в розничных сетях</li>
+                        <li class="section-info__content-list-item">аудит рекламно-информационных материалов</li>
+                        <li class="section-info__content-list-item">организацией рекрутинга респондентов</li>
+                        <li class="section-info__content-list-item">анализом рынков</li>
+                        <li class="section-info__content-list-item">мониторингом цен</li>
+                        <li class="section-info__content-list-item">качественными исследованиями</li>
+                        <li class="section-info__content-list-item">количественными исследованиями, всех видов, обеспечивая репрезентативное покрытие каждого региона РФ, включая населенные пункты от 10 тыс. человек.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section-mission">
+            <div class="section-mission__content wrapper">
+                <div class="section-mission__content-wrap">
+                    <h3 class="section-mission__content-h3">Наша миссия</h3>
+                    <h2 class="section-mission__content-h2">ВРАЩАЕМ МИР ВОКРУГ СЕРВИСА</h2>
+                    <p class="section-mission__content-p">для гармонии бизнеса и людей</p>
+                </div>
+
+                <div class="section-mission__content-wrap ">
+                    <h3 class="section-mission__content-h3">наши ценности</h3>
+                    <h2 class="section-mission__content-h2">Место. Люди. Время. Страсть</h2>
+                    <p class="section-mission__content-p">Место дает нам Идеи, Люди дают нам Радость, Время дает нам Смелость, Страсть дает нам Силу</p>
+                </div>
+            </div>
+            <div class="section-mission__background wrapper">
+                <div class="section-mission__background-ellipse-wrap parallax-mission">
+                    <img 
+                        class="section-mission__background-ellipse-1 parallax-mission__ellipse-1"
+                        src="./assets/svg/section-mission-ellipse-1.svg" 
+                        alt="section-mission-ellipse-1"
+                    >
+                    <img 
+                        class="section-mission__background-ellipse-2 parallax-mission__ellipse-2"
+                        src="./assets/svg/section-mission-ellipse-2.svg" 
+                        alt="section-mission-ellipse-2"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="section-help-link">
+            <div class="section-help-link__content wrapper">
+                <div class="section-help-link__text">
+                    <h2 class="section-help-link__text-h2">Свяжитесь с нами</h2>
+                    <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
+                </div>
+    
+                <a class="section-help-link__btn" href="#">Получить консультацию</a>
+            </div>
+
+            <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
+                <img
+                    style="--parallax-val: -160%;"
+                    class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link.svg"
+                    alt="section-help-link"
+                >
+            </div>
+        </section>
 
     </main>
 
-    <!-- <footer> </footer> -->
+    <footer class="footer">
+        <div class="footer__content wrapper">
+            <img
+                class="footer__content-logo"
+                src="./assets/svg/logo-footer.svg" 
+                alt="logo-footer"
+            >
+            <ol class="footer__content-list">
+                <li class="footer__content-list-item">Услуги</li>
+                <li class="footer__content-list-item">О компании</li>
+                <li class="footer__content-list-item">Кейсы</li>
+                <li class="footer__content-list-item">Для кого</li>
+                <li class="footer__content-list-item">Блог</li>
+                <li class="footer__content-list-item">FAQ</li>
+                <li class="footer__content-list-item">Контакты</li>
+            </ol>
+            <div class="footer__content-tel">
+                <a class="footer__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <p class="footer__content-tel-p">Обратный звонок</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         window.addEventListener('scroll', e => {

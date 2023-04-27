@@ -13,12 +13,134 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .wrapper{
     max-width: $width-content;
+    width: 100%;
     margin: 0 auto;
+}
+.wrapper-max{
+    max-width: $width-max;
+    margin: 0 auto;
+}
+
+.header-plug{
+    height: 142px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: $color-white;
+    padding: 30px 0;
+    height: auto;
+    z-index: 3;
+
+    &__content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo{
+            width: 156px;
+            height: 82px;
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            max-width: 674px;
+            width: 100%;
+
+            &-item{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000;
+                list-style: none;
+            }
+
+        }
+
+        &-tel{
+            &-link{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                color: $color-dark;
+                text-decoration: none;
+            }
+
+            &-p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $color-blue;
+            }
+
+        }
+
+    }
+
+}
+
+.footer{
+    background-color: $color-black;
+    padding: 60px 0;
+
+    &__content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo{
+            width: 156px;
+            height: 82px;
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            max-width: 674px;
+            width: 100%;
+
+            &-item{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: $color-white-light;
+                list-style: none;
+            }
+
+        }
+
+        &-tel{
+            &-link{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                color: $color-white;
+                text-decoration: none;
+            }
+
+            &-p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $color-blue;
+            }
+
+        }
+
+    }
+
 }
 
 @import './media.scss'

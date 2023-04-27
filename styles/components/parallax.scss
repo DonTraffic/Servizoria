@@ -1,0 +1,207 @@
+@import './../vars.scss';
+
+.parallax-circle-1 {
+    left: 0;
+
+    &__wrap{
+        transform: translate(80%, 0%);
+    }
+
+    &__img-wrap{
+        height: 539px;
+        width: 539px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__img{
+        position: relative;
+        transform: translate(0%, calc( -20% + (var( --scrollTop  ) / 10 ) ));
+
+        height: 120%;
+    }
+
+    &__circle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        height: 205px;
+        width: 205px;
+        background-color: $color-white;
+        border-radius: 50%;
+    }
+
+    &__ellipse{
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translate(-25%, calc(0% + var(--scrollTop) / 10));
+
+        height: 649px;
+        width: 649px;
+
+        pointer-events: none;
+        
+    }
+}
+
+
+
+.parallax-bird{
+    &__mask{
+        width: 100%;
+        height: 100%;
+
+        top: 90px;
+        left: 0px;
+        position: absolute;
+        transform: translate(-60%, 0% );
+
+        &-img{
+            position: absolute;
+            right: 20px;
+            top: calc( 0% - ( var( --scrollTop  ) / 10 ) );
+            width: 1343px;
+            height: 900px;
+
+            object-fit: cover;
+
+            mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
+            mask-size: contain;
+            mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
+            mask-repeat: no-repeat;
+
+        }
+
+    }
+
+    &__ellipses{
+        position: absolute;
+        transform: translate(-35%, 0% );
+        left: 0px;
+
+        &-left{
+            transform: translate(0, calc( 15% - (var( --scrollTop  ) / 11 ) ) );
+        }
+
+        &-right{
+            transform: translate(0, calc( -15% + (var( --scrollTop  ) / 11 ) ) );
+        }
+
+    }
+}
+
+
+
+.parallax-circle-2{
+    left: 0;
+    z-index: 1;
+
+    &__mask{
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0px;
+        position: absolute;
+        transform: translate(40%, 0% );
+
+        &-img{
+            position: absolute;
+            right: 20px;
+            top: calc( -15% - ( var( --scrollTop  ) / 10 ) );
+            width: 1121px;
+            height: 1100px;
+
+            object-fit: cover;
+
+            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+            mask-size: contain;
+            mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
+            mask-repeat: no-repeat;
+
+        }
+
+    }
+
+    &__circle{
+        z-index: 2;
+        transform: translate(70%, calc( -30% + (var( --scrollTop  ) / 10 ) ) );
+    }
+}
+
+
+
+.parallax-circle-3 {
+    left: 0;
+
+    &__wrap{
+        transform: translate(-80%, 0%);
+    }
+
+    &__img-wrap{
+        height: 539px;
+        width: 539px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__img{
+        position: relative;
+        transform: translate(0%, calc( -50% + (var( --scrollTop  ) / 10 ) ));
+
+        height: 120%;
+    }
+
+    &__ellipse{
+        position: absolute;
+        top: 0%;
+        transform: translate(-35%, calc(-50% + var(--scrollTop) / 10));
+
+        height: 649px;
+        width: 649px;
+
+        // pointer-events: none;
+        
+    }
+}
+
+
+
+.parallax-resources{
+    &__img{
+        transform: translate(0%, calc(-70% + var(--scrollTop) / 10));
+    }
+
+    &--reverse{
+        .parallax-resources__img{
+            transform: translate(0%, calc(-95% + var(--scrollTop) / 10));
+        }
+    }
+}
+
+.parallax-tools{
+    &__circle-1{
+        transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
+    }
+    &__circle-2{
+        transform: translate(-30%, calc(50% + var(--scrollTop) / 10));
+    }
+}
+
+.parallax-mission{
+    &__ellipse-1{
+        transform: translate(0%, calc(-240% + var(--scrollTop) / 10));
+    }
+
+    &__ellipse-2{
+        transform: translate(100%, calc(220% - var(--scrollTop) / 10));
+    }
+}
+
+.parallax-help-link{
+    &__img{
+        transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 10 ) ) );
+    }
+}
