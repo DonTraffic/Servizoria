@@ -1,7 +1,6 @@
 @import './../vars.scss';
 
 .parallax-circle-1 {
-    left: 0;
 
     &__wrap{
         transform: translate(80%, 0%);
@@ -95,7 +94,6 @@
 
 
 .parallax-circle-2{
-    left: 0;
     z-index: 1;
 
     &__mask{
@@ -135,7 +133,6 @@
 
 
 .parallax-circle-3 {
-    left: 0;
 
     &__wrap{
         transform: translate(-80%, 0%);
@@ -186,17 +183,17 @@
         transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
     }
     &__circle-2{
-        transform: translate(-30%, calc(50% + var(--scrollTop) / 10));
+        transform: translate(-30%, calc(195% - var(--scrollTop) / 10));
     }
 }
 
 .parallax-mission{
     &__ellipse-1{
-        transform: translate(0%, calc(-240% + var(--scrollTop) / 10));
+        transform: translate(0%, calc(-270% + var(--scrollTop) / 10));
     }
 
     &__ellipse-2{
-        transform: translate(100%, calc(220% - var(--scrollTop) / 10));
+        transform: translate(100%, calc(250% - var(--scrollTop) / 10));
     }
 }
 

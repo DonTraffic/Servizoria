@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/pages/page-main.css">
     <link rel="stylesheet" href="./styles/components/parallax.css">
+    <link rel="stylesheet" href="./styles/components/slider.css">
 </head>
 <body>
     <header class="header">
@@ -541,8 +542,90 @@
             </div>
         </section>
         
-        <section class="section-customers">
-            <h2>Клиенты</h2>
+        <section class="section-customers wrapper">
+            <h2 class="section-customers__title">Клиенты</h2>
+
+            <div class="section-customers__slider slider" items-count="4">
+                <button class="section-customers__slider-prev slider__btn slider__btn-prev">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
+                    </svg>
+                </button>
+                <div class="section-customers__slider-line-wrap slider__line-wrap">
+                    <div class="section-customers__slider-line slider__line">
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-1.jpg"
+                                alt="section-customers-1"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-2.png"
+                                alt="section-customers-2"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-3.png"
+                                alt="section-customers-3"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-4.png"
+                                alt="section-customers-4"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-1.jpg"
+                                alt="section-customers-1"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-2.png"
+                                alt="section-customers-2"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-3.png"
+                                alt="section-customers-3"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-4.png"
+                                alt="section-customers-4"
+                            >
+                        </div>
+                    </div> 
+                </div>
+                <button class="slider__btn slider__btn-next">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+           
         </section>
 
         <section class="section-help-link section-help-link--black">
@@ -605,6 +688,97 @@
                         </div>
                     </div>
                 </div> -->
+            </div>
+        </section>
+
+        <section class="section-cases">
+            <h2 class="section-cases__title wrapper">Кейсы</h2>
+
+            <div class="section-cases__slider slider wrapper" >
+                <button class="section-cases__slider-prev slider__btn slider__btn-prev">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
+                    </svg>
+                </button>
+
+                <div class="section-cases__slider-line-wrap slider__line-wrap">
+                    <div class="section-cases__slider-line slider__line">
+                        <div class="section-cases__slider-line-item slider__line-item">
+                            <img 
+                                class="section-cases__slider-item-img"
+                                src="./assets/svg/cases-adidas.svg" 
+                                alt="cases-adidas"
+                            >
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Какие результаты мы получили?</h3>
+                                <ol class="section-cases__slider-item-list">
+                                    <li class="section-cases__slider-item-list-item">+28% in NPS concept stores</li>
+                                    <li class="section-cases__slider-item-list-item">+68% in NPS discount stores</li>
+                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса согласно определенным драйверам роста клиентской удовлетворенности, лояльности и транзакционной активности (внимание к потребности, кросс-сейл, интересные факты о товаре, бренде и проч.) </li>
+                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных форматов магазинов </li>
+                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия разных сегментов ЦА, в том числе определены новые перспективные потребители (plus size, поколение Y)</li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Клиент</h3>
+                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания по производству спортивной одежды, обуви и аксессуаров.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Какие методы мы использовали?</h3>
+                                <ol class="section-cases__slider-item-list">
+                                    <li class="section-cases__slider-item-list-item">Тайный покупатель</li>
+                                    <li class="section-cases__slider-item-list-item">Exit polls</li>
+                                    <li class="section-cases__slider-item-list-item">Наблюдение</li>
+                                    <li class="section-cases__slider-item-list-item">Online surveys</li>
+                                    <li class="section-cases__slider-item-list-item">Воркшопы</li>
+                                    <li class="section-cases__slider-item-list-item">Big data</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <button class="slider__btn slider__btn-next">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="section-reviews">
+            <h2 class="section-reviews__title wrapper">Отзывы</h2>
+
+            <div class="section-reviews__slider slider wrapper" >
+                <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
+                    </svg>
+                </button>
+
+                <div class="section-reviews__slider-line-wrap slider__line-wrap">
+                    <div class="section-reviews__slider-line slider__line">
+                        <div class="section-reviews__slider-line-item slider__line-item">
+                            <img 
+                                src="./assets/image/section-reviews-pdf-1.jpg"
+                                alt="section-reviews-pdf-1"
+                            >
+                            <svg class="icon">
+                                <use xlink:href="#icon-quotation-marks"></use>
+                            </svg>
+                        </div>
+                    </div> 
+                </div>
+
+                <button class="slider__btn slider__btn-next">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
+                    </svg>
+                </button>
             </div>
         </section>
 
@@ -687,7 +861,7 @@
 
             <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
                 <img
-                    style="--parallax-val: -160%;"
+                    style="--parallax-val: -180%;"
                     class="section-help-link__background parallax-help-link__img"
                     src="./assets/svg/section-help-link.svg"
                     alt="section-help-link"
@@ -725,5 +899,7 @@
             document.body.style.cssText = `--scrollTop: ${this.scrollY}px`
         })
     </script>
+
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>

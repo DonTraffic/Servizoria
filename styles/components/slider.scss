@@ -1,0 +1,41 @@
+.slider{
+    width: 100%;
+    position: relative;
+
+    &__line{
+        width: auto;
+        height: auto;
+        display: flex;
+        transition: all 1s ease;
+
+        &-wrap{
+            width: 100%;
+            overflow: hidden;
+        }
+        
+    }
+
+    &__btn{
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        border: none;
+        background-color: #00000000;
+
+        &-prev{
+            left: -60px;
+        }
+
+        &-next{
+            right: -60px;
+        }
+
+        svg{
+            width: 23px;
+            height: 49px;
+        }
+
+    }
+
+}
