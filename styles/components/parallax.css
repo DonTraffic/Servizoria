@@ -1,6 +1,11 @@
 .parallax-circle-1__wrap {
   transform: translate(80%, 0%);
 }
+@media screen and (max-width: 1024px) {
+  .parallax-circle-1__wrap {
+    transform: translate(50%, 0%);
+  }
+}
 .parallax-circle-1__img-wrap {
   height: 539px;
   width: 539px;
@@ -39,6 +44,11 @@
   left: 0px;
   position: absolute;
   transform: translate(-60%, 0%);
+}
+@media screen and (max-width: 1024px) {
+  .parallax-bird__mask {
+    transform: translate(-50%, 0%);
+  }
 }
 .parallax-bird__mask-img {
   position: absolute;
@@ -97,13 +107,34 @@
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
 }
+@media screen and (max-width: 1024px) {
+  .parallax-circle-2__mask-img {
+    top: calc(24% - var(--scrollTop) / 10);
+    -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+    -webkit-mask-position: center calc(-75% + var(--scrollTop) / 10);
+            mask-position: center calc(-75% + var(--scrollTop) / 10);
+  }
+}
 .parallax-circle-2__circle {
   z-index: 2;
   transform: translate(70%, calc(-30% + var(--scrollTop) / 10));
 }
+@media screen and (max-width: 1024px) {
+  .parallax-circle-2__circle {
+    height: 400px;
+    width: 400px;
+    transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
+  }
+}
 
 .parallax-circle-3__wrap {
   transform: translate(-80%, 0%);
+}
+@media screen and (max-width: 1024px) {
+  .parallax-circle-3__wrap {
+    transform: translate(-70%, 0%);
+  }
 }
 .parallax-circle-3__img-wrap {
   height: 539px;
@@ -116,12 +147,22 @@
   transform: translate(0%, calc(-50% + var(--scrollTop) / 10));
   height: 120%;
 }
+@media screen and (max-width: 1024px) {
+  .parallax-circle-3__img {
+    transform: translate(0%, calc(-60% + var(--scrollTop) / 10));
+  }
+}
 .parallax-circle-3__ellipse {
   position: absolute;
   top: 0%;
   transform: translate(-35%, calc(-50% + var(--scrollTop) / 10));
   height: 649px;
   width: 649px;
+}
+@media screen and (max-width: 1024px) {
+  .parallax-circle-3__ellipse {
+    transform: translate(-30%, calc(-65% + var(--scrollTop) / 10));
+  }
 }
 
 .parallax-resources__img {
@@ -137,6 +178,11 @@
 .parallax-tools__circle-2 {
   transform: translate(-30%, calc(195% - var(--scrollTop) / 10));
 }
+@media screen and (max-width: 1024px) {
+  .parallax-tools__circle-2 {
+    transform: translate(-30%, calc(308% - var(--scrollTop) / 10));
+  }
+}
 
 .parallax-mission__ellipse-1 {
   transform: translate(0%, calc(-270% + var(--scrollTop) / 10));
@@ -147,4 +193,13 @@
 
 .parallax-help-link__img {
   transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 10));
+}
+@media screen and (max-width: 1024px) {
+  .parallax-help-link__img {
+    transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 15));
+  }
+}
+
+.parallax-tasks__ellipse {
+  transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 15));
 }

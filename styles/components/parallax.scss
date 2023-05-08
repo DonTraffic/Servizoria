@@ -4,6 +4,11 @@
 
     &__wrap{
         transform: translate(80%, 0%);
+
+        @include laptop{
+            transform: translate(50%, 0%);
+        }
+
     }
 
     &__img-wrap{
@@ -56,6 +61,10 @@
         left: 0px;
         position: absolute;
         transform: translate(-60%, 0% );
+
+        @include laptop{
+            transform: translate(-50%, 0% );
+        }
 
         &-img{
             position: absolute;
@@ -120,6 +129,12 @@
             mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
             mask-repeat: no-repeat;
 
+            @include laptop{
+                top: calc( 24% - ( var( --scrollTop  ) / 10 ) );
+                mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+                mask-position: center calc(-75% + var(--scrollTop) / 10);
+            }
+
         }
 
     }
@@ -127,6 +142,13 @@
     &__circle{
         z-index: 2;
         transform: translate(70%, calc( -30% + (var( --scrollTop  ) / 10 ) ) );
+
+        @include laptop{
+            height: 400px;
+            width: 400px;
+            transform: translate(50%, calc( -40% + (var( --scrollTop  ) / 10 ) ) );
+        }
+
     }
 }
 
@@ -136,6 +158,10 @@
 
     &__wrap{
         transform: translate(-80%, 0%);
+
+        @include laptop{
+            transform: translate(-70%, 0%);
+        }
     }
 
     &__img-wrap{
@@ -149,6 +175,11 @@
         transform: translate(0%, calc( -50% + (var( --scrollTop  ) / 10 ) ));
 
         height: 120%;
+
+        @include laptop{
+            transform: translate(0%, calc( -60% + (var( --scrollTop  ) / 10 ) ));
+        }
+
     }
 
     &__ellipse{
@@ -159,7 +190,9 @@
         height: 649px;
         width: 649px;
 
-        // pointer-events: none;
+        @include laptop{
+            transform: translate(-30%, calc(-65% + var(--scrollTop) / 10));
+        }
         
     }
 }
@@ -184,6 +217,9 @@
     }
     &__circle-2{
         transform: translate(-30%, calc(195% - var(--scrollTop) / 10));
+        @include laptop{
+            transform: translate(-30%, calc(308% - var(--scrollTop) / 10));
+        }
     }
 }
 
@@ -200,5 +236,14 @@
 .parallax-help-link{
     &__img{
         transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 10 ) ) );
+        @include laptop{
+            transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
+        }
+    }
+}
+
+.parallax-tasks{
+    &__ellipse{
+        transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
     }
 }

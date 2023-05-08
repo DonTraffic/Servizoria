@@ -1,3 +1,5 @@
+@import './../vars.scss';
+
 .slider{
     width: 100%;
     position: relative;
@@ -25,10 +27,16 @@
 
         &-prev{
             left: -60px;
+            @include laptopL{
+                left: 0px;
+            }
         }
 
         &-next{
             right: -60px;
+            @include laptopL{
+                right: 0px;
+            }
         }
 
         svg{
@@ -36,6 +44,20 @@
             height: 49px;
         }
 
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &--disable{
+        .slider__btn-prev, .slider__btn-next{
+            display: none;
+        }
+    }
+
+    @include laptopL{
+        padding: 0px 30px;
     }
 
 }

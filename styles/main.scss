@@ -1,5 +1,5 @@
-@import './vars.scss';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import './vars.scss';
 
 * {
     margin: 0;
@@ -10,6 +10,9 @@
     font-family: 'Manrope', sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
 body {
     min-height: 100vh;
 }
@@ -150,4 +153,48 @@ h2{
     color: $color-dark;
 }
 
-@import './media.scss'
+.linear-gradient-btn{
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+    &__background{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .4s ease;
+        background: linear-gradient(244.27deg, #3CDDE4 13.54%, #7E23D1 87.32%);
+
+        &--hover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            z-index: 2;
+            opacity: 0;
+            transition: .4s ease;
+            background: linear-gradient(44.27deg, #3CDDE4 13.54%, #7E23D1 87.32%);
+        }
+
+    }
+
+    &__text{
+        z-index: 3;
+    }
+
+    &:hover{
+        cursor: pointer;
+        .linear-gradient-btn__background--hover{
+            opacity: 1;
+        }
+    }
+
+}
+
+@import './vars.scss';

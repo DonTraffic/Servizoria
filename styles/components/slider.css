@@ -22,10 +22,31 @@
 .slider__btn-prev {
   left: -60px;
 }
+@media screen and (max-width: 1440px) {
+  .slider__btn-prev {
+    left: 0px;
+  }
+}
 .slider__btn-next {
   right: -60px;
+}
+@media screen and (max-width: 1440px) {
+  .slider__btn-next {
+    right: 0px;
+  }
 }
 .slider__btn svg {
   width: 23px;
   height: 49px;
+}
+.slider__btn:hover {
+  cursor: pointer;
+}
+.slider--disable .slider__btn-prev, .slider--disable .slider__btn-next {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .slider {
+    padding: 0px 30px;
+  }
 }

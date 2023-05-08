@@ -7,9 +7,9 @@
     <title>Servizoria</title>
 
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/pages/page-main.css">
     <link rel="stylesheet" href="./styles/components/parallax.css">
     <link rel="stylesheet" href="./styles/components/slider.css">
+    <link rel="stylesheet" href="./styles/pages/page-main.css">
 </head>
 <body>
     <header class="header">
@@ -47,7 +47,11 @@
                         <p class="section-ecosystem__content-text-desc">Вращаем мир вокруг сервиса для гармонии бизнеса и людей</p>
                     </div>
                     
-                    <a class="section-ecosystem__content-link" href="#">Узнать подробнее</a>
+                    <a class="section-ecosystem__content-link" href="#">
+                        <div class="section-ecosystem__content-link-background"></div>
+                        <div class="section-ecosystem__content-link-background--hover"></div>
+                        <p class="section-ecosystem__content-link-text">Узнать подробнее</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -272,7 +276,11 @@
                     <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
                 </div>
     
-                <a class="section-help-link__btn" href="#">Получить консультацию</a>
+                <a class="section-help-link__btn linear-gradient-btn" href="#">
+                    <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
+                    <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
+                    <p class="section-help-link__btn-text linear-gradient-btn__text">Получить консультацию</p>
+                </a>
             </div>
 
             <div class="section-help-link__background-wrap wrapper-max parallax-help-link" >
@@ -473,29 +481,32 @@
             <div class="section-resources-wrap wrapper">
                 <div class="section-resources__list-wrap">
                     <ol class="section-resources__list">
-                        <li class="section-resources__list-item" list-counter="01"> МОДЕРАТОРЫ И ИНТЕРВЬЮЕРЫ
+                        <li class="section-resources__list-item" list-counter="04"> ТАЙНЫЕ ПОКУПАТЕЛИ И АУДИТОРЫ
                             <ul class="section-resources__list">
-                                <li class="resources__list-item">5-20 супервайзеров в каждом регионе РФ</li>
-                                <li class="resources__list-item">450+ интервьюеров</li>
-                                <li class="resources__list-item">100% аудио запись, валидация, геочекинг, опросы на планшетах</li>
-                                <li class="resources__list-item">30 опытных модераторов</li>
-                                <li class="resources__list-item">Составление гайдов ФГ и интервью</li>
-                                <li class="resources__list-item">Оnline комнаты для проведения фокус-групповыхдискуссий и глубинных интервью</li>
+                                <li class="resources__list-item">Покрытие всех регионов РФ, база 500 тыс.+ участников исследований</li>
+                                <li class="resources__list-item">250+ проектов Тайный Покупатель / месяц</li>
+                                <li class="resources__list-item">Отбор участников по профилю и опыту</li>
+                                <li class="resources__list-item">Быстрое заполнение анкет через приложение</li>
+                                <li class="resources__list-item">Валидация аудиозаписей и фото</li>
+                                <li class="resources__list-item">Оценка качества каждого ТП (грейдинг)</li>
+                                <li class="resources__list-item">Антифальсификат программы</li>
                             </ul>
                         </li>
-                        <li class="section-resources__list-item" list-counter="02"> ПАТЕНТЫ НА ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
+                        <li class="section-resources__list-item" list-counter="05"> КОНТАКТ-ЦЕНТР
                             <ul class="section-resources__list">
-                                <li class="resources__list-item">Субъективный индекс</li>
-                                <li class="resources__list-item">Путь Тайного покупателя Remote Accompaniment</li>
-                                <li class="resources__list-item">Индекс персонализированного сервиса</li>
-                                <li class="resources__list-item">Методика вовлеченности персонала</li>
+                                <li class="resources__list-item">Собственный Контакт-центр на территории РФ</li>
+                                <li class="resources__list-item">Горячая линия, опросы, телемаркетинг</li>
+                                <li class="resources__list-item">100% аудио запись, валидация диалогов</li>
+                                <li class="resources__list-item">Программируемые анкеты CATI</li>
+                                <li class="resources__list-item">Операторы для глубинных интервью по телефону</li>
                             </ul>
                         </li>
-                        <li class="section-resources__list-item" list-counter="03"> МЕТОДИСТЫ И АНАЛИТИКИ
+                        <li class="section-resources__list-item" list-counter="03"> ОНЛАЙН ПАНЕЛЬ
                             <ul class="section-resources__list">
-                                <li class="resources__list-item">Собственный штат аналитиков</li>
-                                <li class="resources__list-item">Отчеты в xlsx, spss, ppt Power BI, Tablue, QlikView</li>
-                                <li class="resources__list-item">Big Data</li>
+                                <li class="resources__list-item">500 000+ зарегистрированных пользователей в России</li>
+                                <li class="resources__list-item">Глубокая сегментация профиля</li>
+                                <li class="resources__list-item">Населенные пункты от 5 тыс. жителей</li>
+                                <li class="resources__list-item">Целевой дорекрутинг современными инструментами таргетинга</li>
                             </ul>
                         </li>
                     </ol>
@@ -537,7 +548,11 @@
                             placeholder="Напишите ваш вопрос..."
                         ></textarea>
                     </div>
-                    <button class="section-help-form__content-form-btn"  type="submit">Спросить</button>
+                    <button type="submit" class="section-help-form__content-form-btn linear-gradient-btn" href="#">
+                        <div class="section-help-form__content-form-btn-background linear-gradient-btn__background"></div>
+                        <div class="section-help-form__content-form-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <p class="section-help-form__content-form-btn-text linear-gradient-btn__text">Спросить</p>
+                    </button>
                 </form>
             </div>
         </section>
@@ -545,7 +560,7 @@
         <section class="section-customers wrapper">
             <h2 class="section-customers__title">Клиенты</h2>
 
-            <div class="section-customers__slider slider" items-count="4">
+            <div class="section-customers__slider slider slider--disable" items-count="4">
                 <button class="section-customers__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -635,7 +650,11 @@
                     <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
                 </div>
     
-                <a class="section-help-link__btn" href="#">Заказать бесплатный пилотный проект</a>
+                <a class="section-help-link__btn linear-gradient-btn" href="#">
+                    <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
+                    <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
+                    <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект</p>
+                </a>
             </div>
 
             <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
@@ -694,7 +713,7 @@
         <section class="section-cases">
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
-            <div class="section-cases__slider slider wrapper" >
+            <div class="section-cases__slider slider slider--disable wrapper" >
                 <button class="section-cases__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -753,7 +772,7 @@
         <section class="section-reviews">
             <h2 class="section-reviews__title wrapper">Отзывы</h2>
 
-            <div class="section-reviews__slider slider wrapper" >
+            <div class="section-reviews__slider slider slider--disable wrapper" >
                 <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -764,12 +783,81 @@
                     <div class="section-reviews__slider-line slider__line">
                         <div class="section-reviews__slider-line-item slider__line-item">
                             <img 
+                                class="section-reviews__slider-line-item-img"
                                 src="./assets/image/section-reviews-pdf-1.jpg"
                                 alt="section-reviews-pdf-1"
                             >
-                            <svg class="icon">
-                                <use xlink:href="#icon-quotation-marks"></use>
-                            </svg>
+                            <div class="section-reviews__slider-line-item-content">
+                                <img 
+                                    class="section-reviews__slider-line-item-content-quotation"
+                                    src="./assets/svg/icon-quotation-marks.svg"
+                                    alt="icon-quotation-marks"
+                                >
+                                <p class="section-reviews__slider-line-item-content-text">
+                                    ООО «СЕРВИЗОРИЯ» является нашим партнером в реализации проектов с 2018 года.
+                                    За период сотрудничества компания подтвердила свой высокий профессионализм и компетентность. Следует отметить так же активность и гибкость команды для достижения эффективных решений поставленных задач и аналитической проработке поставленных результатов.
+                                </p>
+                                <p class="section-reviews__slider-line-item-content-autor">
+                                    <b>БАНК ВТБ</b> <br>
+                                    Слащева Людмила Александровна <br>
+                                    Начальник Управления
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <button class="slider__btn slider__btn-next">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="section-tasks">
+            <h2 class="section-tasks__title wrapper">Задачи бизнеса которые мы решаем</h2>
+
+            <div class="section-tasks__slider slider slider--disable wrapper" >
+                <button class="slider__btn slider__btn-prev">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
+                    </svg>
+                </button>
+
+                <div class="section-tasks__slider-line-wrap slider__line-wrap">
+                    <div class="section-tasks__slider-line slider__line">
+                        <div class="section-tasks__slider-line-item slider__line-item">
+                            <div class="section-tasks__slider-line-item-img parallax-tasks">
+                                <img
+                                    class="section-tasks__slider-line-item-img-content" 
+                                    src="./assets/image/section-tasks-slider-1.jpg" 
+                                    alt="section-tasks-slider-1"
+                                >
+                                <img 
+                                    class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
+                                    src="./assets/svg/section-tasks-list-ellipse.svg" 
+                                    alt="section-tasks-list-ellipse"
+                                    style="--parallax-val: -270%;"
+                                >
+                            </div>
+
+                            <div class="section-tasks__slider-line-item-content">
+                                <p class="section-tasks__slider-line-item-content-p">ВНЕДРЕНИЕ ИННОВАЦИЙ</p>
+                                
+                                <ul class="section-tasks__slider-line-item-content-list">
+                                    <li class="section-tasks__slider-line-item-content-list-item">Digital-технологии</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Автоматизация бизнес-процессов</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Омниканальность</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Адаптация всех процессов под нововведения</li>
+                                </ul>
+
+                                <a class="section-tasks__slider-line-item-content-btn linear-gradient-btn" href="#">
+                                    <div class="section-tasks__slider-line-item-content-btn-background linear-gradient-btn__background"></div>
+                                    <div class="section-tasks__slider-line-item-content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                                    <p class="section-tasks__slider-line-item-content-btn-text linear-gradient-btn__text">Получить коммерческое предложение</p>
+                                </a>
+                            </div>
                         </div>
                     </div> 
                 </div>
@@ -856,12 +944,16 @@
                     <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
                 </div>
     
-                <a class="section-help-link__btn" href="#">Получить консультацию</a>
+                <a class="section-help-link__btn linear-gradient-btn" href="#">
+                    <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
+                    <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
+                    <p class="section-help-link__btn-text linear-gradient-btn__text">Получить консультацию</p>
+                </a>
             </div>
 
             <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
                 <img
-                    style="--parallax-val: -180%;"
+                    style="--parallax-val: -190%;"
                     class="section-help-link__background parallax-help-link__img"
                     src="./assets/svg/section-help-link.svg"
                     alt="section-help-link"
