@@ -1,13 +1,14 @@
 document.querySelectorAll('.slider').forEach(slider => {
     const items = slider.querySelectorAll('.slider__line-item')
     const sliderLine = slider.querySelector('.slider__line')
+    const sliderWrap = slider.querySelector('.slider__line-wrap')
     const sliderCount = slider.getAttribute('items-count') ? slider.getAttribute('items-count') : 1 ;
 
     let count = 0
     let width = 0
 
     function init () {
-        width = slider.offsetWidth
+        width = sliderWrap.offsetWidth
 
         sliderLine.style.width = `${(width * items.length) / sliderCount}px`
         items.forEach( item => {

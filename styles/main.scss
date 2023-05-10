@@ -29,6 +29,12 @@ body {
 
 .header-plug{
     height: 142px;
+    @include laptop{
+        height: 124px;
+    }
+    @include tablet{
+        height: 112px;
+    }
 }
 .header{
     position: fixed;
@@ -37,6 +43,16 @@ body {
     padding: 30px 0;
     height: auto;
     z-index: 3;
+
+    box-shadow: 0px 1px 13px rgba(116, 41, 191, 0.08);
+
+    @include laptop{
+        padding: 30px 90px;
+    }
+
+    @include tablet{
+        padding: 24px 15px;
+    }
 
     &__content{
         width: 100%;
@@ -47,6 +63,11 @@ body {
         &-logo{
             width: 156px;
             height: 82px;
+
+            @include laptop{
+                width: 123px;
+                height: 64px;
+            }
         }
 
         &-list{
@@ -65,9 +86,104 @@ body {
                 list-style: none;
             }
 
+            @include laptop{
+                display: none;
+            }
+
+        }
+
+        &-wrap{
+            display: flex;
+            gap: 36px;
         }
 
         &-tel{
+            @include tablet{
+                display: none;
+            }
+
+            &-link{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                color: $color-dark;
+                text-decoration: none;
+            }
+
+            &-p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $color-blue;
+            }
+
+        }
+
+        &-menu{
+            padding: 16px 32px;
+            border-radius: 61px;
+            border: none;
+            display: none !important;
+
+            @include laptop{
+                display: flex !important;
+            }
+
+            &-icon{
+                z-index: 2;
+                width: 31px;
+                height: 20px;
+            }
+
+        }
+
+    }
+
+    &__menu{
+        position: absolute;
+        top: 100%;
+        right: 90px;
+        padding: 40px 28px;
+        background: $color-white;
+        box-shadow: 0px 1px 13px rgba(116, 41, 191, 0.08);
+        border-radius: 0px 0px 10px 10px;
+        z-index: 2;
+        display: none;
+
+        @include tablet{
+            width: calc(100% - 30px);
+            right: 15px;
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-width: 231px;
+
+            &-item{
+                list-style: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                color: $color-dark;
+
+                &:hover{
+                    color: $color-purple;
+                }
+
+            }
+
+        }
+
+        &-tel{
+            margin-top: 25px;
+            display: none;
+
+            @include tablet{
+                display: block;
+            }
+
             &-link{
                 font-weight: 700;
                 font-size: 24px;
@@ -92,6 +208,10 @@ body {
 .footer{
     background-color: $color-black;
     padding: 60px 0;
+    
+    @include laptop{
+        padding: 40px 90px;
+    }
 
     &__content{
         width: 100%;
@@ -102,12 +222,20 @@ body {
         &-logo{
             width: 156px;
             height: 82px;
+
+            @include laptop{
+                width: 111px;
+                height: 58px;
+                margin-right: 60px;
+            }
         }
 
         &-list{
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            flex-wrap: wrap;
 
             max-width: 674px;
             width: 100%;
@@ -118,6 +246,7 @@ body {
                 line-height: 25px;
                 color: $color-white-light;
                 list-style: none;
+                padding: 0px 4px;
             }
 
         }
@@ -138,6 +267,10 @@ body {
                 color: $color-blue;
             }
 
+            @include laptop{
+                display: none;
+            }
+
         }
 
     }
@@ -151,6 +284,17 @@ h2{
     line-height: 49px;
     text-transform: uppercase;
     color: $color-dark;
+
+    @include laptop{
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    @include tablet{
+        font-size: 24px;
+        line-height: 33px;
+    }
+
 }
 
 .linear-gradient-btn{

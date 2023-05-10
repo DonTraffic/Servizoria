@@ -19,6 +19,7 @@
                 src="./assets/svg/logo-header.svg" 
                 alt="logo-header"
             >
+
             <ol class="header__content-list">
                 <li class="header__content-list-item">Услуги</li>
                 <li class="header__content-list-item">О компании</li>
@@ -28,13 +29,53 @@
                 <li class="header__content-list-item">FAQ</li>
                 <li class="header__content-list-item">Контакты</li>
             </ol>
-            <div class="header__content-tel">
-                <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                <p class="header__content-tel-p">Обратный звонок</p>
+
+            <div class="header__content-wrap">
+                <div class="header__content-tel">
+                    <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                    <p class="header__content-tel-p">Обратный звонок</p>
+                </div>
+    
+                <button class="header__content-menu linear-gradient-btn">
+                    <div class="header__content-menu-background linear-gradient-btn__background"></div>
+                    <div class="header__content-menu-background--hover linear-gradient-btn__background--hover"></div>
+                    <svg class="header__content-menu-icon"><use xlink:href="./assets/svg/sprite.svg#icon-menu"></use></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="header__menu">
+            <ol class="header__menu-list">
+                <li class="header__menu-list-item">Услуги</li>
+                <li class="header__menu-list-item">О компании</li>
+                <li class="header__menu-list-item">Кейсы</li>
+                <li class="header__menu-list-item">Для кого</li>
+                <li class="header__menu-list-item">Блог</li>
+                <li class="header__menu-list-item">FAQ</li>
+                <li class="header__menu-list-item">Контакты</li>
+            </ol>
+            
+            <div class="header__menu-tel">
+                <a class="header__menu-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <p class="header__menu-tel-p">Обратный звонок</p>
             </div>
         </div>
     </header>
     <div class="header-plug"></div>
+
+    <script>
+        let status = false
+
+        document.querySelector('.header__content-menu').addEventListener('click', e => {
+            if (status) {
+                document.querySelector('.header__menu').style.display = 'none'
+                status = false
+            } else {
+                document.querySelector('.header__menu').style.display = 'block'
+                status = true
+            }
+        })
+    </script>
 
     <main>
         <section class="section-ecosystem">
@@ -672,41 +713,14 @@
                 <h2 class="section-company__title">о компании</h2>
                 <img 
                     class="section-company__diagram" 
-                    src="./assets/svg/section-company-diagram.svg" 
+                    src="./assets/image/section-company-diagram.png" 
                     alt="section-company-diagram"
                 >
-                <!-- <div class="section-company__diagram">
-                    <img 
-                        class="section-company__diagram-img" 
-                        src="./assets/svg/section-company-diagram.svg" 
-                        alt="section-company-diagram"
-                    >
-                    <div class="section-company__diagram-content">
-                        <p class="section-company__diagram-content-name">Стандарты и ассоциации</p>
-                        <div class="section-company__diagram-content-imgs">
-                            <img 
-                                class="section-company__diagram-content-img"
-                                src="./assets/image/section-company-group-1.png" 
-                                alt="section-company-group-1"
-                            >
-                            <img 
-                                class="section-company__diagram-content-img"
-                                src="./assets/image/section-company-group-2.png" 
-                                alt="section-company-group-2"
-                            >
-                            <img 
-                                class="section-company__diagram-content-img"
-                                src="./assets/image/section-company-group-3.png" 
-                                alt="section-company-group-3"
-                            >
-                            <img 
-                                class="section-company__diagram-content-img"
-                                src="./assets/image/section-company-group-4.png" 
-                                alt="section-company-group-4"
-                            >
-                        </div>
-                    </div>
-                </div> -->
+                <img 
+                    class="section-company__diagram--laptop" 
+                    src="./assets/image/section-company-diagram-laptop.png" 
+                    alt="section-company-diagram-laptop"
+                >
             </div>
         </section>
 

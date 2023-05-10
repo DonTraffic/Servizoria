@@ -9,6 +9,10 @@
             transform: translate(50%, 0%);
         }
 
+        @include tablet{
+            transform: translate(0%, 0%) scale(0.5);
+        }
+
     }
 
     &__img-wrap{
@@ -22,6 +26,10 @@
         transform: translate(0%, calc( -20% + (var( --scrollTop  ) / 10 ) ));
 
         height: 120%;
+
+        @include tablet{
+            transform: translate(0%, calc( -25% + (var( --scrollTop  ) / 10 ) ));
+        }
     }
 
     &__circle{
@@ -39,20 +47,32 @@
     &__ellipse{
         position: absolute;
         top: -20%;
-        left: 50%;
-        transform: translate(-25%, calc(0% + var(--scrollTop) / 10));
+        transform: translate(15%, calc(0% + var(--scrollTop) / 10));
 
         height: 649px;
         width: 649px;
 
         pointer-events: none;
         
+        @include tablet{
+            transform: translate(15%, calc(-10% + var(--scrollTop) / 10));
+        }
+        
     }
+
 }
 
 
 
 .parallax-bird{
+    @include tablet{
+        position: relative !important;
+        transform: translate(0%, 0) scale(0.5) !important;
+        left: auto !important;
+        height: auto !important;
+        padding: 0px;
+    }
+
     &__mask{
         width: 100%;
         height: 100%;
@@ -64,6 +84,10 @@
 
         @include laptop{
             transform: translate(-50%, 0% );
+        }
+
+        @include tablet{
+            transform: translate(0%, 0%);
         }
 
         &-img{
@@ -80,6 +104,10 @@
             mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
             mask-repeat: no-repeat;
 
+            @include tablet{
+                mask-position: right calc( 0% + (var( --scrollTop  ) / 20 ) );
+            }
+
         }
 
     }
@@ -95,6 +123,12 @@
 
         &-right{
             transform: translate(0, calc( -15% + (var( --scrollTop  ) / 11 ) ) );
+        }
+
+        @include tablet{
+            position: relative;
+            transform: translate(0, 0);
+            display: flex;
         }
 
     }
@@ -131,7 +165,7 @@
 
             @include laptop{
                 top: calc( 24% - ( var( --scrollTop  ) / 10 ) );
-                mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+                mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask-tablet.svg);
                 mask-position: center calc(-75% + var(--scrollTop) / 10);
             }
 
@@ -156,11 +190,19 @@
 
 .parallax-circle-3 {
 
+    @include tablet{
+        transform: translate(0%, 0%) !important;
+    }
+
     &__wrap{
         transform: translate(-80%, 0%);
 
         @include laptop{
-            transform: translate(-70%, 0%);
+            transform: translate(-55%, 0%);
+        }
+
+        @include tablet{
+            transform: translate(0%, 0%) scale(0.5);
         }
     }
 
@@ -180,6 +222,14 @@
             transform: translate(0%, calc( -60% + (var( --scrollTop  ) / 10 ) ));
         }
 
+        @include tablet{
+            transform: translate(0%, calc( -60% + (var( --scrollTop  ) / 12 ) ));
+        }
+
+        @include phone{
+            transform: translate(0%, calc( -70% + (var( --scrollTop  ) / 12 ) ));
+        }
+
     }
 
     &__ellipse{
@@ -193,8 +243,17 @@
         @include laptop{
             transform: translate(-30%, calc(-65% + var(--scrollTop) / 10));
         }
+
+        @include tablet{
+            transform: translate(-35%, calc(-70% + var(--scrollTop) / 10));
+        }
+
+        @include phone{
+            transform: translate(-35%, calc(-90% + var(--scrollTop) / 10));
+        }
         
     }
+
 }
 
 
@@ -225,25 +284,47 @@
 
 .parallax-mission{
     &__ellipse-1{
-        transform: translate(0%, calc(-270% + var(--scrollTop) / 10));
+        transform: translate(0%, calc(-305% + var(--scrollTop) / 10));
     }
 
     &__ellipse-2{
-        transform: translate(100%, calc(250% - var(--scrollTop) / 10));
+        transform: translate(100%, calc(270% - var(--scrollTop) / 10));
+        @include laptop{
+            transform: translate(100%, calc(290% - var(--scrollTop) / 10));
+        }
     }
 }
 
 .parallax-help-link{
     &__img{
         transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 10 ) ) );
+
         @include laptop{
             transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
         }
+
+        @include tablet{
+            transform: translate(0, calc( 30% + var(--parallax-val) + (var( --scrollTop  ) / 11 ) ) ) rotate(90deg);
+            height: 768px !important;
+            width: 100% !important;
+            left: 0px;
+            right: auto;
+        }
+
+        @include phone{
+            transform: translate(0, calc( 10% + var(--parallax-val) + (var( --scrollTop  ) / 11 ) ) ) rotate(90deg);
+        }
+
     }
+
 }
 
 .parallax-tasks{
     &__ellipse{
         transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
+
+        @include laptop{
+            transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15.5 ) ) );
+        }
     }
 }
