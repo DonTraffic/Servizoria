@@ -213,11 +213,19 @@ body {
         padding: 40px 90px;
     }
 
+    @include tablet{
+        padding: 40px 15px;
+    }
+
     &__content{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include phone{
+            flex-direction: column;
+        }
 
         &-logo{
             width: 156px;
@@ -228,6 +236,13 @@ body {
                 height: 58px;
                 margin-right: 60px;
             }
+
+            @include phone{
+                width: 155px;
+                height: 80px;
+                margin: 0 0 24px 0;
+            }
+
         }
 
         &-list{
@@ -239,6 +254,11 @@ body {
 
             max-width: 674px;
             width: 100%;
+
+            @include phone{
+                flex-direction: column;
+                gap: 8px;
+            }
 
             &-item{
                 font-weight: 400;

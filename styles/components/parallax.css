@@ -131,6 +131,16 @@
   position: absolute;
   transform: translate(40%, 0%);
 }
+@media screen and (max-width: 1024px) {
+  .parallax-circle-2__mask {
+    transform: translate(30%, 0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-circle-2__mask {
+    transform: translate(15%, 0) scale(0.5);
+  }
+}
 .parallax-circle-2__mask-img {
   position: absolute;
   right: 20px;
@@ -150,11 +160,29 @@
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-2__mask-img {
-    top: calc(24% - var(--scrollTop) / 10);
-    -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask-tablet.svg);
-            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask-tablet.svg);
-    -webkit-mask-position: center calc(-75% + var(--scrollTop) / 10);
-            mask-position: center calc(-75% + var(--scrollTop) / 10);
+    height: 1400px;
+    right: 180px;
+    top: calc(15% - var(--scrollTop) / 10);
+    -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+    -webkit-mask-position: left calc(255% + var(--scrollTop) / 10);
+            mask-position: left calc(255% + var(--scrollTop) / 10);
+    -webkit-mask-size: 165%;
+            mask-size: 165%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-circle-2__mask-img {
+    top: calc(-105% - var(--scrollTop) / 10);
+    -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+    -webkit-mask-position: left calc(255% + var(--scrollTop) / 10);
+            mask-position: left calc(255% + var(--scrollTop) / 10);
+    -webkit-mask-size: 206%;
+            mask-size: 206%;
+    right: -270px;
+    height: 1620px;
+    width: 1235px;
   }
 }
 .parallax-circle-2__circle {
@@ -166,6 +194,11 @@
     height: 400px;
     width: 400px;
     transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-circle-2__circle {
+    transform: translate(0%, calc(-90% + var(--scrollTop) / 10));
   }
 }
 
@@ -239,12 +272,43 @@
 .parallax-resources__img {
   transform: translate(0%, calc(-70% + var(--scrollTop) / 10));
 }
+@media screen and (max-width: 768px) {
+  .parallax-resources__img {
+    transform: translate(0%, calc(-90% + var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-resources__img {
+    transform: translate(0%, calc(-120% + var(--scrollTop) / 10));
+  }
+}
 .parallax-resources--reverse .parallax-resources__img {
   transform: translate(0%, calc(-95% + var(--scrollTop) / 10));
 }
+@media screen and (max-width: 768px) {
+  .parallax-resources--reverse .parallax-resources__img {
+    transform: translate(0%, calc(-115% + var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-resources--reverse .parallax-resources__img {
+    transform: translate(0%, calc(-155% + var(--scrollTop) / 10));
+  }
+}
 
+@media screen and (max-width: 425px) {
+  .parallax-tools {
+    top: auto;
+    bottom: 0;
+  }
+}
 .parallax-tools__circle-1 {
   transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
+}
+@media screen and (max-width: 425px) {
+  .parallax-tools__circle-1 {
+    transform: translate(45%, calc(310% - var(--scrollTop) / 10));
+  }
 }
 .parallax-tools__circle-2 {
   transform: translate(-30%, calc(195% - var(--scrollTop) / 10));
@@ -254,9 +318,24 @@
     transform: translate(-30%, calc(308% - var(--scrollTop) / 10));
   }
 }
+@media screen and (max-width: 425px) {
+  .parallax-tools__circle-2 {
+    transform: translate(-30%, calc(520% - var(--scrollTop) / 10));
+  }
+}
 
 .parallax-mission__ellipse-1 {
   transform: translate(0%, calc(-305% + var(--scrollTop) / 10));
+}
+@media screen and (max-width: 768px) {
+  .parallax-mission__ellipse-1 {
+    transform: translate(0%, calc(-335% + var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-mission__ellipse-1 {
+    transform: translate(0%, calc(-455% + var(--scrollTop) / 10));
+  }
 }
 .parallax-mission__ellipse-2 {
   transform: translate(100%, calc(270% - var(--scrollTop) / 10));
@@ -264,6 +343,11 @@
 @media screen and (max-width: 1024px) {
   .parallax-mission__ellipse-2 {
     transform: translate(100%, calc(290% - var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-mission__ellipse-2 {
+    transform: translate(100%, calc(390% - var(--scrollTop) / 10));
   }
 }
 
@@ -296,5 +380,10 @@
 @media screen and (max-width: 1024px) {
   .parallax-tasks__ellipse {
     transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 15.5));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-tasks__ellipse {
+    transform: translate(0, calc(-100% + var(--parallax-val) + var(--scrollTop) / 15));
   }
 }

@@ -27,15 +27,26 @@
 
         &-prev{
             left: -60px;
+            @include tablet{
+                left: -15px;
+            }
         }
 
         &-next{
             right: -60px;
+            @include tablet{
+                right: -15px;
+            }
         }
 
         svg{
             width: 23px;
             height: 49px;
+
+            @include tablet{
+                width: 15px;
+                height: 26px;
+            }
         }
 
         &:hover{

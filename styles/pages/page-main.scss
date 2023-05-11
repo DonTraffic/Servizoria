@@ -1,5 +1,6 @@
 @import './../vars.scss';
 
+
 .section-ecosystem{
     background: center / cover no-repeat url('./../../assets/image/section-ecosystem.jpg');
     height: 648px;
@@ -407,7 +408,6 @@
 }
 
 
-
 .section-help-link{
     position: relative;
     padding: 92px 0;
@@ -564,7 +564,6 @@
     }
 
 }
-
 
 
 .section-tools{
@@ -774,7 +773,6 @@
 }
 
 
-
 .section-resources{
     position: relative;
     padding: 100px 0;
@@ -896,6 +894,17 @@
             transform: translate(-25%, 0) scale(0.8);
         }
 
+        @include tablet{
+            transform: translate(-15%, 0) scale(0.6);
+            top: 15%;
+        }
+
+        @include phone{
+            position: relative;
+            height: 350px;
+            transform: translate(-15%, -50%) scale(0.6);
+        }
+
         &-img{
             position: absolute;
             top: 100px;
@@ -965,6 +974,17 @@
                 transform: translate(-60%, 0) scale(0.8);
             }
 
+            @include tablet{
+                transform: translate(-75%, 0) scale(0.6);
+                top: 15%;
+            }
+
+            @include phone{
+                position: relative;
+                height: 350px;
+                transform: translate(-60%, -30%) scale(0.6);
+            }
+
             &-img{
                 left: 240px;
                 background: center / cover no-repeat url('./../../assets/image/section-resources-2.jpg');
@@ -1009,6 +1029,7 @@
     }
 
 }
+
 
 .section-help-form{
     padding: 100px 0px;
@@ -1143,8 +1164,16 @@
         padding: 80px 90px;
     }
 
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__title{
         margin-bottom: 80px;
+
+        @include tablet{
+            margin-bottom: 40px;
+        }
 
     }
     
@@ -1187,6 +1216,10 @@
         padding: 70px 90px;
     }
     
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__title{
         margin-bottom: 50px;
     }
@@ -1207,6 +1240,20 @@
                 display: block;
             }
 
+            @include phone{
+                display: none;
+            }
+
+        }
+
+        &--phone{
+            display: none;
+            width: 100%;
+
+            @include phone{
+                display: block;
+            }
+
         }
 
     }
@@ -1220,6 +1267,10 @@
 
     @include laptop{
         padding: 50px 90px;
+    }
+
+    @include tablet{
+        padding: 70px 15px;
     }
 
     &__title{
@@ -1240,6 +1291,12 @@
                     gap: 28px 20px;
                 }
 
+                @include phone{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
             }
 
         } 
@@ -1248,6 +1305,12 @@
             &-img{
                 width: 129px;
                 height: 87px;
+
+                @include tablet{
+                    width: 152px;
+                    height: 102px;
+                    margin-bottom: 20px;
+                }
 
             }
 
@@ -1261,6 +1324,7 @@
 
                 @include laptop{
                     font-size: 20px;
+                    margin-bottom: 12px;
                 }
             }
 
@@ -1312,6 +1376,10 @@
         padding: 90px;
     }
 
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__title{
         margin-bottom: 70px;
         @include laptop{
@@ -1324,6 +1392,22 @@
             &-item{
                 display: flex;
                 gap: 52px;
+
+                @include phone{
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &-img{
+                    box-shadow: 0px 3px 17px rgba(77, 67, 87, 0.06);
+                    border-radius: 10px;
+
+                    @include phone{
+                        width: 255px;
+                        height: 360px;
+                    }
+
+                }
 
                 &-content{
                     display: flex;
@@ -1393,6 +1477,10 @@
         padding: 50px 90px 20px 90px;
     }
 
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__title{
         color: $color-white;
     }
@@ -1401,6 +1489,10 @@
         &-line{
             &-item{
                 display: flex;
+
+                @include phone{
+                    display: block;
+                }
 
                 &-img{
                     position: relative;
@@ -1480,6 +1572,10 @@
                         border-radius: 61px;
                         text-decoration: none;
 
+                        @include phone{
+                            max-width: 500px;
+                        }
+
                         &-text{
                             font-weight: 700;
                             font-size: 16px;
@@ -1517,6 +1613,10 @@
         padding: 50px 90px;
     }
 
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__content{
         &-h2{
             font-weight: 800;
@@ -1531,6 +1631,12 @@
             @include laptop{
                 max-width: 410px;
             }
+
+            @include phone{
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
         }
 
         &-p{
@@ -1544,6 +1650,11 @@
 
             @include laptop{
                 max-width: 410px;
+            }
+
+            @include phone{
+                font-size: 16px;
+                margin-bottom: 28px;
             }
         }
 
@@ -1578,6 +1689,17 @@
 
         }
 
+        &-map{
+            display: none;
+
+            @include phone{
+                display: block;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+        }
+
     }
 
     &__wrap{
@@ -1591,6 +1713,10 @@
 
         @include laptopL{
             right: -540px;
+        }
+
+        @include phone{
+            display: none;
         }
 
     }
@@ -1614,11 +1740,19 @@
         padding: 90px;
     }
 
+    @include tablet{
+        padding: 70px 15px;
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 56px;
+
+        @include phone{
+            gap: 28px;
+        }
 
         &-wrap{
             max-width: 650px;
@@ -1627,6 +1761,11 @@
             @include laptop{
                 max-width: 455px;
             }
+
+            @include tablet{
+                max-width: 100%;
+            }
+
         }
 
         &-h3{
@@ -1654,6 +1793,10 @@
                 margin-bottom: 6px;
             }
 
+            @include phone{
+                font-size: 24px;
+            }
+
         }
 
         &-p{
@@ -1664,6 +1807,10 @@
 
             @include laptop{
                 font-size: 18px;
+            }
+
+            @include phone{
+                font-size: 16px;
             }
 
             &:nth-child(0){
@@ -1687,6 +1834,16 @@
             transform: translate(-60%, 0) scale(0.7);
         }
 
+        @include tablet{
+            position: relative;
+            height: 300px;
+        }
+
+        @include phone{
+            transform: translate(-60%, 0) scale(0.5);
+            height: 250px;
+        }
+
         &-ellipse{
             &-wrap{
                 position: absolute;
@@ -1696,6 +1853,7 @@
                 @include laptop{
                     transform: translate(0%, 0);
                 }
+
             }
 
             &-1{
@@ -1713,5 +1871,6 @@
     }
 
 }
+
 
 @import './../vars.scss';
