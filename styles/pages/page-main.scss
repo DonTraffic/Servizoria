@@ -694,13 +694,6 @@
         }
 
         &-list{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 120%;
-            color: $color-white-light;
-            margin-left: 21px;
-
             @include laptop{
                 font-weight: 400;
                 font-size: 16px;
@@ -711,11 +704,15 @@
                 position: relative;
                 list-style: none;
 
+                font-size: 18px;
+                margin-left: 21px;
+                color: $color-white-light;
+
                 &::before{
                     content: '•';
                     position: absolute;
                     font-size: 16px;
-                    top: 1px;
+                    top: 0px;
                     left: -20px;
                 }
 
@@ -724,6 +721,15 @@
                     background: $color-blue;
                     mix-blend-mode: difference;
                     border-radius: 5px;
+                }
+
+                a{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    text-decoration: none;
+                    color: $color-white-light;
                 }
 
                 &:hover{
