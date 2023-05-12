@@ -49,14 +49,17 @@
                 font-size: 44px;
                 line-height: 60px;
                 text-transform: uppercase;
+                margin-bottom: 18px;
 
                 @include laptop{
                     font-size: 32px;
                     line-height: 44px;
+                    margin-bottom: 24px;
                 }
 
                 @include tablet{
                     font-size: 24px;
+                    margin-bottom: 12px;
                 }
 
             }
@@ -119,6 +122,10 @@
                 right: 15px;
                 bottom: 65px;
                 left: auto;
+            }
+
+            @include phone {
+                bottom: 15px;
             }
 
             &-background{

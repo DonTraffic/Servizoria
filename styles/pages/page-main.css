@@ -45,16 +45,19 @@
   font-size: 44px;
   line-height: 60px;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-text-title {
     font-size: 32px;
     line-height: 44px;
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 768px) {
   .section-ecosystem__content-text-title {
     font-size: 24px;
+    margin-bottom: 12px;
   }
 }
 .section-ecosystem__content-text-desc {
@@ -113,6 +116,11 @@
     right: 15px;
     bottom: 65px;
     left: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section-ecosystem__content-link {
+    bottom: 15px;
   }
 }
 .section-ecosystem__content-link-background {

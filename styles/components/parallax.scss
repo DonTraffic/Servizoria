@@ -156,7 +156,7 @@
         &-img{
             position: absolute;
             right: 20px;
-            top: calc( -15% - ( var( --scrollTop  ) / 10 ) );
+            top: calc( 10% - ( var( --scrollTop  ) / 10 ) );
             width: 1121px;
             height: 1100px;
 
@@ -164,7 +164,7 @@
 
             mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
             mask-size: contain;
-            mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
+            mask-position: 50px calc( -90% + (var( --scrollTop  ) / 10 ) );
             mask-repeat: no-repeat;
 
             @include laptop{
