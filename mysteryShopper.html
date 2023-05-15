@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizoria</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components/parallax.css">
+    <link rel="stylesheet" href="./styles/components/slider.css">
+    <link rel="stylesheet" href="./styles/pages/page-mystery-shopper.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content wrapper">
+            <img
+                class="header__content-logo"
+                src="./assets/svg/logo-header.svg" 
+                alt="logo-header"
+            >
+
+            <ol class="header__content-list">
+                <li class="header__content-list-item">Услуги</li>
+                <li class="header__content-list-item">О компании</li>
+                <li class="header__content-list-item">Кейсы</li>
+                <li class="header__content-list-item">Для кого</li>
+                <li class="header__content-list-item">Блог</li>
+                <li class="header__content-list-item">FAQ</li>
+                <li class="header__content-list-item">Контакты</li>
+            </ol>
+
+            <div class="header__content-wrap">
+                <div class="header__content-tel">
+                    <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                    <p class="header__content-tel-p">Обратный звонок</p>
+                </div>
+    
+                <button class="header__content-menu linear-gradient-btn">
+                    <div class="header__content-menu-background linear-gradient-btn__background"></div>
+                    <div class="header__content-menu-background--hover linear-gradient-btn__background--hover"></div>
+                    <svg class="header__content-menu-icon"><use xlink:href="./assets/svg/sprite.svg#icon-menu"></use></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="header__menu">
+            <ol class="header__menu-list">
+                <li class="header__menu-list-item">Услуги</li>
+                <li class="header__menu-list-item">О компании</li>
+                <li class="header__menu-list-item">Кейсы</li>
+                <li class="header__menu-list-item">Для кого</li>
+                <li class="header__menu-list-item">Блог</li>
+                <li class="header__menu-list-item">FAQ</li>
+                <li class="header__menu-list-item">Контакты</li>
+            </ol>
+            
+            <div class="header__menu-tel">
+                <a class="header__menu-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <p class="header__menu-tel-p">Обратный звонок</p>
+            </div>
+        </div>
+    </header>
+    <div class="header-plug"></div>
+
+    <script>
+        let status = false
+
+        document.querySelector('.header__content-menu').addEventListener('click', e => {
+            if (status) {
+                document.querySelector('.header__menu').style.display = 'none'
+                status = false
+            } else {
+                document.querySelector('.header__menu').style.display = 'block'
+                status = true
+            }
+        })
+    </script>
+
+    <main>
+        <section class="section-ecosystem">
+            <div class="section-ecosystem-wrap">
+                <div class="section-ecosystem__content">
+                    <img class="section-ecosystem__content-svg" src="./assets/svg/section-ecosystem.svg" alt="section-ecosystem">
+
+                    <div class="section-ecosystem__content-text">
+                        <p class="section-ecosystem__content-text-title">ТАЙНЫЙ ПОКУПАТЕЛЬ (MYSTERY SHOPPING)</p>
+                        <p class="section-ecosystem__content-text-desc">
+                            Услуга “Тайный покупатель” пользуется большой популярностью во всем мире. Mystery Shopping уже более 20 лет  является неотъемлемой частью системы управления клиентским опытом и в российских компаниях
+                        </p>
+                    </div>
+                    
+                    <a class="section-ecosystem__content-link" href="#">
+                        <div class="section-ecosystem__content-link-background"></div>
+                        <div class="section-ecosystem__content-link-background--hover"></div>
+                        <p class="section-ecosystem__content-link-text">Заказать услугу</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content wrapper">
+            <img
+                class="footer__content-logo"
+                src="./assets/svg/logo-footer.svg" 
+                alt="logo-footer"
+            >
+            <ol class="footer__content-list">
+                <li class="footer__content-list-item">Услуги</li>
+                <li class="footer__content-list-item">О компании</li>
+                <li class="footer__content-list-item">Кейсы</li>
+                <li class="footer__content-list-item">Для кого</li>
+                <li class="footer__content-list-item">Блог</li>
+                <li class="footer__content-list-item">FAQ</li>
+                <li class="footer__content-list-item">Контакты</li>
+            </ol>
+            <div class="footer__content-tel">
+                <a class="footer__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <p class="footer__content-tel-p">Обратный звонок</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', e => {
+            document.body.style.cssText = `--scrollTop: ${this.scrollY}px`
+        })
+    </script>
+
+    <script src="./scripts/searchTools.js"></script>
+    <script src="./scripts/slider.js"></script>
+</body>
+</html>

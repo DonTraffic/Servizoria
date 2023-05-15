@@ -1,0 +1,11 @@
+@import './../vars.scss';
+
+.section-ecosystem{
+    background: center / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
+    @include tablet{
+        background: right / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
+    }
+    @include phone{
+        background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
+    }
+}

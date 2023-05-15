@@ -1,0 +1,13 @@
+.section-ecosystem {
+  background: center/cover no-repeat url("./../../assets/image/section-ecosystem-2.jpg");
+}
+@media screen and (max-width: 768px) {
+  .section-ecosystem {
+    background: right/cover no-repeat url("./../../assets/image/section-ecosystem-2.jpg");
+  }
+}
+@media screen and (max-width: 425px) {
+  .section-ecosystem {
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-2.jpg");
+  }
+}
