@@ -278,32 +278,118 @@
 
 .parallax-resources{
     &__img{
-        transform: translate(0%, calc(-70% + var(--scrollTop) / 10));
+        transform: translate(0%, calc(100% - var(--scrollTop) / 10));
+
+        @include laptop{
+            transform: translate(0%, calc(140% - var(--scrollTop) / 10));
+        }
 
         @include tablet{
-            transform: translate(0%, calc(-90% + var(--scrollTop) / 10));
+            transform: translate(0%, calc(130% - var(--scrollTop) / 10));
         }
 
         @include phone{
-            transform: translate(0%, calc(-120% + var(--scrollTop) / 10));
+            transform: translate(0%, calc(180% - var(--scrollTop) / 10));
         }
 
     }
 
-    &--reverse{
-        .parallax-resources__img{
-            transform: translate(0%, calc(-95% + var(--scrollTop) / 10));
+    &__medium{
+        transform: translate(0%, calc(-340% + var(--scrollTop) / 10));
 
-            @include tablet{
-                transform: translate(0%, calc(-115% + var(--scrollTop) / 10));
-            }
-
-            @include phone{
-                transform: translate(0%, calc(-155% + var(--scrollTop) / 10));
-            }
-
+        @include laptop{
+            transform: translate(0%, calc(-300% + var(--scrollTop) / 10));
         }
 
+        @include tablet{
+            transform: translate(0%, calc(-390% + var(--scrollTop) / 10));
+        }
+
+        @include phone{
+            transform: translate(0%, calc(-540% + var(--scrollTop) / 10));
+        }
+    }
+
+    &__circle{
+        transform: translate(0%, calc(-150% + var(--scrollTop) / 10));
+
+        @include laptop{
+            transform: translate(0%, calc(-130% + var(--scrollTop) / 10));
+        }
+
+        @include tablet{
+            transform: translate(0%, calc(-160% + var(--scrollTop) / 10));
+        }
+
+        @include phone{
+            transform: translate(0%, calc(-220% + var(--scrollTop) / 10));
+        }
+    }
+
+    &__small{
+        transform: translate(0%, calc(-580% + var(--scrollTop) / 10));
+
+        @include laptop{
+            transform: translate(0%, calc(-460% + var(--scrollTop) / 10));
+        }
+
+        @include tablet{
+            transform: translate(0%, calc(-640% + var(--scrollTop) / 10));
+        }
+
+        @include phone{
+            transform: translate(0%, calc(-860% + var(--scrollTop) / 10));
+        }
+    }
+
+    &--reverse{
+        .parallax-resources__medium{
+            transform: translate(0%, calc(-380% + var(--scrollTop) / 10));
+    
+            @include laptop{
+                transform: translate(0%, calc(-360% + var(--scrollTop) / 10));
+            }
+    
+            @include tablet{
+                transform: translate(0%, calc(-470% + var(--scrollTop) / 10));
+            }
+    
+            @include phone{
+                transform: translate(0%, calc(-620% + var(--scrollTop) / 10));
+            }
+        }
+    
+        .parallax-resources__small{
+            transform: translate(0%, calc(-650% + var(--scrollTop) / 10));
+    
+            @include laptop{
+                transform: translate(0%, calc(-640% + var(--scrollTop) / 10));
+            }
+    
+            @include tablet{
+                transform: translate(0%, calc(-540% + var(--scrollTop) / 10));
+            }
+    
+            @include phone{
+                transform: translate(0%, calc(-1100% + var(--scrollTop) / 10));
+            }
+        }
+
+        .parallax-resources__circle{
+            transform: translate(0%, calc(-170% + var(--scrollTop) / 10));
+    
+            @include laptop{
+                transform: translate(0%, calc(-170% + var(--scrollTop) / 10));
+            }
+    
+            @include tablet{
+                transform: translate(0%, calc(-195% + var(--scrollTop) / 10));
+            }
+    
+            @include phone{
+                transform: translate(0%, calc(-290% + var(--scrollTop) / 10));
+            }
+        }
     }
 
 }

@@ -408,17 +408,17 @@
             <div class="section-resources__background wrapper-max parallax-resources">
                 <div class="section-resources__background-img parallax-resources__img"></div>
                 <img
-                    class="section-resources__background-small"
+                    class="section-resources__background-small parallax-resources__small"
                     src="./assets/svg/section-resources-small-1.svg"
                     alt="section-resources-small"
                 >
                 <img
-                    class="section-resources__background-medium"
+                    class="section-resources__background-medium parallax-resources__medium"
                     src="./assets/svg/section-resources-medium-1.svg"
                     alt="section-resources-medium"
                 >
                 <img
-                    class="section-resources__background-circle"
+                    class="section-resources__background-circle parallax-resources__circle"
                     src="./assets/svg/section-resources-circle-1.svg"
                     alt="section-resources-circle"
                 >
@@ -464,17 +464,17 @@
             <div class="section-resources__background wrapper-max parallax-resources--reverse">
                 <div class="section-resources__background-img parallax-resources__img"></div>
                 <img
-                    class="section-resources__background-small"
+                    class="section-resources__background-small parallax-resources__small"
                     src="./assets/svg/section-resources-small-2.svg"
                     alt="section-resources-small"
                 >
                 <img
-                    class="section-resources__background-medium"
+                    class="section-resources__background-medium parallax-resources__medium"
                     src="./assets/svg/section-resources-medium-2.svg"
                     alt="section-resources-medium"
                 >
                 <img
-                    class="section-resources__background-circle"
+                    class="section-resources__background-circle parallax-resources__circle"
                     src="./assets/svg/section-resources-circle-2.svg"
                     alt="section-resources-circle"
                 >
@@ -505,137 +505,58 @@
             </div>
         </section>
         
-        <section class="section-customers wrapper">
-            <h2 class="section-customers__title">Клиенты</h2>
+        <section class="section-tasks">
+            <h2 class="section-tasks__title wrapper">Задачи бизнеса которые мы решаем</h2>
 
-            <div 
-                class="section-customers__slider slider slider--disable" 
-                items-count='{"0":4,"425":2,"768":3}'
-            >
-                <button class="section-customers__slider-prev slider__btn slider__btn-prev">
+            <div class="section-tasks__slider slider slider--disable wrapper" >
+                <button class="slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
                     </svg>
                 </button>
-                <div class="section-customers__slider-line-wrap slider__line-wrap">
-                    <div class="section-customers__slider-line slider__line">
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-1.jpg"
-                                alt="section-customers-1"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-2.png"
-                                alt="section-customers-2"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-3.png"
-                                alt="section-customers-3"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-4.png"
-                                alt="section-customers-4"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-1.jpg"
-                                alt="section-customers-1"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-2.png"
-                                alt="section-customers-2"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-3.png"
-                                alt="section-customers-3"
-                            >
-                        </div>
-    
-                        <div class="section-customers__slider-line-item slider__line-item">
-                            <img
-                                class="section-customers__slider-item-img"
-                                src="./assets/image/section-customers-4.png"
-                                alt="section-customers-4"
-                            >
+
+                <div class="section-tasks__slider-line-wrap slider__line-wrap">
+                    <div class="section-tasks__slider-line slider__line">
+                        <div class="section-tasks__slider-line-item slider__line-item">
+                            <div class="section-tasks__slider-line-item-img parallax-tasks">
+                                <img
+                                    class="section-tasks__slider-line-item-img-content" 
+                                    src="./assets/image/section-tasks-slider-1.jpg" 
+                                    alt="section-tasks-slider-1"
+                                >
+                                <img 
+                                    class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
+                                    src="./assets/svg/section-tasks-list-ellipse.svg" 
+                                    alt="section-tasks-list-ellipse"
+                                    style="--parallax-val: -270%;"
+                                >
+                            </div>
+
+                            <div class="section-tasks__slider-line-item-content">
+                                <p class="section-tasks__slider-line-item-content-p">ВНЕДРЕНИЕ ИННОВАЦИЙ</p>
+                                
+                                <ul class="section-tasks__slider-line-item-content-list">
+                                    <li class="section-tasks__slider-line-item-content-list-item">Digital-технологии</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Автоматизация бизнес-процессов</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Омниканальность</li>
+                                    <li class="section-tasks__slider-line-item-content-list-item">Адаптация всех процессов под нововведения</li>
+                                </ul>
+
+                                <a class="section-tasks__slider-line-item-content-btn linear-gradient-btn" href="#">
+                                    <div class="section-tasks__slider-line-item-content-btn-background linear-gradient-btn__background"></div>
+                                    <div class="section-tasks__slider-line-item-content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                                    <p class="section-tasks__slider-line-item-content-btn-text linear-gradient-btn__text">Получить коммерческое предложение</p>
+                                </a>
+                            </div>
                         </div>
                     </div> 
                 </div>
+
                 <button class="slider__btn slider__btn-next">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
                     </svg>
                 </button>
-            </div>
-
-           
-        </section>
-
-        <section class="section-help-link section-help-link--black">
-            <div class="section-help-link__content wrapper">
-                <div class="section-help-link__text">
-                    <h2 class="section-help-link__text-h2">Расскажите о своей задаче</h2>
-                    <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
-                </div>
-    
-                <a class="section-help-link__btn linear-gradient-btn" href="#">
-                    <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
-                    <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
-                    <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект</p>
-                </a>
-            </div>
-
-            <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
-                <img
-                    style="--parallax-val: -100%;"
-                    class="section-help-link__background parallax-help-link__img"
-                    src="./assets/svg/section-help-link-1.svg"
-                    alt="section-help-link-1"
-                >
-            </div>
-        </section>
-
-        <section class="section-company">
-            <div class="section-company__content wrapper">
-                <h2 class="section-company__title">о компании</h2>
-                <img 
-                    class="section-company__diagram" 
-                    src="./assets/image/section-company-diagram.png" 
-                    alt="section-company-diagram"
-                >
-                <img 
-                    class="section-company__diagram--laptop" 
-                    src="./assets/image/section-company-diagram-laptop.png" 
-                    alt="section-company-diagram-laptop"
-                >
-                <img 
-                    class="section-company__diagram--phone" 
-                    src="./assets/image/section-company-diagram-phone.png" 
-                    alt="section-company-diagram-phone"
-                >
             </div>
         </section>
 
@@ -744,58 +665,137 @@
             </div>
         </section>
 
-        <section class="section-tasks">
-            <h2 class="section-tasks__title wrapper">Задачи бизнеса которые мы решаем</h2>
+        <section class="section-customers wrapper">
+            <h2 class="section-customers__title">Клиенты</h2>
 
-            <div class="section-tasks__slider slider slider--disable wrapper" >
-                <button class="slider__btn slider__btn-prev">
+            <div 
+                class="section-customers__slider slider slider--disable" 
+                items-count='{"0":4,"425":2,"768":3}'
+            >
+                <button class="section-customers__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
                     </svg>
                 </button>
-
-                <div class="section-tasks__slider-line-wrap slider__line-wrap">
-                    <div class="section-tasks__slider-line slider__line">
-                        <div class="section-tasks__slider-line-item slider__line-item">
-                            <div class="section-tasks__slider-line-item-img parallax-tasks">
-                                <img
-                                    class="section-tasks__slider-line-item-img-content" 
-                                    src="./assets/image/section-tasks-slider-1.jpg" 
-                                    alt="section-tasks-slider-1"
-                                >
-                                <img 
-                                    class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
-                                    src="./assets/svg/section-tasks-list-ellipse.svg" 
-                                    alt="section-tasks-list-ellipse"
-                                    style="--parallax-val: -270%;"
-                                >
-                            </div>
-
-                            <div class="section-tasks__slider-line-item-content">
-                                <p class="section-tasks__slider-line-item-content-p">ВНЕДРЕНИЕ ИННОВАЦИЙ</p>
-                                
-                                <ul class="section-tasks__slider-line-item-content-list">
-                                    <li class="section-tasks__slider-line-item-content-list-item">Digital-технологии</li>
-                                    <li class="section-tasks__slider-line-item-content-list-item">Автоматизация бизнес-процессов</li>
-                                    <li class="section-tasks__slider-line-item-content-list-item">Омниканальность</li>
-                                    <li class="section-tasks__slider-line-item-content-list-item">Адаптация всех процессов под нововведения</li>
-                                </ul>
-
-                                <a class="section-tasks__slider-line-item-content-btn linear-gradient-btn" href="#">
-                                    <div class="section-tasks__slider-line-item-content-btn-background linear-gradient-btn__background"></div>
-                                    <div class="section-tasks__slider-line-item-content-btn-background--hover linear-gradient-btn__background--hover"></div>
-                                    <p class="section-tasks__slider-line-item-content-btn-text linear-gradient-btn__text">Получить коммерческое предложение</p>
-                                </a>
-                            </div>
+                <div class="section-customers__slider-line-wrap slider__line-wrap">
+                    <div class="section-customers__slider-line slider__line">
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-1.jpg"
+                                alt="section-customers-1"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-2.png"
+                                alt="section-customers-2"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-3.png"
+                                alt="section-customers-3"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-4.png"
+                                alt="section-customers-4"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-1.jpg"
+                                alt="section-customers-1"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-2.png"
+                                alt="section-customers-2"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-3.png"
+                                alt="section-customers-3"
+                            >
+                        </div>
+    
+                        <div class="section-customers__slider-line-item slider__line-item">
+                            <img
+                                class="section-customers__slider-item-img"
+                                src="./assets/image/section-customers-4.png"
+                                alt="section-customers-4"
+                            >
                         </div>
                     </div> 
                 </div>
-
                 <button class="slider__btn slider__btn-next">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
                     </svg>
                 </button>
+            </div>
+
+           
+        </section>
+
+        <section class="section-help-link section-help-link--black">
+            <div class="section-help-link__content wrapper">
+                <div class="section-help-link__text">
+                    <h2 class="section-help-link__text-h2">Расскажите о своей задаче</h2>
+                    <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
+                </div>
+    
+                <a class="section-help-link__btn linear-gradient-btn" href="#">
+                    <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
+                    <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
+                    <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект</p>
+                </a>
+            </div>
+
+            <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
+                <img
+                    style="--parallax-val: -150%;"
+                    class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link-1.svg"
+                    alt="section-help-link-1"
+                >
+            </div>
+        </section>
+
+        <section class="section-company">
+            <div class="section-company__content wrapper">
+                <h2 class="section-company__title">о компании</h2>
+                <img 
+                    class="section-company__diagram" 
+                    src="./assets/image/section-company-diagram.png" 
+                    alt="section-company-diagram"
+                >
+                <img 
+                    class="section-company__diagram--laptop" 
+                    src="./assets/image/section-company-diagram-laptop.png" 
+                    alt="section-company-diagram-laptop"
+                >
+                <img 
+                    class="section-company__diagram--phone" 
+                    src="./assets/image/section-company-diagram-phone.png" 
+                    alt="section-company-diagram-phone"
+                >
             </div>
         </section>
 
