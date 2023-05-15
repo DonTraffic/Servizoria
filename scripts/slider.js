@@ -8,21 +8,7 @@ document.querySelectorAll('.slider').forEach(slider => {
 
     let count = 0
     let width = 0
-
-    function init () {
-        width = sliderWrap.offsetWidth
-
-        sliderLine.style.width = `${(width * items.length) / sliderCount()}px`
-        items.forEach( item => {
-            item.style.width = `${width / sliderCount}px`
-        })
-
-        rollSlider()
-    }
-
-    window.addEventListener('resize', init)
-    init()
-
+    
     function sliderCount() {
         let count
 
@@ -34,6 +20,22 @@ document.querySelectorAll('.slider').forEach(slider => {
 
         return count ? count : setting[0]
     }
+
+    function init () {
+        width = sliderWrap.offsetWidth
+
+        sliderLine.style.width = `${(width * items.length) / sliderCount()}px`
+        items.forEach( item => {
+            item.style.width = `${width / sliderCount()}px`
+        })
+
+        rollSlider()
+    }
+
+    window.addEventListener('resize', init)
+    init()
+
+    
 
     function rollSlider() {
         sliderLine.style.transform = `translate(-${count * width}px)`
