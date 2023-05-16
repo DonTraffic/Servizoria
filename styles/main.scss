@@ -59,6 +59,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
 
         &-logo{
             width: 156px;
@@ -78,16 +79,178 @@ body {
             max-width: 674px;
             width: 100%;
 
+            @include laptop{
+                position: absolute;
+                top: 94px;
+                right: 0px;
+                padding: 28px 40px;
+                background: $color-white;
+                box-shadow: 0px 1px 13px rgba(116, 41, 191, 0.08);
+                border-radius: 0px 0px 10px 10px;
+                z-index: 2;
+                display: none;
+                max-width: 228px;
+
+                flex-direction: column;
+                align-items: start;
+                gap: 4px;
+
+            }
+
+            @include tablet{
+                top: 88px; 
+            }
+
+            @include phone{
+                max-width: 100%;
+            }
+
+            a{
+                text-decoration: none;
+                color: $color-black;
+                transition: .4s ease;
+
+                &:hover{
+                    color: $color-purple;
+                    cursor: pointer;
+                }
+            }
+
             &-item{
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 25px;
-                color: #000;
                 list-style: none;
+                text-decoration: none;
+                color: $color-black;
+                transition: .4s ease;
+
+                &:hover{
+                    color: $color-purple;
+                    cursor: pointer;
+                }
+
+                &-p{
+                    display: flex;
+                    align-items: center;
+
+                    &:hover .menu-services-btn-icon{
+                        stroke: $color-purple;
+                    }
+
+                    &-icon{
+                        height: 4px;
+                        width: 9px;
+                        margin-left: 4px;
+                        transform: rotate(180deg);
+                        stroke: $color-dark;
+
+                        @include laptop{
+                            display: none;
+                        }
+                    }
+
+                }
+
+                &-menu{
+                    width: 100vw;
+
+                    position: absolute;
+                    top: 112px;
+                    left: 50%;
+                    transform: translate(-50%);
+
+                    padding: 28px 0 36px 0;
+                    background: $color-white;
+                    
+                    display: none;
+
+                    @include laptop{
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                        transform: none;
+                        max-width: 370px;
+                        padding: 28px;
+                        border-radius: 0px 0px 10px 10px;
+                    }
+
+                    @include phone{
+                        max-width: 100%;
+                    }
+
+                    &-wrap{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(272px, max-content));
+                        gap: 4px 16px;
+
+                        @include laptop{
+                            display: block;
+                        }
+                    }
+
+                    &-title{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: $color-dark;
+                        margin-bottom: 20px;
+                        display: none;
+
+                        @include laptop{
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        &-icon{
+                            fill: $color-dark;
+                            transition: .4s ease;
+                            width: 27px;
+                            height: 8px;
+                            margin-right: 11px;
+                        }
+
+                        &:hover .header__content-list-item-menu-title-icon{
+                            fill: $color-purple;
+                        }
+
+
+                    }
+
+                    &-item a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: $color-dark;
+                    }
+                    
+                }
+
             }
 
-            @include laptop{
+            &-tel{
+                margin-top: 25px;
                 display: none;
+    
+                @include tablet{
+                    display: block;
+                }
+    
+                &-link{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 33px;
+                    color: $color-dark;
+                    text-decoration: none;
+                }
+    
+                &-p{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $color-purple;
+                }
+    
             }
 
         }
@@ -114,7 +277,7 @@ body {
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 25px;
-                color: $color-blue;
+                color: $color-purple;
             }
 
         }
@@ -172,31 +335,6 @@ body {
                     color: $color-purple;
                 }
 
-            }
-
-        }
-
-        &-tel{
-            margin-top: 25px;
-            display: none;
-
-            @include tablet{
-                display: block;
-            }
-
-            &-link{
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33px;
-                color: $color-dark;
-                text-decoration: none;
-            }
-
-            &-p{
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 25px;
-                color: $color-blue;
             }
 
         }

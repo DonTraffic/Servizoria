@@ -21,13 +21,63 @@
             >
 
             <ol class="header__content-list">
-                <li class="header__content-list-item">Услуги</li>
-                <li class="header__content-list-item">О компании</li>
-                <li class="header__content-list-item">Кейсы</li>
-                <li class="header__content-list-item">Для кого</li>
-                <li class="header__content-list-item">Блог</li>
-                <li class="header__content-list-item">FAQ</li>
-                <li class="header__content-list-item">Контакты</li>
+                <li class="header__content-list-item header__content-list-item-services">
+                    <p class="header__content-list-item-p menu-services-btn">
+                        Услуги
+                        <svg class="header__content-list-item-p-icon menu-services-btn-icon">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-arrow-2"></use>
+                        </svg>
+                    </p>
+                    <div class="header__content-list-item-menu">
+                        <div class="header__content-list-item-menu-wrap wrapper">
+                            <a class="header__content-list-item-menu-title menu-services-btn">
+                                <svg class="header__content-list-item-menu-title-icon">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-arrow"></use>
+                                </svg>
+                                Услуги
+                            </a>
+                            <div>
+                                <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые исследования</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Количественные исследования</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Онлайн-панель</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Тайный Покупатель</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Аудит</a></p>
+                            </div>
+
+                            <div>
+                                <p class="header__content-list-item-menu-item"><a href="#">Кабинетные исследования</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Аналитика</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Качественные исследования</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Тайный соискатель</a></p>
+                            </div>
+
+                            <div>
+                                <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия клиента)</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Видеомониторинг</a></p>
+                            </div>
+
+                            <div>
+                                <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи клиентов</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Контакт-центр</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Аудиобейджи</a></p>
+                                <p class="header__content-list-item-menu-item"><a href="#">Тестирование персонала</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__content-list-item"><a href="#">О компании</a></li>
+                <li class="header__content-list-item"><a href="#">Кейсы</a></li>
+                <li class="header__content-list-item"><a href="#">Для кого</a></li>
+                <li class="header__content-list-item"><a href="#">Блог</a></li>
+                <li class="header__content-list-item"><a href="#">FAQ</a></li>
+                <li class="header__content-list-item"><a href="#">Контакты</a></li>
+
+                <li class="header__content-list-tel">
+                    <a class="header__content-list-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                    <p class="header__content-list-tel-p">Обратный звонок</p>
+                </li>
             </ol>
 
             <div class="header__content-wrap">
@@ -44,36 +94,27 @@
             </div>
         </div>
 
-        <div class="header__menu">
-            <ol class="header__menu-list">
-                <li class="header__menu-list-item">Услуги</li>
-                <li class="header__menu-list-item">О компании</li>
-                <li class="header__menu-list-item">Кейсы</li>
-                <li class="header__menu-list-item">Для кого</li>
-                <li class="header__menu-list-item">Блог</li>
-                <li class="header__menu-list-item">FAQ</li>
-                <li class="header__menu-list-item">Контакты</li>
-            </ol>
-            
-            <div class="header__menu-tel">
-                <a class="header__menu-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                <p class="header__menu-tel-p">Обратный звонок</p>
-            </div>
-        </div>
     </header>
     <div class="header-plug"></div>
 
     <script>
-        let status = false
+        let statusMenu = false
+        let statysServices = false
+        let list = document.querySelector('.header__content-list').style
+        let services = document.querySelector('.header__content-list-item-menu')
+        let servicesArrow = document.querySelector('.menu-services-btn-icon').style
 
         document.querySelector('.header__content-menu').addEventListener('click', e => {
-            if (status) {
-                document.querySelector('.header__menu').style.display = 'none'
-                status = false
-            } else {
-                document.querySelector('.header__menu').style.display = 'block'
-                status = true
-            }
+            statusMenu ? list.display = 'none' : list.display = 'flex' ;
+            statusMenu = !statusMenu
+        })
+
+        document.querySelectorAll('.menu-services-btn').forEach(elem => {
+            elem.addEventListener('click', e => {
+                statysServices ? services.style.display = 'none' : services.style.display = 'flex' ;
+                statysServices ? servicesArrow.transform = 'rotate(180deg)' : servicesArrow.transform = 'rotate(0deg)' ;
+                statysServices = !statysServices
+            })
         })
     </script>
 

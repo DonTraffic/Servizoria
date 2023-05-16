@@ -64,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .header__content-logo {
   width: 156px;
@@ -82,17 +83,161 @@ body {
   max-width: 674px;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .header__content-list {
+    position: absolute;
+    top: 94px;
+    right: 0px;
+    padding: 28px 40px;
+    background: #fff;
+    box-shadow: 0px 1px 13px rgba(116, 41, 191, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    z-index: 2;
+    display: none;
+    max-width: 228px;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__content-list {
+    top: 88px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__content-list {
+    max-width: 100%;
+  }
+}
+.header__content-list a {
+  text-decoration: none;
+  color: #18151C;
+  transition: 0.4s ease;
+}
+.header__content-list a:hover {
+  color: #7429BF;
+  cursor: pointer;
+}
 .header__content-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  color: #000;
   list-style: none;
+  text-decoration: none;
+  color: #18151C;
+  transition: 0.4s ease;
+}
+.header__content-list-item:hover {
+  color: #7429BF;
+  cursor: pointer;
+}
+.header__content-list-item-p {
+  display: flex;
+  align-items: center;
+}
+.header__content-list-item-p:hover .menu-services-btn-icon {
+  stroke: #7429BF;
+}
+.header__content-list-item-p-icon {
+  height: 4px;
+  width: 9px;
+  margin-left: 4px;
+  transform: rotate(180deg);
+  stroke: #2E2735;
 }
 @media screen and (max-width: 1024px) {
-  .header__content-list {
+  .header__content-list-item-p-icon {
     display: none;
   }
+}
+.header__content-list-item-menu {
+  width: 100vw;
+  position: absolute;
+  top: 112px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 28px 0 36px 0;
+  background: #fff;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .header__content-list-item-menu {
+    top: 0;
+    right: 0;
+    left: auto;
+    transform: none;
+    max-width: 370px;
+    padding: 28px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__content-list-item-menu {
+    max-width: 100%;
+  }
+}
+.header__content-list-item-menu-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, max-content));
+  gap: 4px 16px;
+}
+@media screen and (max-width: 1024px) {
+  .header__content-list-item-menu-wrap {
+    display: block;
+  }
+}
+.header__content-list-item-menu-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #2E2735;
+  margin-bottom: 20px;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .header__content-list-item-menu-title {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__content-list-item-menu-title-icon {
+  fill: #2E2735;
+  transition: 0.4s ease;
+  width: 27px;
+  height: 8px;
+  margin-right: 11px;
+}
+.header__content-list-item-menu-title:hover .header__content-list-item-menu-title-icon {
+  fill: #7429BF;
+}
+.header__content-list-item-menu-item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #2E2735;
+}
+.header__content-list-tel {
+  margin-top: 25px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header__content-list-tel {
+    display: block;
+  }
+}
+.header__content-list-tel-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 33px;
+  color: #2E2735;
+  text-decoration: none;
+}
+.header__content-list-tel-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #7429BF;
 }
 .header__content-wrap {
   display: flex;
@@ -114,7 +259,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
-  color: #33DCD8;
+  color: #7429BF;
 }
 .header__content-menu {
   padding: 16px 32px;
@@ -164,28 +309,6 @@ body {
 }
 .header__menu-list-item:hover {
   color: #7429BF;
-}
-.header__menu-tel {
-  margin-top: 25px;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .header__menu-tel {
-    display: block;
-  }
-}
-.header__menu-tel-link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: #2E2735;
-  text-decoration: none;
-}
-.header__menu-tel-p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  color: #33DCD8;
 }
 
 .footer {
