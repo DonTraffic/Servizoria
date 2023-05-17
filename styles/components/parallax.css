@@ -1,13 +1,16 @@
 .parallax-circle-1__wrap {
-  transform: translate(80%, 0%);
+  position: absolute;
+  right: 0;
+  transform: translate(35%, 0%);
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-1__wrap {
-    transform: translate(50%, 0%);
+    transform: translate(5%, 0%);
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-1__wrap {
+    right: auto;
     transform: translate(0%, 0%) scale(0.5);
   }
 }
@@ -61,21 +64,26 @@
   }
 }
 .parallax-bird__mask {
-  width: 100%;
-  height: 100%;
+  width: 1343px;
+  height: 900px;
   top: 90px;
   left: 0px;
   position: absolute;
-  transform: translate(-60%, 0%);
+  transform: translate(-75%, 0%);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .parallax-bird__mask {
-    transform: translate(-50%, 0%);
+    transform: translate(-65%, 0%);
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-bird__mask {
-    transform: translate(0%, 0%);
+    transform: translate(-35%, 0%);
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-bird__mask {
+    transform: translate(-60%, 0%);
   }
 }
 .parallax-bird__mask-img {
@@ -103,14 +111,34 @@
 }
 .parallax-bird__ellipses {
   position: absolute;
-  transform: translate(-35%, 0%);
+  transform: translate(-65%, 0%);
   left: 0px;
 }
 .parallax-bird__ellipses-left {
   transform: translate(0, calc(15% - var(--scrollTop) / 11));
 }
+@media screen and (max-width: 425px) {
+  .parallax-bird__ellipses-left {
+    transform: translate(0, calc(30% - var(--scrollTop) / 11));
+  }
+}
 .parallax-bird__ellipses-right {
   transform: translate(0, calc(-15% + var(--scrollTop) / 11));
+}
+@media screen and (max-width: 425px) {
+  .parallax-bird__ellipses-right {
+    transform: translate(0, calc(-30% + var(--scrollTop) / 11));
+  }
+}
+@media screen and (max-width: 1440px) {
+  .parallax-bird__ellipses {
+    transform: translate(-40%, 0%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .parallax-bird__ellipses {
+    transform: translate(-30%, 0%);
+  }
 }
 @media screen and (max-width: 768px) {
   .parallax-bird__ellipses {
@@ -208,15 +236,18 @@
   }
 }
 .parallax-circle-3__wrap {
-  transform: translate(-80%, 0%);
+  left: 0;
+  position: absolute;
+  transform: translate(-50%, 0%);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .parallax-circle-3__wrap {
-    transform: translate(-55%, 0%);
+    transform: translate(-25%, 0%);
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-3__wrap {
+    left: auto;
     transform: translate(0%, 0%) scale(0.5);
   }
 }
@@ -228,172 +259,163 @@
 }
 .parallax-circle-3__img {
   position: relative;
-  transform: translate(0%, calc(-50% + var(--scrollTop) / 10));
+  transform: translate(0%, calc(var(--parallax-val) - 50% + var(--scrollTop) / 10));
   height: 120%;
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-3__img {
-    transform: translate(0%, calc(-60% + var(--scrollTop) / 10));
+    transform: translate(0%, calc(var(--parallax-val-laptop) - 60% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-3__img {
-    transform: translate(0%, calc(-60% + var(--scrollTop) / 12));
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 60% + var(--scrollTop) / 12));
   }
 }
 @media screen and (max-width: 425px) {
   .parallax-circle-3__img {
-    transform: translate(0%, calc(-70% + var(--scrollTop) / 12));
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 70% + var(--scrollTop) / 12));
   }
 }
 .parallax-circle-3__ellipse {
   position: absolute;
   top: 0%;
-  transform: translate(-35%, calc(-50% + var(--scrollTop) / 10));
+  transform: translate(-35%, calc(var(--parallax-val) - 50% + var(--scrollTop) / 10));
   height: 649px;
   width: 649px;
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-3__ellipse {
-    transform: translate(-30%, calc(-65% + var(--scrollTop) / 10));
+    transform: translate(-30%, calc(var(--parallax-val-laptop) - 65% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-3__ellipse {
-    transform: translate(-35%, calc(-70% + var(--scrollTop) / 10));
+    transform: translate(-35%, calc(var(--parallax-val-mobile) - 70% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {
   .parallax-circle-3__ellipse {
-    transform: translate(-35%, calc(-90% + var(--scrollTop) / 10));
+    transform: translate(-35%, calc(var(--parallax-val-mobile) - 90% + var(--scrollTop) / 10));
   }
 }
 
+.parallax-resources-wrap {
+  position: absolute;
+  bottom: 50%;
+  right: 140px;
+  transform: translate(0%, 50%);
+  height: 555px;
+  width: 555px;
+}
+@media screen and (max-width: 1024px) {
+  .parallax-resources-wrap {
+    transform: scale(0.7);
+    right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-resources-wrap {
+    top: -125px;
+    transform: translate(0%, -15%) scale(0.6);
+    right: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-resources-wrap {
+    top: -270px;
+  }
+}
 .parallax-resources__img {
-  transform: translate(0%, calc(100% - var(--scrollTop) / 10));
+  transform: translate(0%, calc(var(--parallax-val) + 100% - var(--scrollTop) / 10));
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
   .parallax-resources__img {
-    transform: translate(0%, calc(140% - var(--scrollTop) / 10));
+    transform: translate(0%, calc(135% - var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-resources__img {
-    transform: translate(0%, calc(130% - var(--scrollTop) / 10));
+    transform: translate(0%, calc(150% - var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {
   .parallax-resources__img {
-    transform: translate(0%, calc(180% - var(--scrollTop) / 10));
-  }
-}
-.parallax-resources__medium {
-  transform: translate(0%, calc(-340% + var(--scrollTop) / 10));
-}
-@media screen and (max-width: 1024px) {
-  .parallax-resources__medium {
-    transform: translate(0%, calc(-300% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-resources__medium {
-    transform: translate(0%, calc(-390% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 425px) {
-  .parallax-resources__medium {
-    transform: translate(0%, calc(-540% + var(--scrollTop) / 10));
-  }
-}
-.parallax-resources__circle {
-  transform: translate(0%, calc(-150% + var(--scrollTop) / 10));
-}
-@media screen and (max-width: 1024px) {
-  .parallax-resources__circle {
-    transform: translate(0%, calc(-130% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-resources__circle {
-    transform: translate(0%, calc(-160% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 425px) {
-  .parallax-resources__circle {
-    transform: translate(0%, calc(-220% + var(--scrollTop) / 10));
+    transform: translate(0%, calc(220% - var(--scrollTop) / 10));
   }
 }
 .parallax-resources__small {
-  transform: translate(0%, calc(-580% + var(--scrollTop) / 10));
-}
-@media screen and (max-width: 1024px) {
-  .parallax-resources__small {
-    transform: translate(0%, calc(-460% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-resources__small {
-    transform: translate(0%, calc(-640% + var(--scrollTop) / 10));
-  }
+  position: absolute;
+  top: 0;
+  right: 31px;
+  transform: translate(0%, calc(var(--parallax-val) - 560% + var(--scrollTop) / 10));
 }
 @media screen and (max-width: 425px) {
   .parallax-resources__small {
-    transform: translate(0%, calc(-860% + var(--scrollTop) / 10));
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 560% + var(--scrollTop) / 10));
   }
 }
-.parallax-resources--reverse .parallax-resources__medium {
-  transform: translate(0%, calc(-380% + var(--scrollTop) / 10));
+.parallax-resources__medium {
+  position: absolute;
+  top: 0;
+  left: -93px;
+  transform: translate(0%, calc(var(--parallax-val) - 235% + var(--scrollTop) / 10));
+}
+@media screen and (max-width: 425px) {
+  .parallax-resources__medium {
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 235% + var(--scrollTop) / 10));
+  }
+}
+.parallax-resources__circle {
+  position: absolute;
+  bottom: 0;
+  right: -130px;
+  transform: translate(0%, calc(var(--parallax-val) - 125% + var(--scrollTop) / 10));
 }
 @media screen and (max-width: 1024px) {
-  .parallax-resources--reverse .parallax-resources__medium {
-    transform: translate(0%, calc(-360% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-resources--reverse .parallax-resources__medium {
-    transform: translate(0%, calc(-470% + var(--scrollTop) / 10));
+  .parallax-resources__circle {
+    transform: translate(0%, calc(var(--parallax-val) - 115% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {
-  .parallax-resources--reverse .parallax-resources__medium {
-    transform: translate(0%, calc(-620% + var(--scrollTop) / 10));
+  .parallax-resources__circle {
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 115% + var(--scrollTop) / 10));
   }
 }
-.parallax-resources--reverse .parallax-resources__small {
-  transform: translate(0%, calc(-650% + var(--scrollTop) / 10));
+.parallax-resources--reverse .parallax-resources-wrap {
+  position: absolute;
+  bottom: 50%;
+  left: 140px;
+  transform: translate(0%, 50%) scaleX(-1);
+  height: 555px;
+  width: 555px;
 }
 @media screen and (max-width: 1024px) {
-  .parallax-resources--reverse .parallax-resources__small {
-    transform: translate(0%, calc(-640% + var(--scrollTop) / 10));
+  .parallax-resources--reverse .parallax-resources-wrap {
+    transform: translate(0%, 50%) scale(0.7) scaleX(-1);
+    left: 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  .parallax-resources--reverse .parallax-resources__small {
-    transform: translate(0%, calc(-540% + var(--scrollTop) / 10));
+  .parallax-resources--reverse .parallax-resources-wrap {
+    top: -125px;
+    transform: translate(0%, -15%) scale(0.6) scaleX(-1);
+    left: auto;
   }
 }
 @media screen and (max-width: 425px) {
-  .parallax-resources--reverse .parallax-resources__small {
-    transform: translate(0%, calc(-1100% + var(--scrollTop) / 10));
+  .parallax-resources--reverse .parallax-resources-wrap {
+    transform: translate(0%, calc(var(--parallax-val-mobile) - 15%)) scale(0.6) scaleX(-1);
+    top: -270px;
   }
 }
-.parallax-resources--reverse .parallax-resources__circle {
-  transform: translate(0%, calc(-170% + var(--scrollTop) / 10));
-}
-@media screen and (max-width: 1024px) {
-  .parallax-resources--reverse .parallax-resources__circle {
-    transform: translate(0%, calc(-170% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-resources--reverse .parallax-resources__circle {
-    transform: translate(0%, calc(-195% + var(--scrollTop) / 10));
-  }
-}
-@media screen and (max-width: 425px) {
-  .parallax-resources--reverse .parallax-resources__circle {
-    transform: translate(0%, calc(-290% + var(--scrollTop) / 10));
-  }
+.parallax-resources--reverse .parallax-resources-img {
+  transform: translate(0%, calc(100% - var(--scrollTop) / 10)) scaleX(1);
 }
 
 @media screen and (max-width: 425px) {
@@ -479,11 +501,16 @@
 }
 @media screen and (max-width: 1024px) {
   .parallax-tasks__ellipse {
-    transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 15.5));
+    transform: translate(0, calc(-15% + var(--parallax-val) + var(--scrollTop) / 15));
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-tasks__ellipse {
+    transform: translate(0, calc(-30% + var(--parallax-val) + var(--scrollTop) / 15));
   }
 }
 @media screen and (max-width: 425px) {
   .parallax-tasks__ellipse {
-    transform: translate(0, calc(-100% + var(--parallax-val) + var(--scrollTop) / 15));
+    transform: translate(0, calc(-80% + var(--parallax-val) + var(--scrollTop) / 15));
   }
 }

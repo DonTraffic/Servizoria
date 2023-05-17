@@ -9,3 +9,271 @@
         background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
     }
 }
+
+.section-services{
+    padding: 120px 90px;
+
+    @include tablet{
+        padding: 70px 16px;
+    }
+
+    &__title{
+        margin-bottom: 70px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-wrap{
+        &--laptop{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(368px, max-content));
+            gap: 40px 16px;
+
+            @include tablet{
+                display: none;
+            }
+        }
+
+        &--mobile{
+            display: none;
+            
+            @include tablet{
+                display: block;
+            }
+        }
+    }
+
+    &__item{
+        &-image{
+            height: 160px;
+            width: 160px;
+            margin-bottom: 48px;
+            position: relative;
+
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            &-svg{
+                width: 194px;
+                height: 194px;
+                position: absolute;
+                top: -17px;
+                left: -17px;
+
+                &-3{
+                    left: 50%;
+                    transform: translate(-25%);
+                }
+
+                &-4{ 
+                    top: 50%;
+                    height: 96px;
+                    width: 96px;
+                }
+
+                &-5{
+                    transform: translate(-25%);
+                }
+            }
+
+            &-count{
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 66px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-white;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: uppercase;
+            color: $color-dark;
+            margin-bottom: 16px;
+        }
+
+        &-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $color-gray;
+        }
+
+    }
+
+    &__slider{
+        &-prev, &-next {
+            top: 25%;
+        }
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-image{
+                height: 160px;
+                width: 160px;
+                margin: 40px;
+                position: relative;
+
+                &-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                &-svg{
+                    width: 194px;
+                    height: 194px;
+                    position: absolute;
+                    top: -17px;
+                    left: -17px;
+
+                    &-3{
+                        left: 50%;
+                        transform: translate(-25%);
+                    }
+
+                    &-4{ 
+                        top: 50%;
+                        height: 96px;
+                        width: 96px;
+                    }
+
+                    &-5{
+                        transform: translate(-25%);
+                    }
+                }
+
+                &-count{
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 66px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $color-white;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+
+            &-title{
+                width: 100%;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 27px;
+                text-transform: uppercase;
+                color: $color-dark;
+                margin-bottom: 11px;
+            }
+
+            &-text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: $color-gray;
+            }
+
+        }
+
+    }
+
+}
+
+.section-advantage{
+    background: center / cover no-repeat url('./../../assets/image/section-advantage.png');
+    padding: 100px 90px;
+    background-color: $color-dark;
+
+    @include tablet{
+        padding: 70px 16px;
+    }
+
+    *{
+        color: $color-white;
+    }
+
+    &__title{
+        margin-bottom: 48px;
+    }
+
+    &__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px 16px;
+
+        @include laptop{
+            gap: 20px;
+        }
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+
+            @include laptop{
+                align-items: start;
+            }
+
+            &-img{
+                height: 100px;
+                width: 100px;
+                margin-right: 20px;
+
+                @include laptop{
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            &-title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+
+                @include laptop{
+                    font-size: 20px;
+                }
+            }
+
+            &-text{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 120%;
+                color: $color-white-light;
+
+                @include laptop{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

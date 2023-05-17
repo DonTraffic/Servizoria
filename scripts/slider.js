@@ -9,6 +9,10 @@ document.querySelectorAll('.slider').forEach(slider => {
     let count = 0
     let width = 0
     
+    function rollSlider() {
+        sliderLine.style.transform = `translate(-${count * width}px)`
+    }
+
     function sliderCount() {
         let count
 
@@ -27,6 +31,7 @@ document.querySelectorAll('.slider').forEach(slider => {
         sliderLine.style.width = `${(width * items.length) / sliderCount()}px`
         items.forEach( item => {
             item.style.width = `${width / sliderCount()}px`
+            item.style.minWidth = `${width / sliderCount()}px`
         })
 
         rollSlider()
@@ -34,12 +39,6 @@ document.querySelectorAll('.slider').forEach(slider => {
 
     window.addEventListener('resize', init)
     init()
-
-    
-
-    function rollSlider() {
-        sliderLine.style.transform = `translate(-${count * width}px)`
-    }
 
     slider.querySelector('.slider__btn-prev').addEventListener('click', e => {
         count--

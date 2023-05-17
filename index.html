@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section class="section-list section-list--left">
+        <section class="section-list">
             <div class="section-list__content wrapper">
                 <h2 class="section-list__title">Наша экспертиза</h2>
 
@@ -189,7 +189,7 @@
             </div>
         </section>
 
-        <section class="section-list section-list--right">
+        <section class="section-list section-list--black">
             <div class="section-list__content wrapper">
                 <div class="section-list__item" list-count="03">
                     <div class="section-list__item-title">Розничные сети</div>
@@ -246,7 +246,7 @@
             </div>
         </section>
 
-        <section class="section-list section-list--left">
+        <section class="section-list">
             <div class="section-list__content wrapper">
                 <div class="section-list__item" list-count="05">
                     <div class="section-list__item-title">Персонал</div>
@@ -300,7 +300,7 @@
             </div>
         </section>
 
-        <section class="section-list section-list--right">
+        <section class="section-list section-list--black">
             <div class="section-list__content wrapper">
                 <div class="section-list__item" list-count="07">
                     <div class="section-list__item-title">Продукты и сервисы</div>
@@ -334,12 +334,14 @@
                 <div class="parallax-circle-3__wrap">
                     <div class="parallax-circle-3__img-wrap">
                         <img 
+                            style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="parallax-circle-3__img" 
                             src="./assets/image/section-ecosystem-list-4.jpg" 
                             alt="section-ecosystem-list-4"
                         >
                     </div>
                     <img
+                        style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                         class="parallax-circle-3__ellipse"
                         src="./assets/svg/section-ecosystem-list-4-ellipse.svg"
                         alt="section-ecosystem-list-4-ellipse"
@@ -411,114 +413,138 @@
 
         </section>
 
-        <section class="section-resources">
-            <div class="section-resources-wrap wrapper">
-                <h2 class="section-resources__title">Ресурсы</h2>
+        <section class="section-list">
+            <div class="section-list__content wrapper">
+                <h2 class="section-list__title">Ресурсы</h2>
 
-                <div class="section-resources__list-wrap">
-                    <ol class="section-resources__list">
-                        <li class="section-resources__list-item" list-counter="01"> МОДЕРАТОРЫ И ИНТЕРВЬЮЕРЫ
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">5-20 супервайзеров в каждом регионе РФ</li>
-                                <li class="resources__list-item">450+ интервьюеров</li>
-                                <li class="resources__list-item">100% аудио запись, валидация, геочекинг, опросы на планшетах</li>
-                                <li class="resources__list-item">30 опытных модераторов</li>
-                                <li class="resources__list-item">Составление гайдов ФГ и интервью</li>
-                                <li class="resources__list-item">Оnline комнаты для проведения фокус-групповыхдискуссий и глубинных интервью</li>
-                            </ul>
-                        </li>
-                        <li class="section-resources__list-item" list-counter="02"> ПАТЕНТЫ НА ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">Субъективный индекс</li>
-                                <li class="resources__list-item">Путь Тайного покупателя Remote Accompaniment</li>
-                                <li class="resources__list-item">Индекс персонализированного сервиса</li>
-                                <li class="resources__list-item">Методика вовлеченности персонала</li>
-                            </ul>
-                        </li>
-                        <li class="section-resources__list-item" list-counter="03"> МЕТОДИСТЫ И АНАЛИТИКИ
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">Собственный штат аналитиков</li>
-                                <li class="resources__list-item">Отчеты в xlsx, spss, ppt Power BI, Tablue, QlikView</li>
-                                <li class="resources__list-item">Big Data</li>
-                            </ul>
-                        </li>
-                    </ol>
+                <div class="section-list__item" list-count="01">
+                    <div class="section-list__item-title">МОДЕРАТОРЫ И ИНТЕРВЬЮЕРЫ</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">5-20 супервайзеров в каждом регионе РФ</li>
+                        <li class="resources__list-item">450+ интервьюеров</li>
+                        <li class="resources__list-item">100% аудио запись, валидация, геочекинг, опросы на планшетах</li>
+                        <li class="resources__list-item">30 опытных модераторов</li>
+                        <li class="resources__list-item">Составление гайдов ФГ и интервью</li>
+                        <li class="resources__list-item">Оnline комнаты для проведения фокус-групповыхдискуссий и глубинных интервью</li>
+                    </ul>
                 </div>
+
+                <div class="section-list__item" list-count="02">
+                    <div class="section-list__item-title">ПАТЕНТЫ НА ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">Субъективный индекс</li>
+                        <li class="resources__list-item">Путь Тайного покупателя Remote Accompaniment</li>
+                        <li class="resources__list-item">Индекс персонализированного сервиса</li>
+                        <li class="resources__list-item">Методика вовлеченности персонала</li>
+                    </ul>
+                </div>
+
+                <div class="section-list__item" list-count="03">
+                    <div class="section-list__item-title">МЕТОДИСТЫ И АНАЛИТИКИ</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">Собственный штат аналитиков</li>
+                        <li class="resources__list-item">Отчеты в xlsx, spss, ppt Power BI, Tablue, QlikView</li>
+                        <li class="resources__list-item">Big Data</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="section-resources__background wrapper-max parallax-resources">
-                <div class="section-resources__background-img parallax-resources__img"></div>
-                <img
-                    class="section-resources__background-small parallax-resources__small"
-                    src="./assets/svg/section-resources-small-1.svg"
-                    alt="section-resources-small"
-                >
-                <img
-                    class="section-resources__background-medium parallax-resources__medium"
-                    src="./assets/svg/section-resources-medium-1.svg"
-                    alt="section-resources-medium"
-                >
-                <img
-                    class="section-resources__background-circle parallax-resources__circle"
-                    src="./assets/svg/section-resources-circle-1.svg"
-                    alt="section-resources-circle"
-                >
+            <div class="section-list__background wrapper-max parallax-resources">
+                <div class="parallax-resources-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 0%;">
+                    <img
+                        style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-resources__background-img parallax-resources__img"
+                        src="./assets/image/section-resources-1.jpg"
+                    >
+                    <img
+                        style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-list__background-small parallax-resources__small"
+                        src="./assets/svg/section-resources-small-1.svg"
+                        alt="section-resources-small"
+                    >
+                    <img
+                        style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-list__background-medium parallax-resources__medium"
+                        src="./assets/svg/section-resources-medium-1.svg"
+                        alt="section-resources-medium"
+                    >
+                    <img
+                        style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-list__background-circle parallax-resources__circle"
+                        src="./assets/svg/section-resources-circle-1.svg"
+                        alt="section-resources-circle"
+                    >
+                </div>
             </div>
         </section>
 
-        <section class="section-resources section-resources--black">
-            <div class="section-resources-wrap wrapper">
-                <div class="section-resources__list-wrap">
-                    <ol class="section-resources__list">
-                        <li class="section-resources__list-item" list-counter="04"> ТАЙНЫЕ ПОКУПАТЕЛИ И АУДИТОРЫ
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">Покрытие всех регионов РФ, база 500 тыс.+ участников исследований</li>
-                                <li class="resources__list-item">250+ проектов Тайный Покупатель / месяц</li>
-                                <li class="resources__list-item">Отбор участников по профилю и опыту</li>
-                                <li class="resources__list-item">Быстрое заполнение анкет через приложение</li>
-                                <li class="resources__list-item">Валидация аудиозаписей и фото</li>
-                                <li class="resources__list-item">Оценка качества каждого ТП (грейдинг)</li>
-                                <li class="resources__list-item">Антифальсификат программы</li>
-                            </ul>
-                        </li>
-                        <li class="section-resources__list-item" list-counter="05"> КОНТАКТ-ЦЕНТР
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">Собственный Контакт-центр на территории РФ</li>
-                                <li class="resources__list-item">Горячая линия, опросы, телемаркетинг</li>
-                                <li class="resources__list-item">100% аудио запись, валидация диалогов</li>
-                                <li class="resources__list-item">Программируемые анкеты CATI</li>
-                                <li class="resources__list-item">Операторы для глубинных интервью по телефону</li>
-                            </ul>
-                        </li>
-                        <li class="section-resources__list-item" list-counter="03"> ОНЛАЙН ПАНЕЛЬ
-                            <ul class="section-resources__list">
-                                <li class="resources__list-item">500 000+ зарегистрированных пользователей в России</li>
-                                <li class="resources__list-item">Глубокая сегментация профиля</li>
-                                <li class="resources__list-item">Населенные пункты от 5 тыс. жителей</li>
-                                <li class="resources__list-item">Целевой дорекрутинг современными инструментами таргетинга</li>
-                            </ul>
-                        </li>
-                    </ol>
+        <section class="section-list section-list--black">
+            <div class="section-list__content wrapper">
+                <h2 class="section-list__title">Ресурсы</h2>
+
+                <div class="section-list__item" list-count="04">
+                    <div class="section-list__item-title">ТАЙНЫЕ ПОКУПАТЕЛИ И АУДИТОРЫ</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">Покрытие всех регионов РФ, база 500 тыс.+ участников исследований</li>
+                        <li class="resources__list-item">250+ проектов Тайный Покупатель / месяц</li>
+                        <li class="resources__list-item">Отбор участников по профилю и опыту</li>
+                        <li class="resources__list-item">Быстрое заполнение анкет через приложение</li>
+                        <li class="resources__list-item">Валидация аудиозаписей и фото</li>
+                        <li class="resources__list-item">Оценка качества каждого ТП (грейдинг)</li>
+                        <li class="resources__list-item">Антифальсификат программы</li>
+                    </ul>
                 </div>
+
+                <div class="section-list__item" list-count="05">
+                    <div class="section-list__item-title">КОНТАКТ-ЦЕНТР</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">Собственный Контакт-центр на территории РФ</li>
+                        <li class="resources__list-item">Горячая линия, опросы, телемаркетинг</li>
+                        <li class="resources__list-item">100% аудио запись, валидация диалогов</li>
+                        <li class="resources__list-item">Программируемые анкеты CATI</li>
+                        <li class="resources__list-item">Операторы для глубинных интервью по телефону</li>
+                    </ul>
+                </div>
+
+                <div class="section-list__item" list-count="06">
+                    <div class="section-list__item-title">ОНЛАЙН ПАНЕЛЬ</div>
+                    <ul class="section-list__list">
+                        <li class="resources__list-item">500 000+ зарегистрированных пользователей в России</li>
+                        <li class="resources__list-item">Глубокая сегментация профиля</li>
+                        <li class="resources__list-item">Населенные пункты от 5 тыс. жителей</li>
+                        <li class="resources__list-item">Целевой дорекрутинг современными инструментами таргетинга</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="section-resources__background wrapper-max parallax-resources--reverse">
-                <div class="section-resources__background-img parallax-resources__img"></div>
-                <img
-                    class="section-resources__background-small parallax-resources__small"
-                    src="./assets/svg/section-resources-small-2.svg"
-                    alt="section-resources-small"
-                >
-                <img
-                    class="section-resources__background-medium parallax-resources__medium"
-                    src="./assets/svg/section-resources-medium-2.svg"
-                    alt="section-resources-medium"
-                >
-                <img
-                    class="section-resources__background-circle parallax-resources__circle"
-                    src="./assets/svg/section-resources-circle-2.svg"
-                    alt="section-resources-circle"
-                >
+            <div class="section-list__background wrapper-max parallax-resources parallax-resources--reverse">
+                <div class="parallax-resources-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 15%;">
+                    <img
+                        style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-resources__background-img parallax-resources__img"
+                        src="./assets/image/section-resources-2.jpg"
+                    >
+                    <img
+                        style="--parallax-val: -200%; --parallax-val-mobile: -340%;"
+                        class="section-resources__background-small parallax-resources__small"
+                        src="./assets/svg/section-resources-small-2.svg"
+                        alt="section-resources-small"
+                    >
+                    <img
+                        style="--parallax-val: -100%; --parallax-val-mobile: -150%;"
+                        class="section-resources__background-medium parallax-resources__medium"
+                        src="./assets/svg/section-resources-medium-2.svg"
+                        alt="section-resources-medium"
+                    >
+                    <img
+                        style="--parallax-val: -45%; --parallax-val-mobile: -80%;"
+                        class="section-list__background-circle parallax-resources__circle"
+                        src="./assets/svg/section-resources-circle-2.svg"
+                        alt="section-resources-circle"
+                    >
+                </div>
             </div>
         </section>
 
@@ -569,7 +595,7 @@
                                     class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
                                     src="./assets/svg/section-tasks-list-ellipse.svg" 
                                     alt="section-tasks-list-ellipse"
-                                    style="--parallax-val: -270%;"
+                                    style="--parallax-val: -210%;"
                                 >
                             </div>
 
@@ -604,7 +630,7 @@
         <section class="section-cases">
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
-            <div class="section-cases__slider slider slider--disable wrapper" >
+            <div class="section-cases__slider slider wrapper" >
                 <button class="section-cases__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
