@@ -906,6 +906,26 @@ h2{
 
     }
 
+    &--revert{
+        .section-list__content{
+            align-items: end;
+        }
+
+        .section-list__background{
+            right: auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            @include tablet{
+                position: initial;
+                transform: translate(0%, 0);
+                height: 350px;
+                padding-bottom: 40px;
+            }
+
+        }
+    }
+
     &--black {
         background-color: $color-dark;
 
@@ -923,7 +943,6 @@ h2{
         }
 
         .section-list__content{
-            align-items: end;
 
             .section-list__item{
         
@@ -963,20 +982,6 @@ h2{
         
                 }
         
-            }
-
-        }
-
-        .section-list__background{
-            right: auto;
-            left: 50%;
-            transform: translate(-50%, 0);
-
-            @include tablet{
-                position: initial;
-                transform: translate(0%, 0);
-                height: 350px;
-                padding-bottom: 40px;
             }
 
         }
@@ -1138,6 +1143,302 @@ h2{
             margin-left: 90px;
         }
 
+    }
+
+}
+
+.section-company{
+    padding: 100px 0;
+
+    background-color: $color-white;
+    background-image: url(./../../assets/image/section-tools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include laptop{
+        padding: 70px 90px;
+    }
+    
+    @include tablet{
+        padding: 70px 15px;
+    }
+
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__diagram{
+        width: 100%;
+        object-fit: cover;
+
+        @include laptop{
+            display: none;
+        }
+
+        &--laptop{
+            display: none;
+            width: 100%;
+
+            @include laptop{
+                display: block;
+            }
+
+            @include phone{
+                display: none;
+            }
+
+        }
+
+        &--phone{
+            display: none;
+            width: 100%;
+
+            @include phone{
+                display: block;
+            }
+
+        }
+
+    }
+
+}
+
+.section-cases{
+    background-color: $color-white;
+    padding: 100px 0;
+
+    @include laptop{
+        padding: 50px 90px;
+    }
+
+    @include tablet{
+        padding: 70px 15px;
+    }
+
+    &__title{
+        color: $color-dark;
+        margin-bottom: 52px;
+    }
+
+    &__slider{
+        &-line{
+            &-item{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                grid-auto-flow: column;
+                gap: 30px 16px;
+
+                @include laptop{
+                    gap: 28px 20px;
+                }
+
+                @include phone{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+            }
+
+        } 
+
+        &-item{
+            &-img{
+                width: 129px;
+                height: 87px;
+
+                &--white{
+                    display: none;
+                }
+
+                @include tablet{
+                    width: 152px;
+                    height: 102px;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            &-h3{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-transform: uppercase;
+                color: $color-black;
+                margin-bottom: 16px;
+
+                @include laptop{
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            &-p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 120%;
+                color: $color-gray;
+
+                @include laptop{
+                    font-size: 16px;
+                }
+            }
+
+            &-list{
+
+                &-item{
+                    list-style: none;
+                    position: relative;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: $color-gray;
+                    margin-left: 20px;
+
+                    &::before{
+                        content: '•';
+                        position: absolute;
+                        font-size: 18px;
+                        top: 1px;
+                        left: -20px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &--black{
+        background-color: $color-dark;
+        *{
+            color: $color-white;
+        }
+        .section-cases__slider-item-list-item, .section-cases__slider-item-p{
+            color: $color-white-light;
+        }
+        .section-cases__slider-item-img--black{
+            display: none;
+        }
+        .section-cases__slider-item-img--white{
+            display: block;
+        }
+    }
+
+}
+
+.section-reviews{
+    padding: 120px 0;
+    background-color: $color-dark;
+
+    @include laptop{
+        padding: 90px;
+    }
+
+    @include tablet{
+        padding: 70px 15px;
+    }
+
+    &__title{
+        margin-bottom: 70px;
+        @include laptop{
+            margin-bottom: 50px;
+        }
+    }
+
+    &__slider{
+        &-line{
+            &-item{
+                display: flex;
+                gap: 52px;
+
+                @include phone{
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &-img{
+                    box-shadow: 0px 3px 17px rgba(77, 67, 87, 0.06);
+                    border-radius: 10px;
+                    margin: 15px;
+
+                    @include phone{
+                        width: 255px;
+                        height: 360px;
+                    }
+
+                }
+
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+
+                    &-quotation{
+                        width: 56px;
+                        height: 46px;
+
+                        @include laptop{
+                            width: 36px;
+                            height: 30px;
+                        }
+                    }
+
+                    &-text{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 120%;
+                        color: $color-white-light;
+                        
+                        @include laptop{
+                            font-size: 16px;
+                        }
+                    }
+
+                    &-autor{
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 130%;
+                        color: $color-white;
+
+                        @include laptop{
+                            font-size: 18px;
+                        }
+                        
+                        b{
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            text-transform: uppercase;
+
+                            @include laptop{
+                                font-size: 20px;
+                            }
+
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &--white{
+        background-color: $color-white;
+        *{
+            color: $color-dark;
+        }
+        .section-reviews__slider-line-item-content-text{
+            color: $color-gray
+        }
     }
 
 }
