@@ -1011,6 +1011,117 @@ h2 {
   margin-left: 90px;
 }
 
+.section-help-form {
+  padding: 100px 0px;
+  background: center/cover no-repeat url("./../../assets/image/section-help-form.png");
+}
+@media screen and (max-width: 1024px) {
+  .section-help-form {
+    padding: 70px 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-help-form {
+    padding: 70px 16px;
+  }
+}
+.section-help-form__content-h2 {
+  color: #2E2735;
+  margin-bottom: 23px;
+}
+@media screen and (max-width: 1024px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 16px;
+  }
+}
+.section-help-form__content-p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+  color: #2E2735;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 1024px) {
+  .section-help-form__content-p {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-help-form__content-p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+.section-help-form__content-form {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .section-help-form__content-form {
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+  }
+}
+.section-help-form__content-form input, .section-help-form__content-form textarea {
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.569);
+  border: 1px solid #7429BF;
+  border-radius: 27px;
+  resize: none;
+}
+.section-help-form__content-form-wrap {
+  max-width: 752px;
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45px 150px;
+}
+@media screen and (max-width: 768px) {
+  .section-help-form__content-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.section-help-form__content-form-text {
+  grid-column: span 2;
+}
+.section-help-form__content-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 210px;
+  min-height: 210px;
+  max-width: 210px;
+  max-height: 210px;
+  background: linear-gradient(244.27deg, #33DCD8 13.54%, #7429BF 87.32%);
+  box-shadow: 0px 3px 18px rgba(116, 41, 191, 0.28);
+  border: none;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .section-help-form__content-form-btn {
+    min-width: 169px;
+    min-height: 169px;
+    max-width: 169px;
+    max-height: 169px;
+    margin-left: 40px;
+  }
+}
+
 .section-company {
   padding: 100px 0;
   background-color: #fff;

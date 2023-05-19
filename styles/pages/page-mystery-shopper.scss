@@ -509,3 +509,108 @@
     }
 
 }
+
+.section-more{
+    padding: 120px 0;
+    background: center / cover no-repeat url('./../../assets/image/section-more.png');
+
+    @include laptop{
+        padding: 120px 90px;
+    }
+
+    @include tablet{
+        padding: 70px 16px;
+    }
+
+    &__title{
+        margin-bottom: 70px;
+
+        @include laptop{
+            margin-bottom: 50px;
+        }
+
+        @include tablet{
+            margin-bottom: 28px;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: uppercase;
+            color: $color-dark;
+            margin-bottom: 45px;
+
+            @include laptop{
+                font-size: 20px;
+                line-height: 27px;
+                margin-bottom: 24px;
+            }
+
+            @include tablet{
+                margin-bottom: 16px;
+            }
+        }
+
+        &-text{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 135%;
+            color: $color-dark;
+            margin-bottom: 12px;
+
+            @include laptop{
+                font-size: 16px;
+                margin-bottom: 36px;
+            }
+
+            @include tablet{
+                margin-bottom: 16px;
+            }
+
+            &--hide{
+                max-height: 50px;
+                overflow: hidden;
+                position: relative;
+
+                &:after{
+                    content: "";
+                    position: absolute; top: 0; bottom: 0; left: 0px; right: 0px;
+                    // box-shadow: inset white 0 -25px 25px;
+                    // box-shadow: inset 0px -40px 19px -11px rgba(255, 255, 255, 1);
+                    box-shadow: inset 0px -55px 30px -25px rgb(255 255 255 / 55%);
+                }
+            }
+        }
+
+        &-btn{
+            width: max-content;
+            padding: 17px 103px;
+            border-radius: 61px;
+            border: none;
+            align-self: flex-end;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-white;
+
+            @include phone{
+                width: 100%;
+            }
+
+            &--hide{
+                background: $color-blue;
+            }
+        }
+    }
+
+}

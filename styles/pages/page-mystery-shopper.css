@@ -452,3 +452,110 @@
   color: #2E2735;
   max-width: 230px;
 }
+
+.section-more {
+  padding: 120px 0;
+  background: center/cover no-repeat url("./../../assets/image/section-more.png");
+}
+@media screen and (max-width: 1024px) {
+  .section-more {
+    padding: 120px 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-more {
+    padding: 70px 16px;
+  }
+}
+.section-more__title {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 1024px) {
+  .section-more__title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-more__title {
+    margin-bottom: 28px;
+  }
+}
+.section-more__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.section-more__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #2E2735;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .section-more__item-title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-more__item-title {
+    margin-bottom: 16px;
+  }
+}
+.section-more__item-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135%;
+  color: #2E2735;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .section-more__item-text {
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-more__item-text {
+    margin-bottom: 16px;
+  }
+}
+.section-more__item-text--hide {
+  max-height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.section-more__item-text--hide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  box-shadow: inset 0px -55px 30px -25px rgba(255, 255, 255, 0.55);
+}
+.section-more__item-btn {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 17px 103px;
+  border-radius: 61px;
+  border: none;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media screen and (max-width: 425px) {
+  .section-more__item-btn {
+    width: 100%;
+  }
+}
+.section-more__item-btn--hide {
+  background: #33DCD8;
+}
