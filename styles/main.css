@@ -762,6 +762,22 @@ h2 {
 .section-list__item-btn:hover-icon {
   fill: #fff;
 }
+.section-list__item-btn-gradient {
+  max-width: 330px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 16px 48px;
+  border-radius: 61px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
 .section-list__item-list {
   position: relative;
   left: 0;

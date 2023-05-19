@@ -845,6 +845,24 @@ h2{
 
         }
 
+        &-btn-gradient{
+            max-width: 330px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: uppercase;
+            padding: 16px 48px;
+            border-radius: 61px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-white;
+            text-decoration: none;
+        }
+
         &-list{
             position: relative;
             left: 0;
