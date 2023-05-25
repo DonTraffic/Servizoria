@@ -567,6 +567,9 @@
   right: 0px;
   box-shadow: inset 0px -55px 30px -25px rgba(255, 255, 255, 0.55);
 }
+.section-more__item-text p {
+  margin-bottom: 20px;
+}
 .section-more__item-btn {
   width: -moz-max-content;
   width: max-content;

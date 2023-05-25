@@ -215,18 +215,18 @@
 }
 .parallax-circle-2__circle {
   z-index: 2;
-  transform: translate(70%, calc(-30% + var(--scrollTop) / 10));
+  transform: translate(70%, 0) rotate(var(--scrollRotate));
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-2__circle {
     height: 400px;
     width: 400px;
-    transform: translate(50%, calc(-40% + var(--scrollTop) / 10));
+    transform: translate(50%, 0%) rotate(var(--scrollRotate));
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-2__circle {
-    transform: translate(0%, calc(-90% + var(--scrollTop) / 10));
+    transform: translate(0%, 0) rotate(var(--scrollRotate));
   }
 }
 
@@ -512,23 +512,8 @@
   }
 }
 
-.parallax-tasks__ellipse {
-  transform: translate(0, calc(var(--parallax-val) + var(--scrollTop) / 15));
-}
-@media screen and (max-width: 1024px) {
-  .parallax-tasks__ellipse {
-    transform: translate(0, calc(-15% + var(--parallax-val) + var(--scrollTop) / 15));
-  }
-}
-@media screen and (max-width: 768px) {
-  .parallax-tasks__ellipse {
-    transform: translate(0, calc(-30% + var(--parallax-val) + var(--scrollTop) / 15));
-  }
-}
-@media screen and (max-width: 425px) {
-  .parallax-tasks__ellipse {
-    transform: translate(0, calc(-80% + var(--parallax-val) + var(--scrollTop) / 15));
-  }
+.parallax-tasks__ellipse-wrap {
+  transform: rotate(var(--scrollRotate));
 }
 
 .parallax-advantage {

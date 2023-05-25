@@ -29,40 +29,42 @@
                         </svg>
                     </p>
                     <div class="header__content-list-item-menu">
-                        <div class="header__content-list-item-menu-wrap wrapper">
-                            <a class="header__content-list-item-menu-title menu-services-btn">
-                                <svg class="header__content-list-item-menu-title-icon">
-                                    <use xlink:href="./assets/svg/sprite.svg#icon-arrow"></use>
-                                </svg>
-                                Услуги
-                            </a>
-                            <div>
-                                <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые исследования</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Количественные исследования</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Онлайн-панель</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Тайный Покупатель</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Аудит</a></p>
-                            </div>
-
-                            <div>
-                                <p class="header__content-list-item-menu-item"><a href="#">Кабинетные исследования</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Аналитика</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Качественные исследования</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Тайный соискатель</a></p>
-                            </div>
-
-                            <div>
-                                <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия клиента)</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Видеомониторинг</a></p>
-                            </div>
-
-                            <div>
-                                <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи клиентов</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Контакт-центр</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Аудиобейджи</a></p>
-                                <p class="header__content-list-item-menu-item"><a href="#">Тестирование персонала</a></p>
+                        <div class="header__content-list-item-menu-background">
+                            <div class="header__content-list-item-menu-wrap wrapper">
+                                <a class="header__content-list-item-menu-title menu-services-btn">
+                                    <svg class="header__content-list-item-menu-title-icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                    Услуги
+                                </a>
+                                <div>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Количественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Онлайн-панель</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Тайный Покупатель</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Аудит</a></p>
+                                </div>
+    
+                                <div>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Кабинетные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Аналитика</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Качественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Тайный соискатель</a></p>
+                                </div>
+    
+                                <div>
+                                    <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия клиента)</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Видеомониторинг</a></p>
+                                </div>
+    
+                                <div>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи клиентов</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Контакт-центр</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Аудиобейджи</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Тестирование персонала</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,7 +73,6 @@
                 <li class="header__content-list-item"><a href="#">Кейсы</a></li>
                 <li class="header__content-list-item"><a href="#">Для кого</a></li>
                 <li class="header__content-list-item"><a href="#">Блог</a></li>
-                <li class="header__content-list-item"><a href="#">FAQ</a></li>
                 <li class="header__content-list-item"><a href="#">Контакты</a></li>
 
                 <li class="header__content-list-tel">
@@ -589,12 +590,13 @@
                                     src="./assets/image/section-tasks-slider-1.jpg" 
                                     alt="section-tasks-slider-1"
                                 >
-                                <img 
-                                    class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
-                                    src="./assets/svg/section-tasks-list-ellipse.svg" 
-                                    alt="section-tasks-list-ellipse"
-                                    style="--parallax-val: -210%;"
-                                >
+                                <div class="section-tasks__slider-line-item-img-svg-wrap parallax-tasks__ellipse-wrap">
+                                    <img 
+                                        class="section-tasks__slider-line-item-img-svg parallax-tasks__ellipse" 
+                                        src="./assets/svg/section-tasks-list-ellipse.svg" 
+                                        alt="section-tasks-list-ellipse"
+                                    >
+                                </div>
                             </div>
 
                             <div class="section-tasks__slider-line-item-content">
@@ -988,7 +990,7 @@
 
     <script>
         window.addEventListener('scroll', e => {
-            document.body.style.cssText = `--scrollTop: ${this.scrollY}px`
+            document.body.style.cssText = `--scrollTop: ${this.scrollY}px; --scrollRotate: ${this.scrollY / 10}deg;`
         })
     </script>
 

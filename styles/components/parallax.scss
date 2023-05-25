@@ -213,16 +213,16 @@
 
     &__circle{
         z-index: 2;
-        transform: translate(70%, calc( -30% + (var( --scrollTop  ) / 10 ) ) );
+        transform: translate(70%, 0) rotate( var(--scrollRotate) );
 
         @include laptop{
             height: 400px;
             width: 400px;
-            transform: translate(50%, calc( -40% + (var( --scrollTop  ) / 10 ) ) );
+            transform: translate(50%, 0% ) rotate( var(--scrollRotate) );
         }
 
         @include tablet{
-            transform: translate(0%, calc(-90% + var(--scrollTop) / 10));
+            transform: translate(0%, 0) rotate( var(--scrollRotate) );
         }
 
     }
@@ -529,21 +529,8 @@
 }
 
 .parallax-tasks{
-    &__ellipse{
-        transform: translate(0, calc( var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
-
-        @include laptop{
-            transform: translate(0, calc( (-15%) + var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
-        }
-
-        @include tablet{
-            transform: translate(0, calc( (-30%) + var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
-        }
-
-        @include phone{
-            transform: translate(0, calc( -80% + var(--parallax-val) + (var( --scrollTop  ) / 15 ) ) );
-        }
-
+    &__ellipse-wrap{
+        transform: rotate( var(--scrollRotate) );
     }
 
 }

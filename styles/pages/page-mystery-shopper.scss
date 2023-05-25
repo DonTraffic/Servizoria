@@ -625,10 +625,12 @@
                 &:after{
                     content: "";
                     position: absolute; top: 0; bottom: 0; left: 0px; right: 0px;
-                    // box-shadow: inset white 0 -25px 25px;
-                    // box-shadow: inset 0px -40px 19px -11px rgba(255, 255, 255, 1);
                     box-shadow: inset 0px -55px 30px -25px rgb(255 255 255 / 55%);
                 }
+            }
+
+            p{
+                margin-bottom: 20px;
             }
         }
 
