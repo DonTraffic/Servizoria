@@ -34,6 +34,21 @@
   line-height: 120%;
   color: #4D4357;
 }
+.section-single__content-btn {
+  margin-top: 40px;
+  padding: 16px 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0px 9px 21px rgba(45, 189, 182, 0.13);
+  border-radius: 61px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
 .section-single__background {
   position: relative;
 }
@@ -81,4 +96,26 @@
   bottom: 102px;
   left: -6px;
   background-color: #04B8FF;
+}
+.section-single .parallax-bird {
+  transform: translate(205px, -55px);
+}
+.section-single .parallax-bird .parallax-bird__mask {
+  transform: translate(-75%, -10%);
+}
+.section-single--background {
+  background: center/cover no-repeat url("./../../assets/image/section-help-form.png");
+}
+.section-single--revert .section-single-wrap {
+  flex-direction: row-reverse;
+}
+.section-single--revert .section-single-wrap .section-single__background {
+  width: 50%;
+  height: 100%;
+}
+.section-single--black {
+  background-color: #2E2735;
+}
+.section-single--black * {
+  color: #fff;
 }
