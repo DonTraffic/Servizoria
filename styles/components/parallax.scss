@@ -5,15 +5,15 @@
     &__wrap{
         position: absolute;
         right: 0;
-        transform: translate(35%, 0%);
+        transform: translate(35%, 0%) scale(calc(var(--parallax-scale)));
 
         @include laptop{
-            transform: translate(5%, 0%);
+            transform: translate(5%, 0%) scale(calc(var(--parallax-scale)));
         }
 
         @include tablet{
             right: auto;
-            transform: translate(0%, 0%) scale(0.5);
+            transform: translate(0%, 0%) scale(calc(0.5 - var(--parallax-scale)));
         }
 
     }
@@ -26,12 +26,12 @@
     }
     &__img{
         position: relative;
-        transform: translate(0%, calc( -20% + (var( --scrollTop  ) / 10 ) ));
+        transform: translate(0%, calc( (-20% + var(--parallax-val)) + (var( --scrollTop  ) / 10 ) ));
 
         height: 120%;
 
         @include tablet{
-            transform: translate(0%, calc( -25% + (var( --scrollTop  ) / 10 ) ));
+            transform: translate(0%, calc( (-25% + var(--parallax-val-mobile)) + (var( --scrollTop  ) / 10 ) ));
         }
     }
 
@@ -41,8 +41,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        height: 205px;
-        width: 205px;
+        height: 35%;
+        width: 35%;
         background-color: $color-white;
         border-radius: 50%;
     }
@@ -50,7 +50,7 @@
     &__ellipse{
         position: absolute;
         top: -20%;
-        transform: translate(15%, calc(0% + var(--scrollTop) / 10));
+        transform: translate(15%, calc((0% + var(--parallax-val)) + var(--scrollTop) / 10));
 
         height: 649px;
         width: 649px;
@@ -58,7 +58,7 @@
         pointer-events: none;
         
         @include tablet{
-            transform: translate(15%, calc(-10% + var(--scrollTop) / 10));
+            transform: translate(15%, calc((-10% + var(--parallax-val-mobile)) + var(--scrollTop) / 10));
         }
         
     }
@@ -580,6 +580,8 @@
 
 }
 
+
+
 .parallax-triangle{
     &-wrap{
         position: relative;
@@ -660,7 +662,20 @@
             height: 100%;
             width: 100%;
             transform: rotate( var(--scrollRotate) );
+            
+            &-quarter{
+                z-index: 2;
+
+                .parallax-semicircle-rotate__ellipse{
+                    height: 50%;
+                    width: 50%;
+                    transform: rotate(90deg);
+                }
+
+            }
+
         }
+        
     }
 
     &__img{
@@ -669,5 +684,6 @@
         position: inherit;
         z-index: 2;
         border-radius: 50%;
+        object-fit: cover;
     }
 }

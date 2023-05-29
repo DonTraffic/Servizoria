@@ -53,6 +53,64 @@
             color: $color-white;
         }
 
+        &-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 12px 40px;
+
+            max-width: max-content;
+
+            margin-top: 16px;
+
+            transition: .4s ease;
+
+            border: 1px solid $color-purple;
+            border-radius: 61px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-purple;
+
+            background-color: $color-white;
+
+            @include laptop{
+                padding: 12px 18px;
+            }
+
+            &-wrap{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 17px;
+
+                @include tablet{
+                    gap: 12px;
+                }
+            }
+
+            &-icon{
+                min-height: 11px;
+                max-height: 11px;
+                min-width: 11px;
+                max-width: 11px;
+                fill: $color-purple;
+                margin-left: 10px;
+            }
+
+            &:hover{
+                color: $color-white;
+                background-color: $color-purple;
+                &-icon{
+                    fill: $color-white;
+                }
+            }
+
+        }
+
     }
 
     &__background{
@@ -126,6 +184,16 @@
 
     }
 
+    .parallax-double-semicircle{
+        position: absolute;
+        height: 100%;
+        right: -157px;
+
+        .parallax-double-semicircle-wrap{
+            top: -3%;
+        }
+    }
+
     &--background{
         background: center/cover no-repeat url('./../../assets/image/section-help-form.png');
     }
@@ -143,10 +211,138 @@
 
     &--black{
         background-color: $color-dark;
+
         *{
             color: $color-white;
+        }
+
+        .section-single__content{
+
+            &-text{
+                color: $color-white-light;
+            }
+
+            &-link{
+                border: 1px solid $color-blue;
+                color: $color-blue;
+                background-color: $color-dark;
+
+                &-icon{
+                    height: 11px;
+                    width: 11px;
+                    fill: $color-blue;
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    color: $color-white;
+                    background-color: $color-blue;
+
+                    &-icon{
+                        fill: $color-white;
+                    }
+
+                }
+
+            }
+
         }
     }
 
 }
 
+.section-calculator{
+    padding: 100px 0;
+    background-color: $color-dark;
+
+    *{
+        color: $color-white;
+    }
+
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__inputs{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, auto));
+        gap: 16px;
+        margin-bottom: 35px;
+
+        &-item{
+            &-wrap{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            &-title{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 135%;
+                margin-right: 12px;
+            }
+
+            &-svg{
+                height: 21.5px;
+                width: 21.5px;
+            }
+            
+            &-input, &-select{
+                width: 100%;
+                background: rgba(255, 255, 255, 0.03);
+
+                border: 1px solid #04B8FF;
+                border-radius: 61px;
+
+                padding: 12px 20px;
+
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+
+                cursor: pointer;
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                option{
+                    color: $color-dark;
+                }
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
+
+            }
+
+        }
+
+    }
+
+    &__result{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 48px;
+
+        &-text{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 135%;
+            text-transform: uppercase;
+        }
+
+        &-number{
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 135%;
+            color: #04B8FF;
+        }
+    }
+
+}

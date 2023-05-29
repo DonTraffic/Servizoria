@@ -49,6 +49,56 @@
   text-transform: uppercase;
   color: #fff;
 }
+.section-single__content-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 12px 40px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-top: 16px;
+  transition: 0.4s ease;
+  border: 1px solid #7429BF;
+  border-radius: 61px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7429BF;
+  background-color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__content-link {
+    padding: 12px 18px;
+  }
+}
+.section-single__content-link-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+@media screen and (max-width: 768px) {
+  .section-single__content-link-wrap {
+    gap: 12px;
+  }
+}
+.section-single__content-link-icon {
+  min-height: 11px;
+  max-height: 11px;
+  min-width: 11px;
+  max-width: 11px;
+  fill: #7429BF;
+  margin-left: 10px;
+}
+.section-single__content-link:hover {
+  color: #fff;
+  background-color: #7429BF;
+}
+.section-single__content-link:hover-icon {
+  fill: #fff;
+}
 .section-single__background {
   position: relative;
 }
@@ -103,6 +153,14 @@
 .section-single .parallax-bird .parallax-bird__mask {
   transform: translate(-75%, -10%);
 }
+.section-single .parallax-double-semicircle {
+  position: absolute;
+  height: 100%;
+  right: -157px;
+}
+.section-single .parallax-double-semicircle .parallax-double-semicircle-wrap {
+  top: -3%;
+}
 .section-single--background {
   background: center/cover no-repeat url("./../../assets/image/section-help-form.png");
 }
@@ -118,4 +176,97 @@
 }
 .section-single--black * {
   color: #fff;
+}
+.section-single--black .section-single__content-text {
+  color: #B7ACC2;
+}
+.section-single--black .section-single__content-link {
+  border: 1px solid #33DCD8;
+  color: #33DCD8;
+  background-color: #2E2735;
+}
+.section-single--black .section-single__content-link-icon {
+  height: 11px;
+  width: 11px;
+  fill: #33DCD8;
+  margin-left: 10px;
+}
+.section-single--black .section-single__content-link:hover {
+  color: #fff;
+  background-color: #33DCD8;
+}
+.section-single--black .section-single__content-link:hover-icon {
+  fill: #fff;
+}
+
+.section-calculator {
+  padding: 100px 0;
+  background-color: #2E2735;
+}
+.section-calculator * {
+  color: #fff;
+}
+.section-calculator__title {
+  margin-bottom: 50px;
+}
+.section-calculator__inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, auto));
+  gap: 16px;
+  margin-bottom: 35px;
+}
+.section-calculator__inputs-item-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.section-calculator__inputs-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  margin-right: 12px;
+}
+.section-calculator__inputs-item-svg {
+  height: 21.5px;
+  width: 21.5px;
+}
+.section-calculator__inputs-item-input, .section-calculator__inputs-item-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #04B8FF;
+  border-radius: 61px;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.section-calculator__inputs-item-input option, .section-calculator__inputs-item-select option {
+  color: #2E2735;
+}
+.section-calculator__inputs-item-input::-webkit-outer-spin-button, .section-calculator__inputs-item-input::-webkit-inner-spin-button, .section-calculator__inputs-item-select::-webkit-outer-spin-button, .section-calculator__inputs-item-select::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.section-calculator__result {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 48px;
+}
+.section-calculator__result-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+.section-calculator__result-number {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 135%;
+  color: #04B8FF;
 }

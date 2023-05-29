@@ -398,7 +398,7 @@
             </div>
         </section>
 
-        <section class="section-list  section-list--black">
+        <section class="section-list section-list--black">
             <div class="section-list__content wrapper">
                 <h2 class="section-list__title">Виды и методики количественных исследований</h2>
 
@@ -529,6 +529,353 @@
             </div>
         </section>
 
+        <section class="section-calculator">
+            <div class="section-calculator__content wrapper">
+                <h2 class="section-calculator__title">Рассчитайте объем выборки</h2>
+
+                <div class="section-calculator__inputs">
+                    <div class="section-calculator__inputs-item">
+                        <div class="section-calculator__inputs-item-wrap">
+                            <h3 class="section-calculator__inputs-item-title">Объем целевой группы</h3>
+                            <svg class="section-calculator__inputs-item-svg">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
+                            </svg>
+                        </div>
+                        <input type="number" class="section-calculator__inputs-item-input" value="0">
+                    </div>
+
+                    <div class="section-calculator__inputs-item">
+                        <div class="section-calculator__inputs-item-wrap">
+                            <h3 class="section-calculator__inputs-item-title">Степень достоверности (%)</h3>
+                            <svg class="section-calculator__inputs-item-svg">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
+                            </svg>
+                        </div>
+                        <select type="number" class="section-calculator__inputs-item-select">
+                            <option value="1.645">90</option>
+                            <option value="1.695">91</option>
+                            <option value="1.752">92</option>
+                            <option value="1.812">93</option>
+                            <option value="1.881">94</option>
+                            <option value="1.96">95</option>
+                            <option value="2.054">96</option>
+                            <option value="2.17">97</option>
+                            <option value="2.326">98</option>
+                            <option value="2.576" selected>99</option>
+                        </select>
+                    </div>
+
+                    <div class="section-calculator__inputs-item">
+                        <div class="section-calculator__inputs-item-wrap">
+                            <h3 class="section-calculator__inputs-item-title">Погрешность (%)</h3>
+                            <svg class="section-calculator__inputs-item-svg">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
+                            </svg>
+                        </div>
+                        <input type="number" class="section-calculator__inputs-item-input">
+                    </div>
+                </div>
+
+                <div class="section-calculator__result">
+                    <p class="section-calculator__result-text">Объем выборки</p>
+                    <p class="section-calculator__result-number">0</p>
+                </div>
+            </div>
+
+            <div class="section-calculator__background"></div>
+        </section>
+
+        <!-- <script>
+            function calculateSampleSize() {
+                var populationSize = parseFloat(document.getElementById("populationSize").value);
+                var confidenceLevel = parseFloat(document.getElementById("confidenceLevel").value);
+                var marginOfError = parseFloat(document.getElementById("marginOfError").value);
+    
+                if (!populationSize || !confidenceLevel || !marginOfError) {
+                    alert("Пожалуйста, введите значение для всех полей.");
+                    return;
+                }
+    
+                var z = getZScore(confidenceLevel);
+                var p = 0.5;
+                var q = 1 - p;
+                var e = marginOfError / 100;
+    
+                var sampleSize = ((z*z) * p * q) / (e*e);
+    
+                if (sampleSize > populationSize) {
+                    alert("Размер выборки не может быть больше размера популяции.");
+                } else {
+                    document.getElementById("sampleSize").innerHTML = Math.ceil(sampleSize);
+                }
+            }
+    
+            function getZScore(confidenceLevel) {
+                var zScores = {
+                    90: 1.645,
+                    91: 1.695,
+                    92: 1.752,
+                    93: 1.812,
+                    94: 1.881,
+                    95: 1.96,
+                    96: 2.054,
+                    97: 2.17,
+                    98: 2.326,
+                    99: 2.576
+                };
+    
+                if (zScores.hasOwnProperty(confidenceLevel)) {
+                    return zScores[confidenceLevel];
+                } else {
+                    return 1.96; // default to 95% confidence level
+                }
+            }
+        </script> -->
+
+        <section class="section-cases">
+            <h2 class="section-cases__title wrapper">Кейсы</h2>
+
+            <div class="section-cases__slider slider wrapper" >
+                <button class="section-cases__slider-prev slider__btn slider__btn-prev">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
+                    </svg>
+                </button>
+
+                <div class="section-cases__slider-line-wrap slider__line-wrap">
+                    <div class="section-cases__slider-line slider__line">
+                        <div class="section-cases__slider-line-item slider__line-item">
+                            <img 
+                                class="section-cases__slider-item-img section-cases__slider-item-img--white"
+                                src="./assets/svg/cases-adidas-white.svg" 
+                                alt="cases-adidas-white"
+                            >
+                            <img 
+                                class="section-cases__slider-item-img section-cases__slider-item-img--black"
+                                src="./assets/svg/cases-adidas-black.svg" 
+                                alt="cases-adidas-black"
+                            >
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Какие результаты мы получили?</h3>
+                                <ol class="section-cases__slider-item-list">
+                                    <li class="section-cases__slider-item-list-item">+28% in NPS concept stores</li>
+                                    <li class="section-cases__slider-item-list-item">+68% in NPS discount stores</li>
+                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса согласно определенным драйверам роста клиентской удовлетворенности, лояльности и транзакционной активности (внимание к потребности, кросс-сейл, интересные факты о товаре, бренде и проч.) </li>
+                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных форматов магазинов </li>
+                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия разных сегментов ЦА, в том числе определены новые перспективные потребители (plus size, поколение Y)</li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Клиент</h3>
+                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания по производству спортивной одежды, обуви и аксессуаров.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="section-cases__slider-item-h3">Какие методы мы использовали?</h3>
+                                <ol class="section-cases__slider-item-list">
+                                    <li class="section-cases__slider-item-list-item">Тайный покупатель</li>
+                                    <li class="section-cases__slider-item-list-item">Exit polls</li>
+                                    <li class="section-cases__slider-item-list-item">Наблюдение</li>
+                                    <li class="section-cases__slider-item-list-item">Online surveys</li>
+                                    <li class="section-cases__slider-item-list-item">Воркшопы</li>
+                                    <li class="section-cases__slider-item-list-item">Big data</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <button class="slider__btn slider__btn-next">
+                    <svg class="icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="section-single section-single--black">
+            <div class="section-single-wrap wrapper-max">
+                <div class="section-single__content wrapper">
+                    <h2 class="section-single__content-title">Качественные исследования</h2>
+                    <p class="section-single__content-text">
+                        Качественные методы исследования используются для того, чтобы получить наиболее полную информацию о психологии потребителя, его ценностях, глубинных мотивах поведения, эмоциональном восприятии бренда.<br/><br/>
+
+                        Представьте, что вы хотите создать новый продукт, но не знаете, что именно заинтересует ваших клиентов. Вот тут на сцену выходят качественные исследования! <br/><br/>
+
+                        Мы проводим глубинные интервью и фокус-группы с вашими потенциальными клиентами, чтобы узнать их мнения и взгляды на ваш продукт. А потом мы собираем эту информацию и анализируем ее, чтобы вы могли создать продукт, который действительно будет полезен для ваших клиентов и приносить вам больше прибыли.<br/><br/>
+
+                        Это как приключение, где мы исследуем потребности ваших клиентов и находим способы улучшить ваш бизнес! Мы погружаемся в мир ваших клиентов, узнаем, что им нравится и что не нравится, и находим решения, чтобы вы могли дать им то, что они действительно хотят. 
+                    </p>
+
+                    <a class="section-single__content-link" href="#">
+                        Лаборатория качественных исследований “мир”
+                        <svg class="section-single__content-link-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                    </a>
+
+                    <a class="section-single__content-btn linear-gradient-btn" href="#">
+                        <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
+                        <div class="section-single__content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <p class="section-single__content-btn-text linear-gradient-btn__text">Обсудить вашу задачу</p>
+                    </a>
+                </div>
+
+                <div class="section-single__background parallax-double-semicircle">
+                    <div class="parallax-double-semicircle-wrap">
+                        <img 
+                            style="--parallax-val: 100%;"
+                            class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-1"
+                            src="./assets/svg/section-mission-ellipse-1.svg" 
+                            alt="parallax-double-semicircle__ellipse-1"
+                        >
+                        <img 
+                            style="--parallax-val: -100%;"
+                            class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-2"
+                            src="./assets/svg/section-mission-ellipse-2.svg" 
+                            alt="parallax-double-semicircle__ellipse-2"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-list">
+            <div class="section-list__content wrapper">
+                <h2 class="section-list__title">Виды и методики качественных исследований</h2>
+
+                <div class="section-list__item" list-count="01">
+                    <div class="section-list__item-title">Глубинное интервью</div>
+                    <div class="section-list__item-text">
+                        Проведение глубинных интервью – один из самых распространенных методов качественного исследования. Это личное интервью, которое проводится с одним респондентом за раз. Это чисто разговорный метод, который дает возможность получить подробные сведения от респондента.<br/><br/>
+
+                        Одно из преимуществ этого метода – прекрасная возможность собрать точные данные о том, во что люди верят и каковы их мотивации. Если исследователь имеет большой опыт, правильные вопросы могут помочь ему / ей собрать значимые данные. Если им понадобится дополнительная информация, исследователи должны задать такие дополнительные вопросы, которые помогут им собрать больше данных.<br/><br/>
+
+                        Эти собеседования могут проводиться лично или по телефону, и обычно длятся от получаса до двух часов или даже больше. Когда глубинное интервью проводится лицом к лицу, это дает лучшую возможность прочитать язык тела респондентов и сопоставить ответы.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="
+                section-list__background
+                parallax-circle-1
+                wrapper
+            ">
+                <div class="parallax-circle-1__wrap" style="--parallax-scale: 1;">
+                    <div class="parallax-circle-1__img-wrap">
+                        <img 
+                            style="--parallax-val: -100%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                            class="parallax-circle-1__img" 
+                            src="./assets/image/section-list-3.jpg" 
+                            alt="section-ecosystem-list-1"
+                        >
+                        <div class="parallax-circle-1__circle"></div>
+                    </div>
+                    <img
+                        style="--parallax-val: -103%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                        class="parallax-circle-1__ellipse"
+                        src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
+                        alt="section-ecosystem-list-1-ellipse"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="section-list section-list--revert" style="background-image: url(./../../assets/image/section-tools.png);">
+            <div class="section-list__content wrapper">
+                <div class="section-list__item" list-count="02">
+                    <div class="section-list__item-title">Фокус-группы</div>
+                    <div class="section-list__item-text">
+                        Фокус-группа также является одним из широко используемых методов качественного исследования при сборе данных. Фокус-группа обычно включает ограниченное количество респондентов (6-10) из вашего целевого рынка.<br/><br/>
+
+                        Основная цель фокус-группы – найти ответы на вопросы «почему», «что» и «как». Одним из преимуществ фокус-групп является то, что вам не обязательно общаться с группой лично. В настоящее время в фокус-группы можно отправлять онлайн-опрос на различных устройствах, а ответы можно собирать одним нажатием кнопки.<br/><br/>
+                        
+                        Фокус-группы – это дорогостоящий метод по сравнению с другими методами качественного онлайн-исследования. Обычно они используются для объяснения сложных процессов. Этот метод очень полезен, когда дело доходит до исследования рынка новых продуктов и тестирования новых концепций.                    
+                    </div>
+                </div>
+
+                <div class="section-list__item" list-count="03">
+                    <div class="section-list__item-title">Customer Journey Map</div>
+                    <div class="section-list__item-text">
+                        Customer Journey Map (карта путешествия пользователя) — это методология развития продукта, которая основывается на подробном анализе потребностей и поведения аудитории. Это визуализированная история взаимодействия потребителя с продуктом, сервисом, компанией или брендом через разные каналы в определенный период времени, которая от имени потребителя позволяет объективно проанализировать опыт взаимодействия с продуктом, зафиксировать и устранить возникающие барьеры, предложить рекомендации по улучшению продукта. <br/><br/>
+
+                        Представляет собой график, на котором отмечены точки соприкосновения клиента с продуктом и описаны действия клиента, его чувства и возможные проблемы.              
+                    </div>
+                </div>
+
+            </div>
+
+            <div 
+                class="
+                    section-list__background
+                    parallax-semicircle-rotate
+                    wrapper-max
+                "
+            >
+                <div class="parallax-semicircle-rotate-wrap">
+                    <img 
+                        class="parallax-semicircle-rotate__img" 
+                        src="./assets/image/section-list-4.jpg" 
+                        alt="section-list-4"
+                    >
+                    <div class="parallax-semicircle-rotate__ellipse-wrap parallax-semicircle-rotate__ellipse-wrap-quarter" >
+                        <img
+                            class="parallax-semicircle-rotate__ellipse"
+                            src="./assets/svg/quarter-bagel.svg"
+                            alt="quarter-bagel"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-list section-list--black">
+            <div class="section-list__content wrapper">
+                <div class="section-list__item" list-count="04">
+                    <div class="section-list__item-title">Этнографические исследования</div>
+                    <div class="section-list__item-text">
+                        Этнографические исследования – это наиболее глубокий метод наблюдения, который изучает людей в их естественной среде обитания.<br/><br/>
+
+                        Этот метод требует, чтобы исследователи адаптировались к среде целевой аудитории, которая может быть где угодно: от организации до города или любого удаленного места. Здесь географические ограничения могут стать проблемой при сборе данных.<br/><br/>
+                        
+                        Этот план исследования направлен на понимание возникающих культур, проблем, мотиваций и условий. Вместо того, чтобы полагаться на интервью и дискуссии, вы лично сталкиваетесь с естественной обстановкой.<br/><br/>
+                        
+                        Этот тип исследовательского метода может длиться от нескольких дней до нескольких лет, так как он предполагает углубленное наблюдение и сбор данных на этих основаниях. Это сложный и трудоемкий метод, который зависит исключительно от опыта исследователя, который сможет анализировать, наблюдать и делать выводы.                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-list__background wrapper-max parallax-resources">
+                <div class="parallax-resources-wrap" style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 15%;">
+                    <img
+                        style="--parallax-val: 55%; --parallax-val-laptop: 0%; --parallax-val-mobile: -30%;"
+                        class="section-resources__background-img parallax-resources__img"
+                        src="./assets/image/section-list-5.jpg"
+                    >
+                    <img
+                        style="--parallax-val: -370%; --parallax-val-laptop: -100%; --parallax-val-mobile: 0%;"
+                        class="section-list__background-small parallax-resources__small"
+                        src="./assets/svg/section-resources-small-1.svg"
+                        alt="section-resources-small"
+                    >
+                    <img
+                        style="--parallax-val: -260%; --parallax-val-laptop: 0%; --parallax-val-mobile: 60%;"
+                        class="section-list__background-medium parallax-resources__medium"
+                        src="./assets/svg/section-resources-medium-1.svg"
+                        alt="section-resources-medium"
+                    >
+                    <img
+                        style="--parallax-val: -100%; --parallax-val-laptop: -30%; --parallax-val-mobile: 5%;"
+                        class="section-list__background-circle parallax-resources__circle"
+                        src="./assets/svg/section-resources-circle-1.svg"
+                        alt="section-resources-circle"
+                    >
+                </div>
+            </div>
+        </section>
 
     </main>
 
