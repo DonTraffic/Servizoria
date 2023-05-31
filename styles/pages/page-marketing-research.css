@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .section-ecosystem {
   background: 0px -200px/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg");
 }
@@ -19,11 +20,15 @@
   align-items: center;
 }
 .section-single-wrap {
+  position: relative;
   display: flex;
   gap: 94px;
 }
 .section-single__content-max-570 {
   max-width: 570px;
+}
+.section-single__content-max-660 {
+  max-width: 660px;
 }
 .section-single__content-title {
   margin-bottom: 36px;
@@ -33,6 +38,53 @@
   font-size: 18px;
   line-height: 120%;
   color: #4D4357;
+}
+.section-single__content-text-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.section-single__content-list {
+  margin: 0 0 50px 0;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__content-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+.section-single__content-list-item {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  margin-left: 21px;
+  color: #4D4357;
+}
+.section-single__content-list-item::before {
+  content: "•";
+  position: absolute;
+  font-size: 16px;
+  top: 0px;
+  left: -20px;
+}
+.section-single__content-list-item b {
+  font-weight: 400;
+  background: #33DCD8;
+  mix-blend-mode: difference;
+  border-radius: 5px;
+}
+.section-single__content-list-item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-decoration: none;
+  color: #B7ACC2;
+}
+.section-single__content-list-item:hover {
+  cursor: pointer;
 }
 .section-single__content-btn {
   margin-top: 40px;
@@ -156,7 +208,7 @@
 .section-single .parallax-double-semicircle {
   position: absolute;
   height: 100%;
-  right: -157px;
+  right: -650px;
 }
 .section-single .parallax-double-semicircle .parallax-double-semicircle-wrap {
   top: -3%;

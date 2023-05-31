@@ -17,13 +17,19 @@
     align-items: center;
 
     &-wrap{
+        position: relative;
         display: flex;
         gap: 94px;
     }
 
     &__content{
-        &-max-570{
-            max-width: 570px;
+        &-max{
+            &-570{
+                max-width: 570px;
+            }
+            &-660{
+                max-width: 660px;
+            }
         }
 
         &-title{
@@ -35,6 +41,62 @@
             font-size: 18px;
             line-height: 120%;
             color: $color-gray;
+        }
+
+        &-text-title{
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        &-list{
+            margin: 0 0 50px 0;
+
+            @include laptop{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+            }
+
+            &-item{
+                position: relative;
+                list-style: none;
+
+                font-size: 18px;
+                margin-left: 21px;
+                color: $color-gray;
+
+                &::before{
+                    content: '•';
+                    position: absolute;
+                    font-size: 16px;
+                    top: 0px;
+                    left: -20px;
+                }
+
+                b{
+                    font-weight: 400;
+                    background: $color-blue;
+                    mix-blend-mode: difference;
+                    border-radius: 5px;
+                }
+
+                a{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    text-decoration: none;
+                    color: $color-white-light;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+            }
+
         }
 
         &-btn{
@@ -187,7 +249,7 @@
     .parallax-double-semicircle{
         position: absolute;
         height: 100%;
-        right: -157px;
+        right: -650px;
 
         .parallax-double-semicircle-wrap{
             top: -3%;
