@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,11 @@
     <link rel="stylesheet" href="./styles/components/slider.css">
     <link rel="stylesheet" href="./styles/pages/page-marketing-research.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__content wrapper">
-            <img
-                class="header__content-logo"
-                src="./assets/svg/logo-header.svg" 
-                alt="logo-header"
-            >
+            <img class="header__content-logo" src="./assets/svg/logo-header.svg" alt="logo-header">
 
             <ol class="header__content-list">
                 <li class="header__content-list-item header__content-list-item-services">
@@ -38,32 +36,41 @@
                                     Услуги
                                 </a>
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые исследования</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Количественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые
+                                            исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Количественные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Онлайн-панель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Тайный Покупатель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аудит</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Кабинетные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Кабинетные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аналитика</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Качественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Качественные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Тайный соискатель</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия клиента)</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия
+                                            клиента)</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a>
+                                    </p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a>
+                                    </p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Видеомониторинг</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи клиентов</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи
+                                            клиентов</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Контакт-центр</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аудиобейджи</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Тестирование персонала</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Тестирование
+                                            персонала</a></p>
                                 </div>
                             </div>
                         </div>
@@ -86,11 +93,13 @@
                     <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
                     <p class="header__content-tel-p">Обратный звонок</p>
                 </div>
-    
+
                 <button class="header__content-menu linear-gradient-btn">
                     <div class="header__content-menu-background linear-gradient-btn__background"></div>
                     <div class="header__content-menu-background--hover linear-gradient-btn__background--hover"></div>
-                    <svg class="header__content-menu-icon"><use xlink:href="./assets/svg/sprite.svg#icon-menu"></use></svg>
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -106,14 +115,14 @@
         let servicesArrow = document.querySelector('.menu-services-btn-icon').style
 
         document.querySelector('.header__content-menu').addEventListener('click', e => {
-            statusMenu ? list.display = 'none' : list.display = 'flex' ;
+            statusMenu ? list.display = 'none' : list.display = 'flex';
             statusMenu = !statusMenu
         })
 
         document.querySelectorAll('.menu-services-btn').forEach(elem => {
             elem.addEventListener('click', e => {
-                statysServices ? services.style.display = 'none' : services.style.display = 'flex' ;
-                statysServices ? servicesArrow.transform = 'rotate(180deg)' : servicesArrow.transform = 'rotate(0deg)' ;
+                statysServices ? services.style.display = 'none' : services.style.display = 'flex';
+                statysServices ? servicesArrow.transform = 'rotate(180deg)' : servicesArrow.transform = 'rotate(0deg)';
                 statysServices = !statysServices
             })
         })
@@ -123,15 +132,18 @@
         <section class="section-ecosystem">
             <div class="section-ecosystem-wrap">
                 <div class="section-ecosystem__content">
-                    <img class="section-ecosystem__content-svg" src="./assets/svg/section-ecosystem.svg" alt="section-ecosystem">
+                    <img class="section-ecosystem__content-svg" src="./assets/svg/section-ecosystem.svg"
+                        alt="section-ecosystem">
 
                     <div class="section-ecosystem__content-text">
                         <p class="section-ecosystem__content-text-title">ТАЙНЫЙ ПОКУПАТЕЛЬ (MYSTERY SHOPPING)</p>
                         <p class="section-ecosystem__content-text-desc">
-                            Услуга “Тайный покупатель” пользуется большой популярностью во всем мире. Mystery Shopping уже более 20 лет  является неотъемлемой частью системы управления клиентским опытом и в российских компаниях
+                            Услуга “Тайный покупатель” пользуется большой популярностью во всем мире. Mystery Shopping
+                            уже более 20 лет является неотъемлемой частью системы управления клиентским опытом и в
+                            российских компаниях
                         </p>
                     </div>
-                    
+
                     <a class="section-ecosystem__content-link" href="#">
                         <div class="section-ecosystem__content-link-background"></div>
                         <div class="section-ecosystem__content-link-background--hover"></div>
@@ -144,27 +156,30 @@
         <section class="section-single">
             <div class="section-single-wrap wrapper">
                 <div class="section-single__content section-single__content-max-570">
-                    <h2 class="section-single__content-title">Виды маркетинговых исследований, которые мы предоставляем</h2>
-                    <p class="section-single__content-text">Мы предлагаем широкий спектр услуг маркетинговых исследований, которые подходят для разнообразных уровней рынка. Наша команда специалистов может проводить качественные и количественные исследования, анализировать рынок, проводить фокус-группы и интервью, а также многое другое. У нас есть опыт в различных областях, таких как ритейл, технологии, FMCG и другие, что позволяет нам предложить нашим клиентам услуги, которые наиболее подходят для каждого случая.</p>
+                    <h2 class="section-single__content-title">Виды маркетинговых исследований, которые мы предоставляем
+                    </h2>
+                    <p class="section-single__content-text">Мы предлагаем широкий спектр услуг маркетинговых
+                        исследований, которые подходят для разнообразных уровней рынка. Наша команда специалистов может
+                        проводить качественные и количественные исследования, анализировать рынок, проводить
+                        фокус-группы и интервью, а также многое другое. У нас есть опыт в различных областях, таких как
+                        ритейл, технологии, FMCG и другие, что позволяет нам предложить нашим клиентам услуги, которые
+                        наиболее подходят для каждого случая.</p>
                 </div>
 
                 <div class="section-single__background">
-                    <img 
-                        class="section-single__background-img"
-                        src="./assets/image/section-kinds-img.png" 
-                        alt="section-kinds-img"
-                    >
+                    <img class="section-single__background-img" src="./assets/image/section-kinds-img.png"
+                        alt="section-kinds-img">
 
                     <div class="section-single__background-wrap">
-                        <img 
-                            class="section-single__background-svg"
-                            src="/assets/svg/section-kinds-svg.svg" 
-                            alt="section-kinds-svg"
-                        >
+                        <img class="section-single__background-svg" src="/assets/svg/section-kinds-svg.svg"
+                            alt="section-kinds-svg">
 
-                        <p class="section-single__background-svg-p section-single__background-svg-p-quantitative">Количественные</p>
-                        <p class="section-single__background-svg-p section-single__background-svg-p-quality">Качественные</p>
-                        <p class="section-single__background-svg-p section-single__background-svg-p-rooms">Кабинетные</p>
+                        <p class="section-single__background-svg-p section-single__background-svg-p-quantitative">
+                            Количественные</p>
+                        <p class="section-single__background-svg-p section-single__background-svg-p-quality">
+                            Качественные</p>
+                        <p class="section-single__background-svg-p section-single__background-svg-p-rooms">Кабинетные
+                        </p>
                     </div>
                 </div>
             </div>
@@ -173,29 +188,29 @@
         <section class="section-single section-single--revert section-single--black">
             <div class="section-single-wrap wrapper">
                 <div class="section-single__content section-single__content-max-570">
-                    <h2 class="section-single__content-title">Почему вам стоит заказать маркетинговые исследования у нас</h2>
-                    <p class="section-single__content-text">Важно понимать, что маркетинговые исследования могут помочь вашему бизнесу не только понимать рынок, но и развиваться быстрее и с меньшими рисками. У нас есть богатый опыт в проведении подобных исследований для разных компаний. Мы адаптируем наши исследования для каждого конкретного случая и используем новейшие технологии для сбора и анализа данных. Получая результаты наших исследований, вы сможете разработать более эффективную маркетинговую стратегию, увеличить узнаваемость вашего бренда, улучшить продукты и сервисы и повысить уровень удовлетворенности клиентов.</p>
+                    <h2 class="section-single__content-title">Почему вам стоит заказать маркетинговые исследования у нас
+                    </h2>
+                    <p class="section-single__content-text">Важно понимать, что маркетинговые исследования могут помочь
+                        вашему бизнесу не только понимать рынок, но и развиваться быстрее и с меньшими рисками. У нас
+                        есть богатый опыт в проведении подобных исследований для разных компаний. Мы адаптируем наши
+                        исследования для каждого конкретного случая и используем новейшие технологии для сбора и анализа
+                        данных. Получая результаты наших исследований, вы сможете разработать более эффективную
+                        маркетинговую стратегию, увеличить узнаваемость вашего бренда, улучшить продукты и сервисы и
+                        повысить уровень удовлетворенности клиентов.</p>
                 </div>
 
                 <div class="section-single__background parallax-bird wrapper">
                     <div class="parallax-bird__ellipses">
-                        <img
-                            class="parallax-bird__ellipses-left"
+                        <img class="parallax-bird__ellipses-left"
                             src="./assets/svg/section-ecosystem-list-2-ellipse-left.svg"
-                            alt="section-ecosystem-list-2-ellipse-left"
-                        >
-                        <img
-                            class="parallax-bird__ellipses-right"
+                            alt="section-ecosystem-list-2-ellipse-left">
+                        <img class="parallax-bird__ellipses-right"
                             src="./assets/svg/section-ecosystem-list-2-ellipse-right.svg"
-                            alt="section-ecosystem-list-2-ellipse-right"
-                        >
+                            alt="section-ecosystem-list-2-ellipse-right">
                     </div>
                     <div class="parallax-bird__mask">
-                        <img
-                            class="parallax-bird__mask-img"
-                            src="./assets/image/section-single-bird.jpg"
-                            alt="section-single-bird-2"
-                        >
+                        <img class="parallax-bird__mask-img" src="./assets/image/section-single-bird.jpg"
+                            alt="section-single-bird-2">
                     </div>
                 </div>
             </div>
@@ -205,9 +220,11 @@
             <div class="section-help-link__content wrapper">
                 <div class="section-help-link__text">
                     <h2 class="section-help-link__text-h2">Свяжитесь с нами</h2>
-                    <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
+                    <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций.
+                        Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время
+                    </p>
                 </div>
-    
+
                 <a class="section-help-link__btn linear-gradient-btn" href="#">
                     <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
                     <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
@@ -215,13 +232,9 @@
                 </a>
             </div>
 
-            <div class="section-help-link__background-wrap wrapper-max parallax-help-link" >
-                <img
-                    style="--parallax-val: -40%;"
-                    class="section-help-link__background parallax-help-link__img"
-                    src="./assets/svg/section-help-link.svg"
-                    alt="section-help-link"
-                >
+            <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
+                <img style="--parallax-val: -40%;" class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link.svg" alt="section-help-link">
             </div>
         </section>
 
@@ -232,60 +245,46 @@
 
                 <div class="section-which__item section-which__item--left">
                     <div class="section-which__item-image">
-                        <img
-                            class="section-which__item-image-img"
-                            src="./assets/image/section-which-item-2-1.jpg"
-                            alt="section-which-item-2-1.jpg"
-                        >
+                        <img class="section-which__item-image-img" src="./assets/image/section-which-item-2-1.jpg"
+                            alt="section-which-item-2-1.jpg">
                         <div class="section-which__item-image-svg-wrap">
-                            <img
-                                class="section-which__item-image-svg section-which__item-image-svg-1"
-                                src="./assets/svg/section-which-item-1.svg"
-                                alt="section-which-item-1.svg"
-                            >
+                            <img class="section-which__item-image-svg section-which__item-image-svg-1"
+                                src="./assets/svg/section-which-item-1.svg" alt="section-which-item-1.svg">
                         </div>
                     </div>
 
                     <h3 class="section-which__item-title">Количественные</h3>
-                    <p class="section-which__item-text">Это способ узнать, что думают ваши клиенты о ваших продуктах или услугах, используя статистические методы и опросы</p>
+                    <p class="section-which__item-text">Это способ узнать, что думают ваши клиенты о ваших продуктах или
+                        услугах, используя статистические методы и опросы</p>
                 </div>
 
                 <div class="section-which__item section-which__item--left">
                     <div class="section-which__item-image">
-                        <img
-                            class="section-which__item-image-img"
-                            src="./assets/image/section-which-item-2-2.jpg"
-                            alt="section-which-item-2-2.jpg"
-                        >
+                        <img class="section-which__item-image-img" src="./assets/image/section-which-item-2-2.jpg"
+                            alt="section-which-item-2-2.jpg">
                         <div class="section-which__item-image-svg-wrap">
-                            <img
-                                class="section-which__item-image-svg section-which__item-image-svg-2"
-                                src="./assets/svg/section-which-item-2.svg"
-                                alt="section-which-item-2.svg"
-                            >
+                            <img class="section-which__item-image-svg section-which__item-image-svg-2"
+                                src="./assets/svg/section-which-item-2.svg" alt="section-which-item-2.svg">
                         </div>
                     </div>
                     <h3 class="section-which__item-title">Качественные</h3>
-                    <p class="section-which__item-text">Это способ понять ваших клиентов, их потребности и желания, а также узнать, какие моменты можно улучшить в бизнесе</p>
+                    <p class="section-which__item-text">Это способ понять ваших клиентов, их потребности и желания, а
+                        также узнать, какие моменты можно улучшить в бизнесе</p>
                 </div>
 
                 <div class="section-which__item section-which__item--left">
                     <div class="section-which__item-image">
-                        <img
-                            class="section-which__item-image-img"
-                            src="./assets/image/section-which-item-2-3.jpg"
-                            alt="section-which-item-2-3.jpg"
-                        >
+                        <img class="section-which__item-image-img" src="./assets/image/section-which-item-2-3.jpg"
+                            alt="section-which-item-2-3.jpg">
                         <div class="section-which__item-image-svg-wrap">
-                            <img
-                                class="section-which__item-image-svg section-which__item-image-svg-3"
-                                src="./assets/svg/section-which-item-3.svg"
-                                alt="section-which-item-3.svg"
-                            >
+                            <img class="section-which__item-image-svg section-which__item-image-svg-3"
+                                src="./assets/svg/section-which-item-3.svg" alt="section-which-item-3.svg">
                         </div>
                     </div>
                     <h3 class="section-which__item-title">Кабинетные</h3>
-                    <p class="section-which__item-text">Это сбор и изучение информации, полученной на вторичном рынке из доступных источников (СМИ, официальные сайты, статистические данные, внутрифирменные отчеты и т.д.).</p>
+                    <p class="section-which__item-text">Это сбор и изучение информации, полученной на вторичном рынке из
+                        доступных источников (СМИ, официальные сайты, статистические данные, внутрифирменные отчеты и
+                        т.д.).</p>
                 </div>
 
             </div>
@@ -302,62 +301,48 @@
 
                         <div class="section-which__slider-item section-which__slider-item--left slider__line-item">
                             <div class="section-which__slider-item-image">
-                                <img
-                                    class="section-which__slider-item-image-img"
-                                    src="./assets/image/section-which-item-2-1.jpg"
-                                    alt="section-which-item-2-1.jpg"
-                                >
+                                <img class="section-which__slider-item-image-img"
+                                    src="./assets/image/section-which-item-2-1.jpg" alt="section-which-item-2-1.jpg">
                                 <div class="section-which__slider-item-image-svg-wrap">
-                                    <img
-                                        class="section-which__slider-item-image-svg section-which__slider-item-image-svg-1"
-                                        src="./assets/svg/section-which-item-1.svg"
-                                        alt="section-which-item-1.svg"
-                                    >
+                                    <img class="section-which__slider-item-image-svg section-which__slider-item-image-svg-1"
+                                        src="./assets/svg/section-which-item-1.svg" alt="section-which-item-1.svg">
                                 </div>
                             </div>
 
                             <h3 class="section-which__slider-item-title">Количественные</h3>
-                            <p class="section-which__slider-item-text">Это способ узнать, что думают ваши клиенты о ваших продуктах или услугах, используя статистические методы и опросы</p>
+                            <p class="section-which__slider-item-text">Это способ узнать, что думают ваши клиенты о
+                                ваших продуктах или услугах, используя статистические методы и опросы</p>
                         </div>
 
                         <div class="section-which__slider-item section-which__slider-item--left slider__line-item">
                             <div class="section-which__slider-item-image">
-                                <img
-                                    class="section-which__slider-item-image-img"
-                                    src="./assets/image/section-which-item-2-2.jpg"
-                                    alt="section-which-item-2-2.jpg"
-                                >
+                                <img class="section-which__slider-item-image-img"
+                                    src="./assets/image/section-which-item-2-2.jpg" alt="section-which-item-2-2.jpg">
                                 <div class="section-which__slider-item-image-svg-wrap">
-                                    <img
-                                        class="section-which__slider-item-image-svg section-which__slider-item-image-svg-2"
-                                        src="./assets/svg/section-which-item-2.svg"
-                                        alt="section-which-item-2.svg"
-                                    >
+                                    <img class="section-which__slider-item-image-svg section-which__slider-item-image-svg-2"
+                                        src="./assets/svg/section-which-item-2.svg" alt="section-which-item-2.svg">
                                 </div>
                             </div>
 
                             <h3 class="section-which__slider-item-title">Качественные</h3>
-                            <p class="section-which__slider-item-text">Это способ понять ваших клиентов, их потребности и желания, а также узнать, какие моменты можно улучшить в бизнесе</p>
+                            <p class="section-which__slider-item-text">Это способ понять ваших клиентов, их потребности
+                                и желания, а также узнать, какие моменты можно улучшить в бизнесе</p>
                         </div>
-        
+
                         <div class="section-which__slider-item section-which__slider-item--left slider__line-item">
                             <div class="section-which__slider-item-image">
-                                <img
-                                    class="section-which__slider-item-image-img"
-                                    src="./assets/image/section-which-item-2-3.jpg"
-                                    alt="section-which-item-2-3.jpg"
-                                >
+                                <img class="section-which__slider-item-image-img"
+                                    src="./assets/image/section-which-item-2-3.jpg" alt="section-which-item-2-3.jpg">
                                 <div class="section-which__slider-item-image-svg-wrap">
-                                    <img
-                                        class="section-which__slider-item-image-svg section-which__slider-item-image-svg-3"
-                                        src="./assets/svg/section-which-item-3.svg"
-                                        alt="section-which-item-3.svg"
-                                    >
+                                    <img class="section-which__slider-item-image-svg section-which__slider-item-image-svg-3"
+                                        src="./assets/svg/section-which-item-3.svg" alt="section-which-item-3.svg">
                                 </div>
                             </div>
 
                             <h3 class="section-which__slider-item-title">Кабинетные</h3>
-                            <p class="section-which__slider-item-text">Это сбор и изучение информации, полученной на вторичном рынке из доступных источников (СМИ, официальные сайты, статистические данные, внутрифирменные отчеты и т.д.).</p>
+                            <p class="section-which__slider-item-text">Это сбор и изучение информации, полученной на
+                                вторичном рынке из доступных источников (СМИ, официальные сайты, статистические данные,
+                                внутрифирменные отчеты и т.д.).</p>
                         </div>
 
                     </div>
@@ -378,46 +363,44 @@
                     <h2 class="section-single__content-title">Количественные исследования</h2>
 
                     <p class="section-single__content-text">
-                        Количественные исследования - это как супергеройский костюм, который поможет вам узнать суперсилу ваших клиентов! Мы собираем данные о том, что они думают и чувствуют, а потом анализируем эти данные и вычисляем секретную формулу, которая покажет вам, как сделать свой бизнес еще лучше!<br/><br/>
+                        Количественные исследования - это как супергеройский костюм, который поможет вам узнать
+                        суперсилу ваших клиентов! Мы собираем данные о том, что они думают и чувствуют, а потом
+                        анализируем эти данные и вычисляем секретную формулу, которая покажет вам, как сделать свой
+                        бизнес еще лучше!<br /><br />
 
-                        Вместо того, чтобы проводить интервью и фокус-группы, мы используем большие выборки людей, чтобы получить числовые данные о том, что думают ваши клиенты. Для вас это значит, что вы можешь получить точные данные о том, что нужно улучшить в своих продуктах или услугах, какие изменения приведут к росту продаж и прибыли, и что нужно изменить, чтобы удерживать клиентов.<br/><br/>
-                        
-                        Количественные исследования могут помочь вам не только понять, что нужно улучшить в ваших продуктах или услугах, но и оценить эффективность ваших рекламных кампаний, определить целевую аудиторию и многое другое!
+                        Вместо того, чтобы проводить интервью и фокус-группы, мы используем большие выборки людей, чтобы
+                        получить числовые данные о том, что думают ваши клиенты. Для вас это значит, что вы можешь
+                        получить точные данные о том, что нужно улучшить в своих продуктах или услугах, какие изменения
+                        приведут к росту продаж и прибыли, и что нужно изменить, чтобы удерживать клиентов.<br /><br />
+
+                        Количественные исследования могут помочь вам не только понять, что нужно улучшить в ваших
+                        продуктах или услугах, но и оценить эффективность ваших рекламных кампаний, определить целевую
+                        аудиторию и многое другое!
                     </p>
 
                     <a class="section-single__content-btn linear-gradient-btn" href="#">
                         <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-single__content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div
+                            class="section-single__content-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-single__content-btn-text linear-gradient-btn__text">Обсудить вашу задачу</p>
                     </a>
                 </div>
 
                 <div class="section-single__background wrapper-max parallax-advantage">
                     <div class="parallax-advantage-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 0%;">
-                        <img
-                            style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-small parallax-advantage__small"
-                            src="./assets/svg/section-resources-small-1.svg"
-                            alt="section-advantage-small"
-                        >
-                        <img
-                            style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-resources-small-1.svg" alt="section-advantage-small">
+                        <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-medium parallax-advantage__medium"
-                            src="./assets/svg/section-resources-medium-1.svg"
-                            alt="section-advantage-medium"
-                        >
-                        <img
-                            style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-resources-medium-1.svg" alt="section-advantage-medium">
+                        <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle-small"
-                            src="./assets/svg/section-tools-circle-2.svg"
-                            alt="section-advantage-circle"
-                        >
-                        <img
-                            style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-tools-circle-2.svg" alt="section-advantage-circle">
+                        <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle"
-                            src="./assets/svg/section-resources-circle-1.svg"
-                            alt="section-advantage-circle"
-                        >
+                            src="./assets/svg/section-resources-circle-1.svg" alt="section-advantage-circle">
                     </div>
                 </div>
             </div>
@@ -430,53 +413,49 @@
                 <div class="section-list__item" list-count="01">
                     <div class="section-list__item-title">Телефонные опросы</div>
                     <div class="section-list__item-text">
-                        Такой вид исследования проводится по телефону в виде опроса респондентов на основе разработанной анкеты.<br/><br/>
+                        Такой вид исследования проводится по телефону в виде опроса респондентов на основе разработанной
+                        анкеты.<br /><br />
 
-                        Преимущество такого вида количественных исследований заключается в его небольших затратах по сравнению с другими, а также в возможности опросить большое количество респондентов.<br/><br/>
+                        Преимущество такого вида количественных исследований заключается в его небольших затратах по
+                        сравнению с другими, а также в возможности опросить большое количество респондентов.<br /><br />
 
-                        Недостатком является невозможность глубоко изучить вопрос, как в случае с качественными исследованиями при проведении личного интервью лицом к лицу, поэтому с помощью телефонного опроса можно решить несложные задачи, а именно: изучить узнаваемость бренда среди респондентов и их лояльность к нему, определить отношение и предпочтения потребителей, оценить эффективность маркетинговой кампании, и т.д.
+                        Недостатком является невозможность глубоко изучить вопрос, как в случае с качественными
+                        исследованиями при проведении личного интервью лицом к лицу, поэтому с помощью телефонного
+                        опроса можно решить несложные задачи, а именно: изучить узнаваемость бренда среди респондентов и
+                        их лояльность к нему, определить отношение и предпочтения потребителей, оценить эффективность
+                        маркетинговой кампании, и т.д.
                     </div>
                     <div class="section-list__item-btn-wrap">
                         <a class="section-list__item-btn" href="#">
                             Контакт- центр
-                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                            <svg class="section-list__item-btn-icon">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
 
             </div>
 
-            <div 
-                class="
+            <div class="
                     section-list__background
                     parallax-triangle parallax-triangle--right parallax-triangle--black
                     parallax-double-semicircle
                     wrapper-max
-                "
-            >
+                ">
                 <div class="parallax-triangle-wrap">
                     <div class="parallax-triangle__geometry"></div>
-                    <img 
-                        style="--parallax-val: -40%;"
-                        class="parallax-triangle__img" 
-                        src="./assets/image/section-list-1.jpg" 
-                        alt="section-list-1"
-                    >
+                    <img style="--parallax-val: -40%;" class="parallax-triangle__img"
+                        src="./assets/image/section-list-1.jpg" alt="section-list-1">
                 </div>
 
                 <div class="parallax-double-semicircle-wrap">
-                    <img 
-                        style="--parallax-val: 60%;"
+                    <img style="--parallax-val: 60%;"
                         class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-1"
-                        src="./assets/svg/section-mission-ellipse-1.svg" 
-                        alt="parallax-double-semicircle__ellipse-1"
-                    >
-                    <img 
-                        style="--parallax-val: -60%;"
+                        src="./assets/svg/section-mission-ellipse-1.svg" alt="parallax-double-semicircle__ellipse-1">
+                    <img style="--parallax-val: -60%;"
                         class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-2"
-                        src="./assets/svg/section-mission-ellipse-2.svg" 
-                        alt="parallax-double-semicircle__ellipse-2"
-                    >
+                        src="./assets/svg/section-mission-ellipse-2.svg" alt="parallax-double-semicircle__ellipse-2">
                 </div>
             </div>
         </section>
@@ -486,45 +465,45 @@
                 <div class="section-list__item" list-count="02">
                     <div class="section-list__item-title">Face-to-Face (Личное интервью)</div>
                     <div class="section-list__item-text">
-                        В ходе этого исследования интервьюер задает вопросы респонденту, строго следуя предварительно разработанной анкете. Исследование Face-to-Face может проводиться на улице, по месту работы респондентов, либо в определенных местах продаж.
-                        Исследование Личное интервью дает возможность изучить потребительские мотивы и предпочтения, а также выяснить мнение и отношение респондентов к тому или иному бренду/продукту.
+                        В ходе этого исследования интервьюер задает вопросы респонденту, строго следуя предварительно
+                        разработанной анкете. Исследование Face-to-Face может проводиться на улице, по месту работы
+                        респондентов, либо в определенных местах продаж.
+                        Исследование Личное интервью дает возможность изучить потребительские мотивы и предпочтения, а
+                        также выяснить мнение и отношение респондентов к тому или иному бренду/продукту.
                     </div>
                 </div>
 
                 <div class="section-list__item" list-count="03">
                     <div class="section-list__item-title">Онлайн опросы</div>
                     <div class="section-list__item-text">
-                        Очный опрос респондента, используя разработанный вопросник. Опросы позволяют получить мнение потребителей о продукте или услуге, а также о том, как они предпочитают покупать и где они ищут информацию о товарах.
+                        Очный опрос респондента, используя разработанный вопросник. Опросы позволяют получить мнение
+                        потребителей о продукте или услуге, а также о том, как они предпочитают покупать и где они ищут
+                        информацию о товарах.
                     </div>
                     <div class="section-list__item-btn-wrap">
                         <a class="section-list__item-btn" href="#">
                             Сбор идей
-                            <svg class="section-list__item-btn-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                            <svg class="section-list__item-btn-icon">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
 
             </div>
 
-            <div 
-                class="
+            <div class="
                     section-list__background
                     parallax-semicircle-rotate
                     wrapper-max
-                "
-            >
+                ">
                 <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-wrap--left-10">
-                    <img 
-                        class="parallax-semicircle-rotate__img" 
-                        src="./assets/image/section-list-2.jpg" 
-                        alt="section-list-2"
-                    >
-                    <div class="parallax-semicircle-rotate__ellipse-wrap" >
-                        <img
-                            class="parallax-semicircle-rotate__ellipse"
+                    <img class="parallax-semicircle-rotate__img" src="./assets/image/section-list-2.jpg"
+                        alt="section-list-2">
+                    <div class="parallax-semicircle-rotate__ellipse-wrap">
+                        <img class="parallax-semicircle-rotate__ellipse"
                             src="./assets/svg/section-ecosystem-list-4-ellipse.svg"
-                            alt="section-ecosystem-list-4-ellipse"
-                        >
+                            alt="section-ecosystem-list-4-ellipse">
                     </div>
                 </div>
             </div>
@@ -538,16 +517,15 @@
                     <div class="section-help-form__content-form-wrap">
                         <input class="section-help-form__content-form-name" type="text" placeholder="Имя">
                         <input class="section-help-form__content-form-email" type="text" placeholder="Email">
-                        <textarea 
-                            class="section-help-form__content-form-text" 
-                            cols="30" 
-                            rows="5" 
-                            placeholder="Напишите ваш вопрос..."
-                        ></textarea>
+                        <textarea class="section-help-form__content-form-text" cols="30" rows="5"
+                            placeholder="Напишите ваш вопрос..."></textarea>
                     </div>
                     <button type="submit" class="section-help-form__content-form-btn linear-gradient-btn" href="#">
-                        <div class="section-help-form__content-form-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-help-form__content-form-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div class="section-help-form__content-form-btn-background linear-gradient-btn__background">
+                        </div>
+                        <div
+                            class="section-help-form__content-form-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-help-form__content-form-btn-text linear-gradient-btn__text">Спросить</p>
                     </button>
                 </form>
@@ -566,7 +544,8 @@
                                 <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
                             </svg>
                         </div>
-                        <input type="number" class="section-calculator__inputs-item-input" value="0">
+                        <input type="number"
+                            class="section-calculator__inputs-item-input calculator-item populationSize" value="0" maxlength="4">
                     </div>
 
                     <div class="section-calculator__inputs-item">
@@ -576,7 +555,10 @@
                                 <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
                             </svg>
                         </div>
-                        <select type="number" class="section-calculator__inputs-item-select">
+                        <select type="number" class="
+                                section-calculator__inputs-item-select 
+                                calculator-item confidenceLevel
+                            ">
                             <option value="1.645">90</option>
                             <option value="1.695">91</option>
                             <option value="1.752">92</option>
@@ -597,70 +579,58 @@
                                 <use xlink:href="./assets/svg/sprite.svg#icon-info"></use>
                             </svg>
                         </div>
-                        <input type="number" class="section-calculator__inputs-item-input">
+                        <input type="number" class="section-calculator__inputs-item-input calculator-item marginOfError"
+                            value="1" max="100">
                     </div>
                 </div>
 
                 <div class="section-calculator__result">
                     <p class="section-calculator__result-text">Объем выборки</p>
-                    <p class="section-calculator__result-number">0</p>
+                    <p class="section-calculator__result-number sampleSize">0</p>
                 </div>
             </div>
 
             <div class="section-calculator__background"></div>
         </section>
 
-        <!-- <script>
+        <script>
             function calculateSampleSize() {
-                var populationSize = parseFloat(document.getElementById("populationSize").value);
-                var confidenceLevel = parseFloat(document.getElementById("confidenceLevel").value);
-                var marginOfError = parseFloat(document.getElementById("marginOfError").value);
-    
-                if (!populationSize || !confidenceLevel || !marginOfError) {
-                    alert("Пожалуйста, введите значение для всех полей.");
-                    return;
-                }
-    
-                var z = getZScore(confidenceLevel);
-                var p = 0.5;
-                var q = 1 - p;
-                var e = marginOfError / 100;
-    
-                var sampleSize = ((z*z) * p * q) / (e*e);
-    
-                if (sampleSize > populationSize) {
-                    alert("Размер выборки не может быть больше размера популяции.");
-                } else {
-                    document.getElementById("sampleSize").innerHTML = Math.ceil(sampleSize);
-                }
+                document.querySelector(`.populationSize`).classList.remove('error')
+                document.querySelector(`.marginOfError`).classList.remove('error')
+
+                let errs = []
+
+                let populationSize = document.querySelector(".populationSize").value
+                    if (!parseFloat(populationSize)) errs.push('populationSize') 
+                    if (populationSize[0] == 0) document.querySelector(".populationSize").value = populationSize.substr(1)
+
+                let marginOfError = parseFloat(document.querySelector(".marginOfError").value)
+                    if (marginOfError) errs.push('marginOfError') 
+                    if (marginOfError > 100) document.querySelector(".marginOfError").value = 100
+
+                let confidenceLevel = parseFloat(document.querySelector(".confidenceLevel").value)
+
+                errs.forEach(err => {
+                    document.querySelector(`.${err}`).classList.add('error')
+                })
+
+                let result = confidenceLevel * confidenceLevel * 2500 / (marginOfError * marginOfError)
+                result = result / (1 + (result - 1) / populationSize)
+
+                document.querySelector(".sampleSize").innerHTML = Math.ceil(result)
+
             }
-    
-            function getZScore(confidenceLevel) {
-                var zScores = {
-                    90: 1.645,
-                    91: 1.695,
-                    92: 1.752,
-                    93: 1.812,
-                    94: 1.881,
-                    95: 1.96,
-                    96: 2.054,
-                    97: 2.17,
-                    98: 2.326,
-                    99: 2.576
-                };
-    
-                if (zScores.hasOwnProperty(confidenceLevel)) {
-                    return zScores[confidenceLevel];
-                } else {
-                    return 1.96; // default to 95% confidence level
-                }
-            }
-        </script> -->
+
+            document.querySelectorAll('.calculator-item').forEach(item => {
+                item.addEventListener('input', calculateSampleSize)
+            })
+
+        </script>
 
         <section class="section-cases">
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
-            <div class="section-cases__slider slider wrapper" >
+            <div class="section-cases__slider slider wrapper">
                 <button class="section-cases__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -670,31 +640,32 @@
                 <div class="section-cases__slider-line-wrap slider__line-wrap">
                     <div class="section-cases__slider-line slider__line">
                         <div class="section-cases__slider-line-item slider__line-item">
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--white"
-                                src="./assets/svg/cases-adidas-white.svg" 
-                                alt="cases-adidas-white"
-                            >
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--black"
-                                src="./assets/svg/cases-adidas-black.svg" 
-                                alt="cases-adidas-black"
-                            >
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--white"
+                                src="./assets/svg/cases-adidas-white.svg" alt="cases-adidas-white">
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--black"
+                                src="./assets/svg/cases-adidas-black.svg" alt="cases-adidas-black">
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Какие результаты мы получили?</h3>
                                 <ol class="section-cases__slider-item-list">
                                     <li class="section-cases__slider-item-list-item">+28% in NPS concept stores</li>
                                     <li class="section-cases__slider-item-list-item">+68% in NPS discount stores</li>
-                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса согласно определенным драйверам роста клиентской удовлетворенности, лояльности и транзакционной активности (внимание к потребности, кросс-сейл, интересные факты о товаре, бренде и проч.) </li>
-                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных форматов магазинов </li>
-                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия разных сегментов ЦА, в том числе определены новые перспективные потребители (plus size, поколение Y)</li>
+                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса
+                                        согласно определенным драйверам роста клиентской удовлетворенности, лояльности и
+                                        транзакционной активности (внимание к потребности, кросс-сейл, интересные факты
+                                        о товаре, бренде и проч.) </li>
+                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных
+                                        форматов магазинов </li>
+                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия
+                                        разных сегментов ЦА, в том числе определены новые перспективные потребители
+                                        (plus size, поколение Y)</li>
                                 </ol>
                             </div>
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Клиент</h3>
-                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания по производству спортивной одежды, обуви и аксессуаров.</p>
+                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания
+                                    по производству спортивной одежды, обуви и аксессуаров.</p>
                             </div>
 
                             <div>
@@ -709,7 +680,7 @@
                                 </ol>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <button class="slider__btn slider__btn-next">
@@ -726,41 +697,49 @@
                 <div class="section-single__content wrapper">
                     <h2 class="section-single__content-title">Качественные исследования</h2>
                     <p class="section-single__content-text">
-                        Качественные методы исследования используются для того, чтобы получить наиболее полную информацию о психологии потребителя, его ценностях, глубинных мотивах поведения, эмоциональном восприятии бренда.<br/><br/>
+                        Качественные методы исследования используются для того, чтобы получить наиболее полную
+                        информацию о психологии потребителя, его ценностях, глубинных мотивах поведения, эмоциональном
+                        восприятии бренда.<br /><br />
 
-                        Представьте, что вы хотите создать новый продукт, но не знаете, что именно заинтересует ваших клиентов. Вот тут на сцену выходят качественные исследования! <br/><br/>
+                        Представьте, что вы хотите создать новый продукт, но не знаете, что именно заинтересует ваших
+                        клиентов. Вот тут на сцену выходят качественные исследования! <br /><br />
 
-                        Мы проводим глубинные интервью и фокус-группы с вашими потенциальными клиентами, чтобы узнать их мнения и взгляды на ваш продукт. А потом мы собираем эту информацию и анализируем ее, чтобы вы могли создать продукт, который действительно будет полезен для ваших клиентов и приносить вам больше прибыли.<br/><br/>
+                        Мы проводим глубинные интервью и фокус-группы с вашими потенциальными клиентами, чтобы узнать их
+                        мнения и взгляды на ваш продукт. А потом мы собираем эту информацию и анализируем ее, чтобы вы
+                        могли создать продукт, который действительно будет полезен для ваших клиентов и приносить вам
+                        больше прибыли.<br /><br />
 
-                        Это как приключение, где мы исследуем потребности ваших клиентов и находим способы улучшить ваш бизнес! Мы погружаемся в мир ваших клиентов, узнаем, что им нравится и что не нравится, и находим решения, чтобы вы могли дать им то, что они действительно хотят. 
+                        Это как приключение, где мы исследуем потребности ваших клиентов и находим способы улучшить ваш
+                        бизнес! Мы погружаемся в мир ваших клиентов, узнаем, что им нравится и что не нравится, и
+                        находим решения, чтобы вы могли дать им то, что они действительно хотят.
                     </p>
 
                     <a class="section-single__content-link" href="#">
                         Лаборатория качественных исследований “мир”
-                        <svg class="section-single__content-link-icon"><use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use></svg>
+                        <svg class="section-single__content-link-icon">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use>
+                        </svg>
                     </a>
 
                     <a class="section-single__content-btn linear-gradient-btn" href="#">
                         <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-single__content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div
+                            class="section-single__content-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-single__content-btn-text linear-gradient-btn__text">Обсудить вашу задачу</p>
                     </a>
                 </div>
 
                 <div class="section-single__background parallax-double-semicircle">
                     <div class="parallax-double-semicircle-wrap">
-                        <img 
-                            style="--parallax-val: 100%;"
+                        <img style="--parallax-val: 100%;"
                             class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-1"
-                            src="./assets/svg/section-mission-ellipse-1.svg" 
-                            alt="parallax-double-semicircle__ellipse-1"
-                        >
-                        <img 
-                            style="--parallax-val: -100%;"
+                            src="./assets/svg/section-mission-ellipse-1.svg"
+                            alt="parallax-double-semicircle__ellipse-1">
+                        <img style="--parallax-val: -100%;"
                             class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-2"
-                            src="./assets/svg/section-mission-ellipse-2.svg" 
-                            alt="parallax-double-semicircle__ellipse-2"
-                        >
+                            src="./assets/svg/section-mission-ellipse-2.svg"
+                            alt="parallax-double-semicircle__ellipse-2">
                     </div>
                 </div>
             </div>
@@ -773,11 +752,20 @@
                 <div class="section-list__item" list-count="01">
                     <div class="section-list__item-title">Глубинное интервью</div>
                     <div class="section-list__item-text">
-                        Проведение глубинных интервью – один из самых распространенных методов качественного исследования. Это личное интервью, которое проводится с одним респондентом за раз. Это чисто разговорный метод, который дает возможность получить подробные сведения от респондента.<br/><br/>
+                        Проведение глубинных интервью – один из самых распространенных методов качественного
+                        исследования. Это личное интервью, которое проводится с одним респондентом за раз. Это чисто
+                        разговорный метод, который дает возможность получить подробные сведения от
+                        респондента.<br /><br />
 
-                        Одно из преимуществ этого метода – прекрасная возможность собрать точные данные о том, во что люди верят и каковы их мотивации. Если исследователь имеет большой опыт, правильные вопросы могут помочь ему / ей собрать значимые данные. Если им понадобится дополнительная информация, исследователи должны задать такие дополнительные вопросы, которые помогут им собрать больше данных.<br/><br/>
+                        Одно из преимуществ этого метода – прекрасная возможность собрать точные данные о том, во что
+                        люди верят и каковы их мотивации. Если исследователь имеет большой опыт, правильные вопросы
+                        могут помочь ему / ей собрать значимые данные. Если им понадобится дополнительная информация,
+                        исследователи должны задать такие дополнительные вопросы, которые помогут им собрать больше
+                        данных.<br /><br />
 
-                        Эти собеседования могут проводиться лично или по телефону, и обычно длятся от получаса до двух часов или даже больше. Когда глубинное интервью проводится лицом к лицу, это дает лучшую возможность прочитать язык тела респондентов и сопоставить ответы.
+                        Эти собеседования могут проводиться лично или по телефону, и обычно длятся от получаса до двух
+                        часов или даже больше. Когда глубинное интервью проводится лицом к лицу, это дает лучшую
+                        возможность прочитать язык тела респондентов и сопоставить ответы.
                     </div>
                 </div>
 
@@ -790,67 +778,69 @@
             ">
                 <div class="parallax-circle-1__wrap" style="--parallax-scale: 1;">
                     <div class="parallax-circle-1__img-wrap">
-                        <img 
-                            style="--parallax-val: -100%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
-                            class="parallax-circle-1__img" 
-                            src="./assets/image/section-list-3.jpg" 
-                            alt="section-ecosystem-list-1"
-                        >
+                        <img style="--parallax-val: -100%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                            class="parallax-circle-1__img" src="./assets/image/section-list-3.jpg"
+                            alt="section-ecosystem-list-1">
                         <div class="parallax-circle-1__circle"></div>
                     </div>
-                    <img
-                        style="--parallax-val: -103%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
-                        class="parallax-circle-1__ellipse"
-                        src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
-                        alt="section-ecosystem-list-1-ellipse"
-                    >
+                    <img style="--parallax-val: -103%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                        class="parallax-circle-1__ellipse" src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
+                        alt="section-ecosystem-list-1-ellipse">
                 </div>
             </div>
         </section>
 
-        <section class="section-list section-list--revert" style="background-image: url(./../../assets/image/section-tools.png);">
+        <section class="section-list section-list--revert"
+            style="background-image: url(./../../assets/image/section-tools.png);">
             <div class="section-list__content wrapper">
                 <div class="section-list__item" list-count="02">
                     <div class="section-list__item-title">Фокус-группы</div>
                     <div class="section-list__item-text">
-                        Фокус-группа также является одним из широко используемых методов качественного исследования при сборе данных. Фокус-группа обычно включает ограниченное количество респондентов (6-10) из вашего целевого рынка.<br/><br/>
+                        Фокус-группа также является одним из широко используемых методов качественного исследования при
+                        сборе данных. Фокус-группа обычно включает ограниченное количество респондентов (6-10) из вашего
+                        целевого рынка.<br /><br />
 
-                        Основная цель фокус-группы – найти ответы на вопросы «почему», «что» и «как». Одним из преимуществ фокус-групп является то, что вам не обязательно общаться с группой лично. В настоящее время в фокус-группы можно отправлять онлайн-опрос на различных устройствах, а ответы можно собирать одним нажатием кнопки.<br/><br/>
-                        
-                        Фокус-группы – это дорогостоящий метод по сравнению с другими методами качественного онлайн-исследования. Обычно они используются для объяснения сложных процессов. Этот метод очень полезен, когда дело доходит до исследования рынка новых продуктов и тестирования новых концепций.                    
+                        Основная цель фокус-группы – найти ответы на вопросы «почему», «что» и «как». Одним из
+                        преимуществ фокус-групп является то, что вам не обязательно общаться с группой лично. В
+                        настоящее время в фокус-группы можно отправлять онлайн-опрос на различных устройствах, а ответы
+                        можно собирать одним нажатием кнопки.<br /><br />
+
+                        Фокус-группы – это дорогостоящий метод по сравнению с другими методами качественного
+                        онлайн-исследования. Обычно они используются для объяснения сложных процессов. Этот метод очень
+                        полезен, когда дело доходит до исследования рынка новых продуктов и тестирования новых
+                        концепций.
                     </div>
                 </div>
 
                 <div class="section-list__item" list-count="03">
                     <div class="section-list__item-title">Customer Journey Map</div>
                     <div class="section-list__item-text">
-                        Customer Journey Map (карта путешествия пользователя) — это методология развития продукта, которая основывается на подробном анализе потребностей и поведения аудитории. Это визуализированная история взаимодействия потребителя с продуктом, сервисом, компанией или брендом через разные каналы в определенный период времени, которая от имени потребителя позволяет объективно проанализировать опыт взаимодействия с продуктом, зафиксировать и устранить возникающие барьеры, предложить рекомендации по улучшению продукта. <br/><br/>
+                        Customer Journey Map (карта путешествия пользователя) — это методология развития продукта,
+                        которая основывается на подробном анализе потребностей и поведения аудитории. Это
+                        визуализированная история взаимодействия потребителя с продуктом, сервисом, компанией или
+                        брендом через разные каналы в определенный период времени, которая от имени потребителя
+                        позволяет объективно проанализировать опыт взаимодействия с продуктом, зафиксировать и устранить
+                        возникающие барьеры, предложить рекомендации по улучшению продукта. <br /><br />
 
-                        Представляет собой график, на котором отмечены точки соприкосновения клиента с продуктом и описаны действия клиента, его чувства и возможные проблемы.              
+                        Представляет собой график, на котором отмечены точки соприкосновения клиента с продуктом и
+                        описаны действия клиента, его чувства и возможные проблемы.
                     </div>
                 </div>
 
             </div>
 
-            <div 
-                class="
+            <div class="
                     section-list__background
                     parallax-semicircle-rotate
                     wrapper-max
-                "
-            >
+                ">
                 <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-wrap--left-10">
-                    <img 
-                        class="parallax-semicircle-rotate__img" 
-                        src="./assets/image/section-list-4.jpg" 
-                        alt="section-list-4"
-                    >
-                    <div class="parallax-semicircle-rotate__ellipse-wrap parallax-semicircle-rotate__ellipse-wrap-quarter" >
-                        <img
-                            class="parallax-semicircle-rotate__ellipse"
-                            src="./assets/svg/quarter-bagel.svg"
-                            alt="quarter-bagel"
-                        >
+                    <img class="parallax-semicircle-rotate__img" src="./assets/image/section-list-4.jpg"
+                        alt="section-list-4">
+                    <div
+                        class="parallax-semicircle-rotate__ellipse-wrap parallax-semicircle-rotate__ellipse-wrap-quarter">
+                        <img class="parallax-semicircle-rotate__ellipse" src="./assets/svg/quarter-bagel.svg"
+                            alt="quarter-bagel">
                     </div>
                 </div>
             </div>
@@ -861,43 +851,41 @@
                 <div class="section-list__item" list-count="04">
                     <div class="section-list__item-title">Этнографические исследования</div>
                     <div class="section-list__item-text">
-                        Этнографические исследования – это наиболее глубокий метод наблюдения, который изучает людей в их естественной среде обитания.<br/><br/>
+                        Этнографические исследования – это наиболее глубокий метод наблюдения, который изучает людей в
+                        их естественной среде обитания.<br /><br />
 
-                        Этот метод требует, чтобы исследователи адаптировались к среде целевой аудитории, которая может быть где угодно: от организации до города или любого удаленного места. Здесь географические ограничения могут стать проблемой при сборе данных.<br/><br/>
-                        
-                        Этот план исследования направлен на понимание возникающих культур, проблем, мотиваций и условий. Вместо того, чтобы полагаться на интервью и дискуссии, вы лично сталкиваетесь с естественной обстановкой.<br/><br/>
-                        
-                        Этот тип исследовательского метода может длиться от нескольких дней до нескольких лет, так как он предполагает углубленное наблюдение и сбор данных на этих основаниях. Это сложный и трудоемкий метод, который зависит исключительно от опыта исследователя, который сможет анализировать, наблюдать и делать выводы.                    
+                        Этот метод требует, чтобы исследователи адаптировались к среде целевой аудитории, которая может
+                        быть где угодно: от организации до города или любого удаленного места. Здесь географические
+                        ограничения могут стать проблемой при сборе данных.<br /><br />
+
+                        Этот план исследования направлен на понимание возникающих культур, проблем, мотиваций и условий.
+                        Вместо того, чтобы полагаться на интервью и дискуссии, вы лично сталкиваетесь с естественной
+                        обстановкой.<br /><br />
+
+                        Этот тип исследовательского метода может длиться от нескольких дней до нескольких лет, так как
+                        он предполагает углубленное наблюдение и сбор данных на этих основаниях. Это сложный и
+                        трудоемкий метод, который зависит исключительно от опыта исследователя, который сможет
+                        анализировать, наблюдать и делать выводы.
                     </div>
                 </div>
 
             </div>
 
             <div class="section-list__background wrapper-max parallax-resources">
-                <div class="parallax-resources-wrap" style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 15%;">
-                    <img
-                        style="--parallax-val: 55%; --parallax-val-laptop: 0%; --parallax-val-mobile: -30%;"
+                <div class="parallax-resources-wrap"
+                    style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 15%;">
+                    <img style="--parallax-val: 55%; --parallax-val-laptop: 0%; --parallax-val-mobile: -30%;"
                         class="section-resources__background-img parallax-resources__img"
-                        src="./assets/image/section-list-5.jpg"
-                    >
-                    <img
-                        style="--parallax-val: -370%; --parallax-val-laptop: -100%; --parallax-val-mobile: 0%;"
+                        src="./assets/image/section-list-5.jpg">
+                    <img style="--parallax-val: -370%; --parallax-val-laptop: -100%; --parallax-val-mobile: 0%;"
                         class="section-list__background-small parallax-resources__small"
-                        src="./assets/svg/section-resources-small-1.svg"
-                        alt="section-resources-small"
-                    >
-                    <img
-                        style="--parallax-val: -260%; --parallax-val-laptop: 0%; --parallax-val-mobile: 60%;"
+                        src="./assets/svg/section-resources-small-1.svg" alt="section-resources-small">
+                    <img style="--parallax-val: -260%; --parallax-val-laptop: 0%; --parallax-val-mobile: 60%;"
                         class="section-list__background-medium parallax-resources__medium"
-                        src="./assets/svg/section-resources-medium-1.svg"
-                        alt="section-resources-medium"
-                    >
-                    <img
-                        style="--parallax-val: -100%; --parallax-val-laptop: -30%; --parallax-val-mobile: 5%;"
+                        src="./assets/svg/section-resources-medium-1.svg" alt="section-resources-medium">
+                    <img style="--parallax-val: -100%; --parallax-val-laptop: -30%; --parallax-val-mobile: 5%;"
                         class="section-list__background-circle parallax-resources__circle"
-                        src="./assets/svg/section-resources-circle-1.svg"
-                        alt="section-resources-circle"
-                    >
+                        src="./assets/svg/section-resources-circle-1.svg" alt="section-resources-circle">
                 </div>
             </div>
         </section>
@@ -907,16 +895,25 @@
                 <div class="section-list__item" list-count="05">
                     <div class="section-list__item-title">Case study</div>
                     <div class="section-list__item-text">
-                        Этот метод исследования эволюционировал в течение последних нескольких лет. Он используется в ряде областей, таких как образование, социальные науки и т. д. Этот метод может показаться сложным в использовании, однако это один из простейших способов проведения исследования, поскольку он включает в себя глубокое погружение и всестороннее понимание методов сбора вывода данных.                    
+                        Этот метод исследования эволюционировал в течение последних нескольких лет. Он используется в
+                        ряде областей, таких как образование, социальные науки и т. д. Этот метод может показаться
+                        сложным в использовании, однако это один из простейших способов проведения исследования,
+                        поскольку он включает в себя глубокое погружение и всестороннее понимание методов сбора вывода
+                        данных.
                     </div>
                 </div>
 
                 <div class="section-list__item" list-count="06">
                     <div class="section-list__item-title">Наблюдение</div>
                     <div class="section-list__item-text">
-                        Качественное наблюдение – это процесс исследования, в котором используются субъективные методологии для сбора систематической информации или данных. Поскольку акцент на качественном наблюдении – это исследовательский процесс с использованием субъективных методологий для сбора информации или данных. Качественное наблюдение в первую очередь используется для определения различий в качестве.<br/><br/>
+                        Качественное наблюдение – это процесс исследования, в котором используются субъективные
+                        методологии для сбора систематической информации или данных. Поскольку акцент на качественном
+                        наблюдении – это исследовательский процесс с использованием субъективных методологий для сбора
+                        информации или данных. Качественное наблюдение в первую очередь используется для определения
+                        различий в качестве.<br /><br />
 
-                        Качественное наблюдение касается 5 основных органов чувств и их функционирования – зрения, обоняния, осязания, вкуса и слуха. Это не измерения их числа, а характеристики.                
+                        Качественное наблюдение касается 5 основных органов чувств и их функционирования – зрения,
+                        обоняния, осязания, вкуса и слуха. Это не измерения их числа, а характеристики.
                     </div>
                 </div>
 
@@ -927,40 +924,34 @@
                 wrapper-max
                 parallax-triangle
                 parallax-triangle-left-20
-                parallax-semicircle-rotate"
-            >
+                parallax-semicircle-rotate">
                 <div class="parallax-triangle-wrap">
                     <div class="parallax-triangle__geometry"></div>
                     <div class="parallax-triangle__geometry parallax-triangle__geometry--bottom"></div>
-                    <img 
-                        style="--parallax-val: -130%;"
-                        class="parallax-triangle__img" 
-                        src="./assets/image/section-list-6.jpg" 
-                        alt="section-list-1"
-                    >
+                    <img style="--parallax-val: -130%;" class="parallax-triangle__img"
+                        src="./assets/image/section-list-6.jpg" alt="section-list-1">
 
-                    
+
                 </div>
-                
+
                 <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-fill">
                     <div class="parallax-semicircle-rotate__ellipse-wrap">
-                        <img
-                            class="parallax-semicircle-rotate__ellipse"
-                            src="/assets/svg/section-kinds-svg.svg"
-                            alt="section-kinds-svg"
-                        >
+                        <img class="parallax-semicircle-rotate__ellipse" src="/assets/svg/section-kinds-svg.svg"
+                            alt="section-kinds-svg">
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
         <section class="section-single" style="background-image: url(./../../assets/image/section-tools.png);">
             <div class="section-single-wrap wrapper">
                 <div class="section-single__content wrapper">
-                    <h2 class="section-single__content-title section-single__content-max-660">Получите готовые решения для вашего исследовательского проекта!</h2>
+                    <h2 class="section-single__content-title section-single__content-max-660">Получите готовые решения
+                        для вашего исследовательского проекта!</h2>
 
-                    <h3 class="section-single__content-text-title section-single__content-max-660">Что вы получите прямо сейчас?</h3>
+                    <h3 class="section-single__content-text-title section-single__content-max-660">Что вы получите прямо
+                        сейчас?</h3>
 
                     <ul class="section-single__content-list section-single__content-max-660">
                         <li class="section-single__content-list-item">Гайд для глубинного интервью с клиентом</li>
@@ -974,31 +965,27 @@
 
                     <a class="section-single__content-btn linear-gradient-btn section-single__content-max-660" href="#">
                         <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-single__content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div
+                            class="section-single__content-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-single__content-btn-text linear-gradient-btn__text">Скачать бесплатно</p>
                     </a>
                 </div>
 
-                <div 
-                    class="
+                <div class="
                         section-single__background
                         parallax-semicircle-rotate
                         parallax-semicircle-rotate--absolute
                         wrapper
-                    "
-                >
+                    ">
                     <div class="parallax-semicircle-rotate-wrap">
-                        <img 
-                            class="parallax-semicircle-rotate__img" 
-                            src="./assets/image/section-list-7.jpg" 
-                            alt="section-list-7"
-                        >
-                        <div class="parallax-semicircle-rotate__ellipse-wrap parallax-semicircle-rotate__ellipse-wrap-double" >
-                            <img
-                                class="parallax-semicircle-rotate__ellipse"
+                        <img class="parallax-semicircle-rotate__img" src="./assets/image/section-list-7.jpg"
+                            alt="section-list-7">
+                        <div
+                            class="parallax-semicircle-rotate__ellipse-wrap parallax-semicircle-rotate__ellipse-wrap-double">
+                            <img class="parallax-semicircle-rotate__ellipse"
                                 src="./assets/svg/section-ecosystem-list-5-ellipse.svg"
-                                alt="section-ecosystem-list-5-ellipse"
-                            >
+                                alt="section-ecosystem-list-5-ellipse">
                         </div>
                     </div>
                 </div>
@@ -1009,30 +996,28 @@
             <div class="section-help-link__content wrapper">
                 <div class="section-help-link__text">
                     <h2 class="section-help-link__text-h2">Расскажите о своей задаче</h2>
-                    <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
+                    <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь
+                        в разработке концепции исследования. </p>
                 </div>
-    
+
                 <a class="section-help-link__btn linear-gradient-btn" href="#">
                     <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
                     <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
-                    <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект</p>
+                    <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект
+                    </p>
                 </a>
             </div>
 
             <div class="section-help-link__background-wrap wrapper-max parallax-help-link">
-                <img
-                    style="--parallax-val: -180%;"
-                    class="section-help-link__background parallax-help-link__img"
-                    src="./assets/svg/section-help-link-1.svg"
-                    alt="section-help-link-1"
-                >
+                <img style="--parallax-val: -180%;" class="section-help-link__background parallax-help-link__img"
+                    src="./assets/svg/section-help-link-1.svg" alt="section-help-link-1">
             </div>
         </section>
 
         <section class="section-cases">
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
-            <div class="section-cases__slider slider wrapper" >
+            <div class="section-cases__slider slider wrapper">
                 <button class="section-cases__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1042,31 +1027,32 @@
                 <div class="section-cases__slider-line-wrap slider__line-wrap">
                     <div class="section-cases__slider-line slider__line">
                         <div class="section-cases__slider-line-item slider__line-item">
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--white"
-                                src="./assets/svg/cases-adidas-white.svg" 
-                                alt="cases-adidas-white"
-                            >
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--black"
-                                src="./assets/svg/cases-adidas-black.svg" 
-                                alt="cases-adidas-black"
-                            >
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--white"
+                                src="./assets/svg/cases-adidas-white.svg" alt="cases-adidas-white">
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--black"
+                                src="./assets/svg/cases-adidas-black.svg" alt="cases-adidas-black">
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Какие результаты мы получили?</h3>
                                 <ol class="section-cases__slider-item-list">
                                     <li class="section-cases__slider-item-list-item">+28% in NPS concept stores</li>
                                     <li class="section-cases__slider-item-list-item">+68% in NPS discount stores</li>
-                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса согласно определенным драйверам роста клиентской удовлетворенности, лояльности и транзакционной активности (внимание к потребности, кросс-сейл, интересные факты о товаре, бренде и проч.) </li>
-                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных форматов магазинов </li>
-                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия разных сегментов ЦА, в том числе определены новые перспективные потребители (plus size, поколение Y)</li>
+                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса
+                                        согласно определенным драйверам роста клиентской удовлетворенности, лояльности и
+                                        транзакционной активности (внимание к потребности, кросс-сейл, интересные факты
+                                        о товаре, бренде и проч.) </li>
+                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных
+                                        форматов магазинов </li>
+                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия
+                                        разных сегментов ЦА, в том числе определены новые перспективные потребители
+                                        (plus size, поколение Y)</li>
                                 </ol>
                             </div>
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Клиент</h3>
-                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания по производству спортивной одежды, обуви и аксессуаров.</p>
+                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания
+                                    по производству спортивной одежды, обуви и аксессуаров.</p>
                             </div>
 
                             <div>
@@ -1081,7 +1067,7 @@
                                 </ol>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <button class="slider__btn slider__btn-next">
@@ -1099,44 +1085,39 @@
                     <h2 class="section-single__content-title">Кабинетные исследования</h2>
 
                     <p class="section-single__content-text">
-                        Кабинетные исследования используются для получения информации о рынке, потребителях, конкурентах, трендах и других аспектах, которые могут оказать влияние на бизнес. Они позволяют получить информацию о многих аспектах рынка, таких как размер рынка, доли рынка, ожидаемые тенденции и другие факторы.<br/><br/>
+                        Кабинетные исследования используются для получения информации о рынке, потребителях,
+                        конкурентах, трендах и других аспектах, которые могут оказать влияние на бизнес. Они позволяют
+                        получить информацию о многих аспектах рынка, таких как размер рынка, доли рынка, ожидаемые
+                        тенденции и другие факторы.<br /><br />
 
-                        Еще такое исследование называют вторичным маркетинговым исследованием, на основе анализа уже существующих данных, таких как отчеты, статистика, научные исследования и другие источники информации.                     
+                        Еще такое исследование называют вторичным маркетинговым исследованием, на основе анализа уже
+                        существующих данных, таких как отчеты, статистика, научные исследования и другие источники
+                        информации.
                     </p>
 
                     <a class="section-single__content-btn linear-gradient-btn" href="#">
                         <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-single__content-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div
+                            class="section-single__content-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-single__content-btn-text linear-gradient-btn__text">Обсудить вашу задачу</p>
                     </a>
                 </div>
 
                 <div class="section-single__background wrapper-max parallax-advantage">
                     <div class="parallax-advantage-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 0%;">
-                        <img
-                            style="--parallax-val: -1950%; --parallax-val-mobile: 0%;"
+                        <img style="--parallax-val: -1950%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-small parallax-advantage__small"
-                            src="./assets/svg/section-resources-small-1.svg"
-                            alt="section-advantage-small"
-                        >
-                        <img
-                            style="--parallax-val: -770%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-resources-small-1.svg" alt="section-advantage-small">
+                        <img style="--parallax-val: -770%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-medium parallax-advantage__medium"
-                            src="./assets/svg/section-resources-medium-1.svg"
-                            alt="section-advantage-medium"
-                        >
-                        <img
-                            style="--parallax-val: -410%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-resources-medium-1.svg" alt="section-advantage-medium">
+                        <img style="--parallax-val: -410%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle-small"
-                            src="./assets/svg/section-tools-circle-2.svg"
-                            alt="section-advantage-circle"
-                        >
-                        <img
-                            style="--parallax-val: -175%; --parallax-val-mobile: 0%;"
+                            src="./assets/svg/section-tools-circle-2.svg" alt="section-advantage-circle">
+                        <img style="--parallax-val: -175%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle"
-                            src="./assets/svg/section-resources-circle-1.svg"
-                            alt="section-advantage-circle"
-                        >
+                            src="./assets/svg/section-resources-circle-1.svg" alt="section-advantage-circle">
                     </div>
                 </div>
             </div>
@@ -1147,15 +1128,19 @@
                 <div class="section-single__content section-single__content-max-660">
                     <h2 class="section-single__content-title">Виды и методики кабинетных исследований</h2>
 
-                    <h3 class="section-single__content-text-title">Наши аналитки готовы реализовать кабинетные исследования в следующих направлениях:</h3>
+                    <h3 class="section-single__content-text-title">Наши аналитки готовы реализовать кабинетные
+                        исследования в следующих направлениях:</h3>
 
                     <ul class="section-single__content-list">
                         <li class="section-single__content-list-item">Исследование конкурентной среды</li>
                         <li class="section-single__content-list-item">Исследование ценовой политики</li>
-                        <li class="section-single__content-list-item">Исследование продуктивности и эффективности маркетинговых кампаний</li>
+                        <li class="section-single__content-list-item">Исследование продуктивности и эффективности
+                            маркетинговых кампаний</li>
                         <li class="section-single__content-list-item">Исследование рынка и потенциальных клиентов</li>
-                        <li class="section-single__content-list-item">Исследование маркетинговых трендов и инноваций</li>
-                        <li class="section-single__content-list-item">Исследование потребностей и предпочтений целевой аудитории</li>
+                        <li class="section-single__content-list-item">Исследование маркетинговых трендов и инноваций
+                        </li>
+                        <li class="section-single__content-list-item">Исследование потребностей и предпочтений целевой
+                            аудитории</li>
                         <li class="section-single__content-list-item">Исследование медиа-поведения потребителей.</li>
                     </ul>
                 </div>
@@ -1167,19 +1152,13 @@
                 ">
                     <div class="parallax-circle-1__wrap" style="--parallax-scale: 1;">
                         <div class="parallax-circle-1__img-wrap">
-                            <img 
-                                style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
-                                class="parallax-circle-1__img" 
-                                src="./assets/image/section-list-8.jpg" 
-                                alt="section-ecosystem-list-1"
-                            >
+                            <img style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                                class="parallax-circle-1__img" src="./assets/image/section-list-8.jpg"
+                                alt="section-ecosystem-list-1">
                         </div>
-                        <img
-                            style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
-                            class="parallax-circle-1__ellipse"
-                            src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
-                            alt="section-ecosystem-list-1-ellipse"
-                        >
+                        <img style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
+                            class="parallax-circle-1__ellipse" src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
+                            alt="section-ecosystem-list-1-ellipse">
                     </div>
                 </div>
             </div>
@@ -1193,16 +1172,15 @@
                     <div class="section-help-form__content-form-wrap">
                         <input class="section-help-form__content-form-name" type="text" placeholder="Имя">
                         <input class="section-help-form__content-form-email" type="text" placeholder="Email">
-                        <textarea 
-                            class="section-help-form__content-form-text" 
-                            cols="30" 
-                            rows="5" 
-                            placeholder="Напишите ваш вопрос..."
-                        ></textarea>
+                        <textarea class="section-help-form__content-form-text" cols="30" rows="5"
+                            placeholder="Напишите ваш вопрос..."></textarea>
                     </div>
                     <button type="submit" class="section-help-form__content-form-btn linear-gradient-btn" href="#">
-                        <div class="section-help-form__content-form-btn-background linear-gradient-btn__background"></div>
-                        <div class="section-help-form__content-form-btn-background--hover linear-gradient-btn__background--hover"></div>
+                        <div class="section-help-form__content-form-btn-background linear-gradient-btn__background">
+                        </div>
+                        <div
+                            class="section-help-form__content-form-btn-background--hover linear-gradient-btn__background--hover">
+                        </div>
                         <p class="section-help-form__content-form-btn-text linear-gradient-btn__text">Спросить</p>
                     </button>
                 </form>
@@ -1212,7 +1190,7 @@
         <section class="section-cases section-cases--black">
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
-            <div class="section-cases__slider slider wrapper" >
+            <div class="section-cases__slider slider wrapper">
                 <button class="section-cases__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1222,31 +1200,32 @@
                 <div class="section-cases__slider-line-wrap slider__line-wrap">
                     <div class="section-cases__slider-line slider__line">
                         <div class="section-cases__slider-line-item slider__line-item">
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--white"
-                                src="./assets/svg/cases-adidas-white.svg" 
-                                alt="cases-adidas-white"
-                            >
-                            <img 
-                                class="section-cases__slider-item-img section-cases__slider-item-img--black"
-                                src="./assets/svg/cases-adidas-black.svg" 
-                                alt="cases-adidas-black"
-                            >
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--white"
+                                src="./assets/svg/cases-adidas-white.svg" alt="cases-adidas-white">
+                            <img class="section-cases__slider-item-img section-cases__slider-item-img--black"
+                                src="./assets/svg/cases-adidas-black.svg" alt="cases-adidas-black">
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Какие результаты мы получили?</h3>
                                 <ol class="section-cases__slider-item-list">
                                     <li class="section-cases__slider-item-list-item">+28% in NPS concept stores</li>
                                     <li class="section-cases__slider-item-list-item">+68% in NPS discount stores</li>
-                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса согласно определенным драйверам роста клиентской удовлетворенности, лояльности и транзакционной активности (внимание к потребности, кросс-сейл, интересные факты о товаре, бренде и проч.) </li>
-                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных форматов магазинов </li>
-                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия разных сегментов ЦА, в том числе определены новые перспективные потребители (plus size, поколение Y)</li>
+                                    <li class="section-cases__slider-item-list-item">Внедрены фокусные параметры сервиса
+                                        согласно определенным драйверам роста клиентской удовлетворенности, лояльности и
+                                        транзакционной активности (внимание к потребности, кросс-сейл, интересные факты
+                                        о товаре, бренде и проч.) </li>
+                                    <li class="section-cases__slider-item-list-item">Дифференцирован сервис для разных
+                                        форматов магазинов </li>
+                                    <li class="section-cases__slider-item-list-item">Выявлены поведенческие различия
+                                        разных сегментов ЦА, в том числе определены новые перспективные потребители
+                                        (plus size, поколение Y)</li>
                                 </ol>
                             </div>
 
                             <div>
                                 <h3 class="section-cases__slider-item-h3">Клиент</h3>
-                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания по производству спортивной одежды, обуви и аксессуаров.</p>
+                                <p class="section-cases__slider-item-p">Adidas AG — немецкая транснациональная компания
+                                    по производству спортивной одежды, обуви и аксессуаров.</p>
                             </div>
 
                             <div>
@@ -1261,7 +1240,7 @@
                                 </ol>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <button class="slider__btn slider__btn-next">
@@ -1276,7 +1255,7 @@
         <section class="section-reviews section-reviews--white">
             <h2 class="section-reviews__title wrapper">Отзывы</h2>
 
-            <div class="section-reviews__slider slider slider--disable wrapper" >
+            <div class="section-reviews__slider slider slider--disable wrapper">
                 <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1286,20 +1265,17 @@
                 <div class="section-reviews__slider-line-wrap slider__line-wrap">
                     <div class="section-reviews__slider-line slider__line">
                         <div class="section-reviews__slider-line-item slider__line-item">
-                            <img 
-                                class="section-reviews__slider-line-item-img"
-                                src="./assets/image/section-reviews-pdf-1.jpg"
-                                alt="section-reviews-pdf-1"
-                            >
+                            <img class="section-reviews__slider-line-item-img"
+                                src="./assets/image/section-reviews-pdf-1.jpg" alt="section-reviews-pdf-1">
                             <div class="section-reviews__slider-line-item-content">
-                                <img 
-                                    class="section-reviews__slider-line-item-content-quotation"
-                                    src="./assets/svg/icon-quotation-marks.svg"
-                                    alt="icon-quotation-marks"
-                                >
+                                <img class="section-reviews__slider-line-item-content-quotation"
+                                    src="./assets/svg/icon-quotation-marks.svg" alt="icon-quotation-marks">
                                 <p class="section-reviews__slider-line-item-content-text">
                                     ООО «СЕРВИЗОРИЯ» является нашим партнером в реализации проектов с 2018 года.
-                                    За период сотрудничества компания подтвердила свой высокий профессионализм и компетентность. Следует отметить так же активность и гибкость команды для достижения эффективных решений поставленных задач и аналитической проработке поставленных результатов.
+                                    За период сотрудничества компания подтвердила свой высокий профессионализм и
+                                    компетентность. Следует отметить так же активность и гибкость команды для достижения
+                                    эффективных решений поставленных задач и аналитической проработке поставленных
+                                    результатов.
                                 </p>
                                 <p class="section-reviews__slider-line-item-content-autor">
                                     <b>БАНК ВТБ</b> <br>
@@ -1308,7 +1284,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <button class="slider__btn slider__btn-next">
@@ -1323,11 +1299,7 @@
 
     <footer class="footer">
         <div class="footer__content wrapper">
-            <img
-                class="footer__content-logo"
-                src="./assets/svg/logo-footer.svg" 
-                alt="logo-footer"
-            >
+            <img class="footer__content-logo" src="./assets/svg/logo-footer.svg" alt="logo-footer">
             <ol class="footer__content-list">
                 <li class="footer__content-list-item">Услуги</li>
                 <li class="footer__content-list-item">О компании</li>
@@ -1352,4 +1324,5 @@
 
     <script src="./scripts/slider.js"></script>
 </body>
+
 </html>
