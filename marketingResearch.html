@@ -605,7 +605,7 @@
                     if (populationSize[0] == 0) document.querySelector(".populationSize").value = populationSize.substr(1)
 
                 let marginOfError = parseFloat(document.querySelector(".marginOfError").value)
-                    if (marginOfError) errs.push('marginOfError') 
+                    if (!marginOfError) errs.push('marginOfError') 
                     if (marginOfError > 100) document.querySelector(".marginOfError").value = 100
 
                 let confidenceLevel = parseFloat(document.querySelector(".confidenceLevel").value)
