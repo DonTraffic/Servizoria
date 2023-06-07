@@ -154,7 +154,7 @@
         </section>
 
         <section class="section-single">
-            <div class="section-single-wrap wrapper">
+            <div class="section-single-wrap section-single-wrap-tablet-relative wrapper">
                 <div class="section-single__content section-single__content-max-570">
                     <h2 class="section-single__content-title">Виды маркетинговых исследований, которые мы предоставляем
                     </h2>
@@ -199,7 +199,7 @@
                         повысить уровень удовлетворенности клиентов.</p>
                 </div>
 
-                <div class="section-single__background parallax-bird wrapper">
+                <div class="section-single__background section-single__background--left parallax-bird wrapper">
                     <div class="parallax-bird__ellipses">
                         <img class="parallax-bird__ellipses-left"
                             src="./assets/svg/section-ecosystem-list-2-ellipse-left.svg"
@@ -388,7 +388,8 @@
                 </div>
 
                 <div class="section-single__background wrapper-max parallax-advantage">
-                    <div class="parallax-advantage-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 0%;">
+                    <div class="parallax-advantage-wrap"
+                        style="--parallax-val: 0%; --parallax-val-laptop: 145%; --parallax-val-mobile: 0%;">
                         <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-small parallax-advantage__small"
                             src="./assets/svg/section-resources-small-1.svg" alt="section-advantage-small">
@@ -445,7 +446,7 @@
                 ">
                 <div class="parallax-triangle-wrap">
                     <div class="parallax-triangle__geometry"></div>
-                    <img style="--parallax-val: -40%;" class="parallax-triangle__img"
+                    <img style="--parallax-val: -40%; --parallax-val-laptop: -42%;" class="parallax-triangle__img"
                         src="./assets/image/section-list-1.jpg" alt="section-list-1">
                 </div>
 
@@ -545,7 +546,8 @@
                             </svg>
                         </div>
                         <input type="number"
-                            class="section-calculator__inputs-item-input calculator-item populationSize" value="0" maxlength="4">
+                            class="section-calculator__inputs-item-input calculator-item populationSize" value="0"
+                            maxlength="4">
                     </div>
 
                     <div class="section-calculator__inputs-item">
@@ -590,7 +592,23 @@
                 </div>
             </div>
 
-            <div class="section-calculator__background"></div>
+            <div class="section-calculator__background wrapper-max parallax-advantage">
+                <div class="parallax-advantage-wrap"
+                    style="--parallax-val: 0%; --parallax-val-laptop: 145%; --parallax-val-mobile: 0%;">
+                    <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-advantage__background-small parallax-advantage__small"
+                        src="./assets/svg/section-resources-small-1.svg" alt="section-advantage-small">
+                    <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-advantage__background-medium parallax-advantage__medium"
+                        src="./assets/svg/section-resources-medium-1.svg" alt="section-advantage-medium">
+                    <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-advantage__background-circle parallax-advantage__circle-small"
+                        src="./assets/svg/section-tools-circle-2.svg" alt="section-advantage-circle">
+                    <img style="--parallax-val: 0%; --parallax-val-mobile: 0%;"
+                        class="section-advantage__background-circle parallax-advantage__circle"
+                        src="./assets/svg/section-resources-circle-1.svg" alt="section-advantage-circle">
+                </div>
+            </div>
         </section>
 
         <script>
@@ -601,12 +619,12 @@
                 let errs = []
 
                 let populationSize = document.querySelector(".populationSize").value
-                    if (!parseFloat(populationSize)) errs.push('populationSize') 
-                    if (populationSize[0] == 0) document.querySelector(".populationSize").value = populationSize.substr(1)
+                if (!parseFloat(populationSize)) errs.push('populationSize')
+                if (populationSize[0] == 0) document.querySelector(".populationSize").value = populationSize.substr(1)
 
                 let marginOfError = parseFloat(document.querySelector(".marginOfError").value)
-                    if (!marginOfError) errs.push('marginOfError') 
-                    if (marginOfError > 100) document.querySelector(".marginOfError").value = 100
+                if (!marginOfError) errs.push('marginOfError')
+                if (marginOfError > 100) document.querySelector(".marginOfError").value = 100
 
                 let confidenceLevel = parseFloat(document.querySelector(".confidenceLevel").value)
 
@@ -730,7 +748,8 @@
                     </a>
                 </div>
 
-                <div class="section-single__background parallax-double-semicircle">
+                <div
+                    class="section-single__background parallax-double-semicircle parallax-double-semicircle-no-scale-laptop">
                     <div class="parallax-double-semicircle-wrap">
                         <img style="--parallax-val: 100%;"
                             class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-1"
@@ -749,7 +768,7 @@
             <div class="section-list__content wrapper">
                 <h2 class="section-list__title">Виды и методики качественных исследований</h2>
 
-                <div class="section-list__item" list-count="01">
+                <div class="section-list__item section-list__item--480" list-count="01">
                     <div class="section-list__item-title">Глубинное интервью</div>
                     <div class="section-list__item-text">
                         Проведение глубинных интервью – один из самых распространенных методов качественного
@@ -776,7 +795,7 @@
                 parallax-circle-1
                 wrapper
             ">
-                <div class="parallax-circle-1__wrap" style="--parallax-scale: 1;">
+                <div class="parallax-circle-1__wrap parallax-circle-1__wrap-scale-laptop" style="--parallax-scale: 1;">
                     <div class="parallax-circle-1__img-wrap">
                         <img style="--parallax-val: -100%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="parallax-circle-1__img" src="./assets/image/section-list-3.jpg"
@@ -793,7 +812,7 @@
         <section class="section-list section-list--revert"
             style="background-image: url(./../../assets/image/section-tools.png);">
             <div class="section-list__content wrapper">
-                <div class="section-list__item" list-count="02">
+                <div class="section-list__item section-list__item--480" list-count="02">
                     <div class="section-list__item-title">Фокус-группы</div>
                     <div class="section-list__item-text">
                         Фокус-группа также является одним из широко используемых методов качественного исследования при
@@ -812,7 +831,7 @@
                     </div>
                 </div>
 
-                <div class="section-list__item" list-count="03">
+                <div class="section-list__item section-list__item--480" list-count="03">
                     <div class="section-list__item-title">Customer Journey Map</div>
                     <div class="section-list__item-text">
                         Customer Journey Map (карта путешествия пользователя) — это методология развития продукта,
@@ -834,7 +853,7 @@
                     parallax-semicircle-rotate
                     wrapper-max
                 ">
-                <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-wrap--left-10">
+                <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-wrap--left-10 parallax-semicircle-rotate-wrap--left-laptop-20">
                     <img class="parallax-semicircle-rotate__img" src="./assets/image/section-list-4.jpg"
                         alt="section-list-4">
                     <div
@@ -848,7 +867,7 @@
 
         <section class="section-list section-list--black">
             <div class="section-list__content wrapper">
-                <div class="section-list__item" list-count="04">
+                <div class="section-list__item section-list__item--480" list-count="04">
                     <div class="section-list__item-title">Этнографические исследования</div>
                     <div class="section-list__item-text">
                         Этнографические исследования – это наиболее глубокий метод наблюдения, который изучает людей в
@@ -872,15 +891,15 @@
             </div>
 
             <div class="section-list__background wrapper-max parallax-resources">
-                <div class="parallax-resources-wrap"
-                    style="--parallax-val: 0%; --parallax-val-laptop: 0%; --parallax-val-mobile: 15%;">
-                    <img style="--parallax-val: 55%; --parallax-val-laptop: 0%; --parallax-val-mobile: -30%;"
+                <div class="parallax-resources-wrap parallax-resources-wrap--457"
+                    style="--parallax-val: 0%; --parallax-val-laptop: -55%; --parallax-val-mobile: 15%;">
+                    <img style="--parallax-val: 90%; --parallax-val-laptop: 125%; --parallax-val-mobile: -30%;"
                         class="section-resources__background-img parallax-resources__img"
                         src="./assets/image/section-list-5.jpg">
-                    <img style="--parallax-val: -370%; --parallax-val-laptop: -100%; --parallax-val-mobile: 0%;"
+                    <img style="--parallax-val: -400%; --parallax-val-laptop: -100%; --parallax-val-mobile: 0%;"
                         class="section-list__background-small parallax-resources__small"
                         src="./assets/svg/section-resources-small-1.svg" alt="section-resources-small">
-                    <img style="--parallax-val: -260%; --parallax-val-laptop: 0%; --parallax-val-mobile: 60%;"
+                    <img style="--parallax-val: -280%; --parallax-val-laptop: 0%; --parallax-val-mobile: 60%;"
                         class="section-list__background-medium parallax-resources__medium"
                         src="./assets/svg/section-resources-medium-1.svg" alt="section-resources-medium">
                     <img style="--parallax-val: -100%; --parallax-val-laptop: -30%; --parallax-val-mobile: 5%;"
@@ -892,7 +911,7 @@
 
         <section class="section-list section-list--revert">
             <div class="section-list__content wrapper">
-                <div class="section-list__item" list-count="05">
+                <div class="section-list__item section-list__item--480" list-count="05">
                     <div class="section-list__item-title">Case study</div>
                     <div class="section-list__item-text">
                         Этот метод исследования эволюционировал в течение последних нескольких лет. Он используется в
@@ -903,7 +922,7 @@
                     </div>
                 </div>
 
-                <div class="section-list__item" list-count="06">
+                <div class="section-list__item section-list__item--480" list-count="06">
                     <div class="section-list__item-title">Наблюдение</div>
                     <div class="section-list__item-text">
                         Качественное наблюдение – это процесс исследования, в котором используются субъективные
@@ -925,16 +944,16 @@
                 parallax-triangle
                 parallax-triangle-left-20
                 parallax-semicircle-rotate">
-                <div class="parallax-triangle-wrap">
+                <div class="parallax-triangle-wrap parallax-triangle-wrap--revert">
                     <div class="parallax-triangle__geometry"></div>
                     <div class="parallax-triangle__geometry parallax-triangle__geometry--bottom"></div>
-                    <img style="--parallax-val: -130%;" class="parallax-triangle__img"
+                    <img style="--parallax-val: -130%; --parallax-val-laptop: -135%;" class="parallax-triangle__img"
                         src="./assets/image/section-list-6.jpg" alt="section-list-1">
 
 
                 </div>
 
-                <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-fill">
+                <div class="parallax-semicircle-rotate-wrap parallax-semicircle-rotate-wrap--left-bottom parallax-semicircle-rotate-fill">
                     <div class="parallax-semicircle-rotate__ellipse-wrap">
                         <img class="parallax-semicircle-rotate__ellipse" src="/assets/svg/section-kinds-svg.svg"
                             alt="section-kinds-svg">
@@ -950,20 +969,25 @@
                     <h2 class="section-single__content-title section-single__content-max-660">Получите готовые решения
                         для вашего исследовательского проекта!</h2>
 
-                    <h3 class="section-single__content-text-title section-single__content-max-660">Что вы получите прямо
+                    <h3
+                        class="section-single__content-text-title section-single__content-max-660 section-single__content-max-laptop-430">
+                        Что вы получите прямо
                         сейчас?</h3>
 
-                    <ul class="section-single__content-list section-single__content-max-660">
+                    <ul
+                        class="section-single__content-list section-single__content-max-660 section-single__content-max-laptop-430">
                         <li class="section-single__content-list-item">Гайд для глубинного интервью с клиентом</li>
                         <li class="section-single__content-list-item">Гайд для фокус-группы с клиентами конкурента</li>
                         <li class="section-single__content-list-item">Шаблон карты пути клиента</li>
                     </ul>
 
-                    <p class="section-single__content-text section-single__content-max-660">
+                    <p
+                        class="section-single__content-text section-single__content-max-660 section-single__content-max-laptop-430">
                         <b>Скачайте бесплатно наши лучшие инструменты для качественных исследований</b>
                     </p>
 
-                    <a class="section-single__content-btn linear-gradient-btn section-single__content-max-660" href="#">
+                    <a class="section-single__content-btn linear-gradient-btn section-single__content-max-660 section-single__content-max-laptop-430"
+                        href="#">
                         <div class="section-single__content-btn-background linear-gradient-btn__background"></div>
                         <div
                             class="section-single__content-btn-background--hover linear-gradient-btn__background--hover">
@@ -974,6 +998,7 @@
 
                 <div class="
                         section-single__background
+                        section-single__background--no-scale
                         parallax-semicircle-rotate
                         parallax-semicircle-rotate--absolute
                         wrapper
@@ -1105,17 +1130,18 @@
                 </div>
 
                 <div class="section-single__background wrapper-max parallax-advantage">
-                    <div class="parallax-advantage-wrap" style="--parallax-val: 0%; --parallax-val-mobile: 0%;">
-                        <img style="--parallax-val: -1950%; --parallax-val-mobile: 0%;"
+                    <div class="parallax-advantage-wrap"
+                        style="--parallax-val: 0%; --parallax-val-laptop: 60%; --parallax-val-mobile: 0%;">
+                        <img style="--parallax-val: -1950%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-small parallax-advantage__small"
                             src="./assets/svg/section-resources-small-1.svg" alt="section-advantage-small">
-                        <img style="--parallax-val: -770%; --parallax-val-mobile: 0%;"
+                        <img style="--parallax-val: -770%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-medium parallax-advantage__medium"
                             src="./assets/svg/section-resources-medium-1.svg" alt="section-advantage-medium">
-                        <img style="--parallax-val: -410%; --parallax-val-mobile: 0%;"
+                        <img style="--parallax-val: -410%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle-small"
                             src="./assets/svg/section-tools-circle-2.svg" alt="section-advantage-circle">
-                        <img style="--parallax-val: -175%; --parallax-val-mobile: 0%;"
+                        <img style="--parallax-val: -175%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                             class="section-advantage__background-circle parallax-advantage__circle"
                             src="./assets/svg/section-resources-circle-1.svg" alt="section-advantage-circle">
                     </div>
@@ -1125,7 +1151,7 @@
 
         <section class="section-single">
             <div class="section-single-wrap wrapper">
-                <div class="section-single__content section-single__content-max-660">
+                <div class="section-single__content section-single__content-max-660 section-single__content-max-laptop-430">
                     <h2 class="section-single__content-title">Виды и методики кабинетных исследований</h2>
 
                     <h3 class="section-single__content-text-title">Наши аналитки готовы реализовать кабинетные
@@ -1150,15 +1176,15 @@
                     parallax-circle-1
                     wrapper
                 ">
-                    <div class="parallax-circle-1__wrap" style="--parallax-scale: 1;">
+                    <div class="parallax-circle-1__wrap parallax-circle-1__wrap--right" style="--parallax-scale: 1;">
                         <div class="parallax-circle-1__img-wrap">
                             <img style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
                                 class="parallax-circle-1__img" src="./assets/image/section-list-8.jpg"
                                 alt="section-ecosystem-list-1">
                         </div>
                         <img style="--parallax-val: -180%; --parallax-val-laptop: 0%; --parallax-val-mobile: 0%;"
-                            class="parallax-circle-1__ellipse" src="./assets/svg/section-ecosystem-list-1-ellipse.svg"
-                            alt="section-ecosystem-list-1-ellipse">
+                            class="parallax-circle-1__ellipse" src="./assets/svg/section-ecosystem-list-2-ellipse-right.svg"
+                            alt="section-ecosystem-list-2-ellipse-right">
                     </div>
                 </div>
             </div>

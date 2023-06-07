@@ -672,7 +672,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .section-list__title {
-    max-width: 355px;
+    max-width: 590px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -689,12 +689,17 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .section-list__item {
-    max-width: 355px;
+    max-width: 442px;
   }
 }
 @media screen and (max-width: 768px) {
   .section-list__item {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-list__item--480 {
+    max-width: 480px;
   }
 }
 .section-list__item::after {

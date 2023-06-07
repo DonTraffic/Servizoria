@@ -750,7 +750,7 @@ h2{
         margin-bottom: 26px;
 
         @include laptop{
-            max-width: 355px;
+            max-width: 590px;
         }
 
         @include tablet{
@@ -767,11 +767,17 @@ h2{
         width: 100%;
 
         @include laptop{
-            max-width: 355px;
+            max-width: 442px;
         }
 
         @include tablet{
             max-width: 100%;
+        }
+
+        &--480{
+            @include laptop{
+                max-width: 480px;
+            }
         }
 
         &::after{

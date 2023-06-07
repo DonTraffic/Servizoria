@@ -19,19 +19,67 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .section-single {
+    padding: 72px 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-single {
+    padding: 70px 16px;
+  }
+}
 .section-single-wrap {
   position: relative;
   display: flex;
   gap: 94px;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .section-single-wrap {
+    gap: 0px;
+  }
+}
+.section-single-wrap-tablet-relative {
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .section-single-wrap-tablet-relative .section-single__background {
+    position: relative;
+    right: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    transform: scale(0.5) translate(-15%, 0px);
+  }
+}
+.section-single__content {
+  z-index: 2;
 }
 .section-single__content-max-570 {
   max-width: 570px;
 }
+@media screen and (max-width: 1024px) {
+  .section-single__content-max-570 {
+    max-width: 452px;
+  }
+}
 .section-single__content-max-660 {
   max-width: 660px;
 }
+@media screen and (max-width: 1024px) {
+  .section-single__content-max-laptop-430 {
+    max-width: 430px;
+  }
+}
 .section-single__content-title {
   margin-bottom: 36px;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__content-title {
+    margin-bottom: 24px;
+  }
 }
 .section-single__content-text {
   font-weight: 400;
@@ -39,11 +87,22 @@
   line-height: 120%;
   color: #4D4357;
 }
+@media screen and (max-width: 1024px) {
+  .section-single__content-text {
+    font-size: 16px;
+  }
+}
 .section-single__content-text-title {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 24px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__content-text-title {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
 }
 .section-single__content-list {
   margin: 0 0 50px 0;
@@ -153,6 +212,23 @@
 }
 .section-single__background {
   position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__background {
+    position: absolute;
+    right: -90px;
+    transform: scale(0.7);
+  }
+}
+.section-single__background--no-scale {
+  transform: scale(1);
+  right: -185px;
+}
+@media screen and (max-width: 1024px) {
+  .section-single__background--left {
+    left: -90px;
+  }
 }
 .section-single__background-img {
   width: 474px;
@@ -168,6 +244,8 @@
   left: -40px;
 }
 .section-single__background-svg {
+  width: 100%;
+  height: 100%;
   transform: rotate(var(--scrollRotate));
   pointer-events: none;
 }
@@ -194,6 +272,11 @@
   background-color: #33DCD8;
   transform: translate(0%, -50%);
 }
+@media screen and (max-width: 1024px) {
+  .section-single__background-svg-p-quality {
+    right: 60px;
+  }
+}
 .section-single__background-svg-p-rooms {
   bottom: 102px;
   left: -6px;
@@ -205,10 +288,27 @@
 .section-single .parallax-bird .parallax-bird__mask {
   transform: translate(-75%, -10%);
 }
+@media screen and (max-width: 1024px) {
+  .section-single .parallax-bird {
+    position: relative !important;
+    transform: translate(-105px, -50%) scale(0.8) !important;
+    left: auto !important;
+    padding: 0px;
+  }
+  .section-single .parallax-bird .parallax-bird__mask {
+    transform: translate(-65%, -20%);
+  }
+}
 .section-single .parallax-double-semicircle {
   position: absolute;
   height: 100%;
   right: -650px;
+}
+.section-single .parallax-double-semicircle-no-scale-laptop {
+  right: -140px;
+}
+.section-single .parallax-double-semicircle-no-scale-laptop .parallax-double-semicircle-wrap {
+  transform: scale(1);
 }
 .section-single .parallax-double-semicircle .parallax-double-semicircle-wrap {
   top: -3%;
@@ -255,6 +355,11 @@
   padding: 100px 0;
   background-color: #2E2735;
 }
+@media screen and (max-width: 1024px) {
+  .section-calculator {
+    padding: 90px;
+  }
+}
 .section-calculator * {
   color: #fff;
 }
@@ -263,9 +368,14 @@
 }
 .section-calculator__inputs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, auto));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .section-calculator__inputs {
+    gap: 12px;
+  }
 }
 .section-calculator__inputs-item-wrap {
   display: flex;
@@ -277,6 +387,12 @@
   font-size: 20px;
   line-height: 135%;
   margin-right: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .section-calculator__inputs-item-title {
+    font-size: 16px;
+    margin-right: 8px;
+  }
 }
 .section-calculator__inputs-item-svg {
   height: 21.5px;
