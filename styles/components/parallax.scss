@@ -20,6 +20,10 @@
             @include laptop{
                 transform: translate(15%, 0%) scale(calc(-0.2 + var(--parallax-scale)));
             }
+
+            @include tablet{
+                transform: translate(0%, 0%) scale(calc(-0.4 + var(--parallax-scale)));
+            }
         }
 
     }
@@ -37,6 +41,10 @@
         height: 120%;
 
         @include tablet{
+            transform: translate(0%, calc( (-25% + var(--parallax-val-tablet)) + (var( --scrollTop  ) / 10 ) ));
+        }
+
+        @include phone{
             transform: translate(0%, calc( (-25% + var(--parallax-val-mobile)) + (var( --scrollTop  ) / 10 ) ));
         }
     }
@@ -64,7 +72,11 @@
         pointer-events: none;
         
         @include tablet{
-            transform: translate(15%, calc((-10% + var(--parallax-val-mobile)) + var(--scrollTop) / 10));
+            transform: translate(15%, calc((-10% + var(--parallax-val-tablet)) + var(--scrollTop) / 10));
+        }
+
+        @include phone{
+            transform: translate(15%, calc( (-10% + var(--parallax-val-mobile)) + (var( --scrollTop  ) / 10 ) ));
         }
         
     }
@@ -323,7 +335,7 @@
 
         @include tablet {
             top: -125px;
-            transform: translate(0%, -15%) scale(0.6);
+            transform: translate(0%, calc((-15%) + var( --parallax-val-tablet))) scale(0.6);
             right: auto;
         }
 
@@ -350,7 +362,7 @@
         }
 
         @include tablet{
-            transform: translate(0%, calc(var( --parallax-val-mobile  ) + (150%) - var(--scrollTop) / 10));
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (150%) - var(--scrollTop) / 10));
         }
 
         @include phone{
@@ -368,8 +380,12 @@
         @include laptop{
             transform: translate(0%, calc(var(--parallax-val-laptop) + (-560%) + var(--scrollTop) / 10));
         }
-    
+
         @include tablet{
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-560%) - var(--scrollTop) / 10));
+        }
+    
+        @include phone{
             transform: translate(0%, calc(var(--parallax-val-mobile) + (-560%) + var(--scrollTop) / 10));
         }
 
@@ -386,6 +402,10 @@
         }
 
         @include tablet{
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-235%) - var(--scrollTop) / 10));
+        }
+
+        @include phone{
             transform: translate(0%, calc(var(--parallax-val-mobile) + (-235%) + var(--scrollTop) / 10));
         }
     
@@ -402,6 +422,10 @@
         }
 
         @include tablet{
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-115%) - var(--scrollTop) / 10));
+        }
+
+        @include phone{
             transform: translate(0%, calc(var(--parallax-val-mobile) + (-115%) + var(--scrollTop) / 10));
         }
 
@@ -627,10 +651,6 @@
         position: relative;
         z-index: 1;
 
-        @include laptop {
-            transform: translate(30%, 0%) scale(1.1);
-        }
-
         &--revert{
             @include laptop {
                 transform: translate(30%, 0%) scale(10.8);
@@ -666,6 +686,88 @@
                     transform: translate(-7%, calc( var( --parallax-val-laptop  ) + (var( --scrollTop  ) / 10 ) )) scale(1.1);
                 }
             }
+
+            @include tablet {
+                transform: translate(30%, 0%) scale(10.8);
+
+                .parallax-triangle__geometry {
+                    position: absolute;
+                    top: -70px;
+                    right: 70%;
+                    left: auto;
+                    z-index: 2;
+                    width: 0;
+                    height: 0;
+                    border-top: 765px solid $color-white;
+                    border-right: 540px solid transparent;
+
+                    &--bottom{
+                        top: auto;
+                        left: auto;
+
+                        bottom: -70px;
+                        right: 0px;
+
+                        border-top: none;
+                        border-right: none;
+                        border-bottom: 170px solid $color-white;
+                        border-left: 1000px solid transparent;
+                    }
+                }
+
+                .parallax-triangle__img{
+                    height: 120%;
+                    width: 100%;
+                    object-fit: cover;
+                    transform: translate(0%, calc( var( --parallax-val-tablet  ) + (var( --scrollTop  ) / 10 ) )) scale(1.1);
+                }
+            }
+
+            @include phone {
+                transform: translate(30%, 0%) scale(10.8);
+
+                .parallax-triangle__geometry {
+                    position: absolute;
+                    top: -70px;
+                    right: 70%;
+                    left: auto;
+                    z-index: 2;
+                    width: 0;
+                    height: 0;
+                    border-top: 765px solid $color-white;
+                    border-right: 540px solid transparent;
+
+                    &--bottom{
+                        top: auto;
+                        left: auto;
+
+                        bottom: -70px;
+                        right: 0px;
+
+                        border-top: none;
+                        border-right: none;
+                        border-bottom: 170px solid $color-white;
+                        border-left: 1000px solid transparent;
+                    }
+                }
+
+                .parallax-triangle__img{
+                    height: 120%;
+                    width: 100%;
+                    object-fit: cover;
+                    transform: translate(0%, calc( var( --parallax-val-mobile  ) + (var( --scrollTop  ) / 10 ) )) scale(1.1);
+                }
+            }
+        }
+
+        @include laptop {
+            transform: translate(30%, 0%) scale(1.1);
+        }
+
+        @include tablet {
+            transform: translate(0%, 0%) scale(1) !important;
+            height: 350px;
+            width: 100%;
         }
     }
 
@@ -702,6 +804,14 @@
 
         @include laptop {
             transform: translate(0%, calc( var( --parallax-val-laptop  ) + (var( --scrollTop  ) / 10 ) ));
+        }
+
+        @include tablet {
+            transform: translate(0%, calc( var( --parallax-val-tablet  ) + (var( --scrollTop  ) / 10 ) ));
+        }
+
+        @include phone {
+            transform: translate(0%, calc( var( --parallax-val-mobile  ) + (var( --scrollTop  ) / 10 ) ));
         }
     }
 
@@ -756,10 +866,18 @@
 
         &-1{
             transform: translate(0%, calc( var( --parallax-val  ) - (var( --scrollTop  ) / 10 ) ));
+
+            @include tablet{
+                transform: translate(0%, calc( var( --parallax-val-tablet  ) - (var( --scrollTop  ) / 10 ) ));
+            }
         }
 
         &-2{
             transform: translate(0%, calc( var( --parallax-val  ) + (var( --scrollTop  ) / 10 ) ));
+
+            @include tablet{
+                transform: translate(0%, calc( var( --parallax-val-tablet  ) + (var( --scrollTop  ) / 10 ) ));
+            }
         }
     }
 }
@@ -780,6 +898,19 @@
             transform: scale(0.8);
         }
 
+        @include laptop{
+            width: 516px;
+            height: 516px;
+            padding: 60px;
+        }
+
+        @include tablet{
+            width: 360px;
+            height: 360px;
+            padding: 40px;
+            margin: 0 auto;
+        }
+
         &--left-10{
             left: 10%;
             @include laptopL{
@@ -788,6 +919,10 @@
 
             @include laptop{
                 left: -5%;
+            }
+
+            @include tablet{
+                left: 0%;
             }
         }
 
@@ -802,9 +937,22 @@
                 transform: scale(0.9) translate(-10%, 10%);
             }
         }
+
+        &--right-bottom{
+            @include tablet{
+                right: 0;
+                bottom: 0;
+                transform: scale(0.7);
+            }
+        }
     }
 
     &__ellipse{
+
+        // @include tablet{
+            height: 100%;
+        // }
+
         &-wrap{
             position: absolute;
             left: 0px;
@@ -885,5 +1033,12 @@
 
         right: -15%;
         top: -40px;
+
+        @include tablet{
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+            height: 300px;
+        }
     }
 }

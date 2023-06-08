@@ -17,35 +17,15 @@
     align-items: center;
 
     @include laptop{
-        padding: 72px 90px;
+        padding: 70px 90px;
     }
 
     @include tablet{
         padding: 70px 16px;
     }
 
-    &-wrap{
-        position: relative;
-        display: flex;
-        gap: 94px;
-        z-index: 1;
-
-        @include laptop{
-            gap: 0px;
-        }
-
-        &-tablet-relative{
-            flex-direction: column;
-            .section-single__background{
-                @include tablet{
-                    position: relative;
-                    right: 0;
-                    width: fit-content;
-                    height: fit-content;
-                    transform: scale(0.5) translate(-15%, 0px);
-                }
-            }
-        }
+    &-no-min{
+        min-height: 100px;
     }
 
     &__content{
@@ -56,6 +36,10 @@
                 max-width: 570px;
                 @include laptop{
                     max-width: 452px;
+                }
+
+                @include tablet{
+                    max-width: 100%;
                 }
             }
             &-660{
@@ -289,10 +273,6 @@
                     left: -6px;
                     background-color: $color-purple;
 
-                    // @include laptop{
-                    //     top: 50px;
-                    // }
-
                 }
 
                 &-quality{
@@ -311,10 +291,6 @@
                     bottom: 102px;
                     left: -6px;
                     background-color: #04B8FF;
-
-                    // @include laptop{
-                    //     bottom: 50px;
-                    // }
 
                 }
 
@@ -339,6 +315,30 @@
 
             .parallax-bird__mask {
                 transform: translate(-65%, -20%);
+            }
+
+        }
+
+        @include tablet{
+            position: relative !important;
+            transform: translate(0px, 20%) scale(0.5) !important;
+            left: auto !important;
+            height: 270px !important;
+            padding: 0px;
+
+            .parallax-bird__mask {
+                transform: translate(-60%, -20%);
+
+                @include phone{
+                    transform: translate(-70%, -20%);
+                }
+            }
+
+            .parallax-bird__ellipses{
+                min-height: 500px;
+                min-width: 500px;
+                height: 100%;
+                width: 100%;
             }
 
         }
@@ -419,6 +419,47 @@
         }
     }
 
+    &-wrap{
+        position: relative;
+        display: flex;
+        gap: 94px;
+        z-index: 1;
+
+        @include laptop{
+            gap: 0px;
+        }
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+        &-tablet-relative{
+            @include tablet{
+                flex-direction: column !important;
+
+                .section-single__background{
+                    display: flex;
+                    justify-content: center;
+
+                    margin: 0 auto;
+                    position: relative;
+                    right: auto;
+                    width: 277px;
+                    height: 277px;
+                    transform: scale(0.5) translate(0%, 0px);
+
+                    &-wrap{
+                        left: auto;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
 }
 
 .section-calculator{
@@ -427,6 +468,10 @@
 
     @include laptop{
         padding: 90px;
+    }
+
+    @include tablet {
+        padding: 70px 16px;
     }
 
     *{
@@ -445,6 +490,11 @@
 
         @include laptop {
             gap: 12px;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
         }
 
         &-item{
@@ -525,6 +575,12 @@
         justify-content: end;
         align-items: center;
         gap: 48px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+        }
 
         &-text{
             font-weight: 500;

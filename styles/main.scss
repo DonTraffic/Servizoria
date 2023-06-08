@@ -530,6 +530,10 @@ h2{
     height: 648px;
     overflow: hidden;
 
+    @include laptop{
+        background-position: 0 !important;
+    }
+
     &-wrap{
         max-width: 1920px;
         height: 100%;
@@ -713,6 +717,10 @@ h2{
     overflow: hidden;
     z-index: 1;
 
+    @include tablet{
+        padding: 70px 0px;
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
@@ -727,8 +735,7 @@ h2{
         }
 
         @include tablet{
-            padding: 70px 16px;
-            
+            padding: 0 16px;
         }
 
         &-list{
@@ -777,6 +784,10 @@ h2{
         &--480{
             @include laptop{
                 max-width: 480px;
+            }
+
+            @include tablet{
+                max-width: 100%;
             }
         }
 
@@ -955,6 +966,20 @@ h2{
             padding-bottom: 40px;
         }
 
+        &-disable-tablet{
+            @include tablet{
+                display: none;
+            }
+        }
+
+        &-no-padding-bottom{
+            padding-bottom: 0;
+
+            @include tablet{
+                height: 300px;
+            }
+        }
+
     }
 
     &--revert{
@@ -974,7 +999,16 @@ h2{
                 padding-bottom: 40px;
             }
 
+            &-no-padding-bottom{
+                padding-bottom: 0;
+
+                @include tablet{
+                    height: 300px;
+                }
+            }
+
         }
+
     }
 
     &--black {
@@ -1636,6 +1670,10 @@ h2{
         @include laptop{
             margin-bottom: 24px;
         }
+
+        &-mb-more{
+            margin-bottom: 60px;
+        }
     }
 
     &__text{
@@ -1657,6 +1695,22 @@ h2{
     }
 
     &-wrap{
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            gap: 54px;
+        }
+
+        &--laptop-all{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(368px, max-content));
+            gap: 36px 10px;
+
+            @include laptop{
+                grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+            }
+        }
+
         &--laptop{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(368px, max-content));
@@ -1684,7 +1738,11 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 300px;
+        max-width: 360px;
+
+        @include phone{
+            max-width: 100%;
+        }
 
         &-image{
             height: 160px;
@@ -1759,6 +1817,10 @@ h2{
             line-height: 33px;
             text-align: center;
             color: $color-dark;
+
+            @include tablet{
+                font-size: 20px;
+            }
         }
 
         &-text{
@@ -1905,6 +1967,12 @@ h2{
         }
     }
 
+}
+
+.phone-disable{
+    @include phone{
+        display: none;
+    }
 }
 
 @import './vars.scss';
