@@ -1433,11 +1433,13 @@ h2{
 
     &__slider{
         &-line{
+            align-items: center;
+            
             &-item{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto;
-                grid-auto-flow: column;
+                grid-auto-rows: max-content;
+                // align-items: center;
                 gap: 30px 16px;
 
                 @include laptop{
@@ -1456,7 +1458,6 @@ h2{
 
         &-item{
             &-img{
-                width: 129px;
                 height: 87px;
 
                 &--white{
@@ -1555,6 +1556,7 @@ h2{
 
     &__title{
         margin-bottom: 70px;
+        color: $color-white;
         @include laptop{
             margin-bottom: 50px;
         }
@@ -1971,6 +1973,12 @@ h2{
 
 .phone-disable{
     @include phone{
+        display: none;
+    }
+}
+
+.tablet-disable{
+    @include tablet{
         display: none;
     }
 }

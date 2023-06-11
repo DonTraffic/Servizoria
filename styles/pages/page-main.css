@@ -257,6 +257,10 @@
   top: -26px;
   left: -26px;
 }
+.section-tasks__slider-line-item-img-svg--right {
+  position: absolute;
+  right: 0;
+}
 .section-tasks__slider-line-item-content {
   display: flex;
   justify-content: center;
