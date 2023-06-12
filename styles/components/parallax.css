@@ -323,6 +323,14 @@
   height: 457px;
   width: 457px;
 }
+.parallax-resources-wrap--right-260 {
+  right: 260px;
+}
+@media screen and (max-width: 1440px) {
+  .parallax-resources-wrap--right-260 {
+    right: 120px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .parallax-resources-wrap {
     transform: translate(0%, calc(50% + var(--parallax-val-laptop))) scale(0.7);
@@ -615,14 +623,14 @@
   }
   .parallax-triangle-wrap--revert .parallax-triangle__geometry {
     position: absolute;
-    top: -70px;
-    right: -2px;
+    top: -480px;
+    right: 2px;
     left: auto;
     z-index: 2;
     width: 0;
     height: 0;
-    border-bottom: 800px solid #fff;
-    border-left: 300px solid transparent;
+    border-bottom: 1470px solid #fff;
+    border-left: 500px solid transparent;
     border-top: none;
     border-right: none;
   }
@@ -630,11 +638,14 @@
     top: auto;
     right: auto;
     bottom: -40px;
-    left: 319px;
+    left: 0;
     border-top: none;
     border-left: none;
-    border-bottom: 200px solid #fff;
-    border-right: 120px solid transparent;
+    border-bottom: 600px solid #fff;
+    border-right: 360px solid transparent;
+  }
+  .parallax-triangle-wrap--revert .parallax-triangle__geometry--top {
+    display: none;
   }
   .parallax-triangle-wrap--revert .parallax-triangle__img {
     transform: translate(-7%, calc(var(--parallax-val-laptop) + var(--scrollTop) / 10)) scale(1.1);
@@ -664,6 +675,16 @@
     border-right: none;
     border-bottom: 170px solid #fff;
     border-left: 1000px solid transparent;
+  }
+  .parallax-triangle-wrap--revert .parallax-triangle__geometry--top {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -180px;
+    right: 0;
+    border: none;
   }
   .parallax-triangle-wrap--revert .parallax-triangle__img {
     height: 120%;
@@ -697,6 +718,16 @@
     border-right: none;
     border-bottom: 170px solid #fff;
     border-left: 1000px solid transparent;
+  }
+  .parallax-triangle-wrap--revert .parallax-triangle__geometry--top {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -180px;
+    right: 0;
+    border: none;
   }
   .parallax-triangle-wrap--revert .parallax-triangle__img {
     height: 120%;
@@ -768,12 +799,17 @@
     border-top: 1140px solid #2E2735;
   }
 }
-.parallax-triangle-left-20 .parallax-triangle-wrap {
-  transform: translate(-20%, 0);
+.parallax-triangle--left-10 .parallax-triangle-wrap {
+  transform: translate(-10%, 0);
+}
+@media screen and (max-width: 1440px) {
+  .parallax-triangle--left-10 .parallax-triangle-wrap {
+    transform: translate(-30%, 0);
+  }
 }
 @media screen and (max-width: 1024px) {
-  .parallax-triangle-left-20 .parallax-triangle-wrap {
-    transform: translate(-40%, 0);
+  .parallax-triangle--left-10 .parallax-triangle-wrap {
+    transform: translate(-20%, 0);
   }
 }
 
@@ -861,6 +897,7 @@
 @media screen and (max-width: 1024px) {
   .parallax-semicircle-rotate-wrap--left-10 {
     left: -5%;
+    transform: scale(1);
   }
 }
 @media screen and (max-width: 768px) {
@@ -915,13 +952,13 @@
   width: 100%;
   transform: rotate(90deg);
 }
-.parallax-semicircle-rotate-fill {
+.parallax-semicircle-rotate--fill {
   position: absolute;
 }
-.parallax-semicircle-rotate-fill .parallax-semicircle-rotate__ellipse-wrap {
+.parallax-semicircle-rotate--fill .parallax-semicircle-rotate__ellipse-wrap {
   position: relative;
   top: auto;
-  right: -185px;
+  right: -260px;
   left: auto;
   bottom: -115px;
   z-index: 2;
@@ -929,11 +966,11 @@
   height: 430px;
 }
 @media screen and (max-width: 1440px) {
-  .parallax-semicircle-rotate-fill .parallax-semicircle-rotate__ellipse-wrap {
+  .parallax-semicircle-rotate--fill .parallax-semicircle-rotate__ellipse-wrap {
     right: 0;
   }
 }
-.parallax-semicircle-rotate-fill .parallax-semicircle-rotate__ellipse-wrap .parallax-semicircle-rotate__ellipse {
+.parallax-semicircle-rotate--fill .parallax-semicircle-rotate__ellipse-wrap .parallax-semicircle-rotate__ellipse {
   height: 100%;
   width: 100%;
 }

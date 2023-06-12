@@ -45,6 +45,9 @@
             &-660{
                 max-width: 660px;
             }
+            &-1000{
+                max-width: 1000px;
+            }
         }
 
         &-max-laptop{
@@ -224,6 +227,10 @@
         &--no-scale{
             transform: scale(1);
             right: -185px;
+
+            .parallax-semicircle-rotate-wrap{
+                transform: scale(1);
+            }
         }
 
         &--left{
@@ -351,9 +358,7 @@
         height: 100%;
         right: -650px;
         
-        &-no-scale-laptop{
-            right: -140px;
-
+        &--no-scale-laptop{
             .parallax-double-semicircle-wrap{
                 transform: scale(1); 
             }
@@ -595,6 +600,31 @@
             line-height: 135%;
             color: #04B8FF;
         }
+    }
+
+    &__background{
+        .parallax-advantage{
+            &-wrap{
+                right: auto;
+                left: 0;
+    
+                transform: scale(0.8);
+
+                @include laptop{
+                    left: -240px;
+                }
+            }
+
+            &__medium{
+                left: 20px;
+            }
+
+            &__circle-small{
+                right: -40px;
+            }
+
+        }
+
     }
 
 }

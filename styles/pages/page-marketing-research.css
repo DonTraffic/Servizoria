@@ -51,6 +51,9 @@
 .section-single__content-max-660 {
   max-width: 660px;
 }
+.section-single__content-max-1000 {
+  max-width: 1000px;
+}
 @media screen and (max-width: 1024px) {
   .section-single__content-max-laptop-430 {
     max-width: 430px;
@@ -208,6 +211,9 @@
   transform: scale(1);
   right: -185px;
 }
+.section-single__background--no-scale .parallax-semicircle-rotate-wrap {
+  transform: scale(1);
+}
 @media screen and (max-width: 1024px) {
   .section-single__background--left {
     left: -90px;
@@ -312,10 +318,7 @@
   height: 100%;
   right: -650px;
 }
-.section-single .parallax-double-semicircle-no-scale-laptop {
-  right: -140px;
-}
-.section-single .parallax-double-semicircle-no-scale-laptop .parallax-double-semicircle-wrap {
+.section-single .parallax-double-semicircle--no-scale-laptop .parallax-double-semicircle-wrap {
   transform: scale(1);
 }
 .section-single .parallax-double-semicircle .parallax-double-semicircle-wrap {
@@ -508,4 +511,20 @@
   font-size: 64px;
   line-height: 135%;
   color: #04B8FF;
+}
+.section-calculator__background .parallax-advantage-wrap {
+  right: auto;
+  left: 0;
+  transform: scale(0.8);
+}
+@media screen and (max-width: 1024px) {
+  .section-calculator__background .parallax-advantage-wrap {
+    left: -240px;
+  }
+}
+.section-calculator__background .parallax-advantage__medium {
+  left: 20px;
+}
+.section-calculator__background .parallax-advantage__circle-small {
+  right: -40px;
 }
