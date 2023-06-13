@@ -1403,38 +1403,76 @@ h2{
         padding: 70px 15px;
     }
 
+    &__content-wrap{
+        position: relative;
+        width: fit-content;
+    }
+
     &__title{
         margin-bottom: 50px;
     }
 
     &__diagram{
-        width: 100%;
+        width: 698px;
+        height: 599px;
         object-fit: cover;
 
-        @include laptop{
+        @include tablet{
             display: none;
         }
 
-        &--laptop{
+        &--tablet{
             display: none;
+            max-width: 290px;
             width: 100%;
 
-            @include laptop{
+            @include tablet{
                 display: block;
-            }
-
-            @include phone{
-                display: none;
             }
 
         }
 
-        &--phone{
-            display: none;
-            width: 100%;
+    }
 
-            @include phone{
-                display: block;
+    &__info{
+        position: absolute;
+        top: 328px;
+        right: -62%;
+
+        @include laptopL{
+            max-width: 240px;
+            right: -27%;
+        }
+
+        @include tablet{
+            position: relative;
+            top: -37px;
+            left: 38px;
+            right: auto;
+        }
+
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: uppercase;
+            color: #2E2735;
+            margin-bottom: 22px;
+
+            @include tablet{
+                font-size: 20px;
+            }
+        }
+
+        &-btns{
+            display: flex;
+            gap: 20px;
+
+            align-items: center;
+            flex-wrap: wrap;
+
+            &-item{
+
             }
 
         }
