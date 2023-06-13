@@ -290,6 +290,11 @@
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-3__img {
+    transform: translate(0%, calc(var(--parallax-val-tablet) - 70% + var(--scrollTop) / 12));
+  }
+}
+@media screen and (max-width: 425px) {
+  .parallax-circle-3__img {
     transform: translate(0%, calc(var(--parallax-val-mobile) - 70% + var(--scrollTop) / 12));
   }
 }
@@ -306,6 +311,11 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .parallax-circle-3__ellipse {
+    transform: translate(-35%, calc(var(--parallax-val-tablet) - 90% + var(--scrollTop) / 10));
+  }
+}
+@media screen and (max-width: 425px) {
   .parallax-circle-3__ellipse {
     transform: translate(-35%, calc(var(--parallax-val-mobile) - 90% + var(--scrollTop) / 10));
   }
@@ -386,7 +396,7 @@
 }
 @media screen and (max-width: 768px) {
   .parallax-resources__small {
-    transform: translate(0%, calc(var(--parallax-val-tablet) - 560% - var(--scrollTop) / 10));
+    transform: translate(0%, calc(var(--parallax-val-tablet) - 560% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {
@@ -407,7 +417,7 @@
 }
 @media screen and (max-width: 768px) {
   .parallax-resources__medium {
-    transform: translate(0%, calc(var(--parallax-val-tablet) - 235% - var(--scrollTop) / 10));
+    transform: translate(0%, calc(var(--parallax-val-tablet) - 235% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {
@@ -428,7 +438,7 @@
 }
 @media screen and (max-width: 768px) {
   .parallax-resources__circle {
-    transform: translate(0%, calc(var(--parallax-val-tablet) - 115% - var(--scrollTop) / 10));
+    transform: translate(0%, calc(var(--parallax-val-tablet) - 115% + var(--scrollTop) / 10));
   }
 }
 @media screen and (max-width: 425px) {

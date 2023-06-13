@@ -286,6 +286,10 @@
         }
 
         @include tablet{
+            transform: translate(0%, calc( var( --parallax-val-tablet  ) + (-70%) + (var( --scrollTop  ) / 12 ) ));
+        }
+
+        @include phone{
             transform: translate(0%, calc( var( --parallax-val-mobile  ) + (-70%) + (var( --scrollTop  ) / 12 ) ));
         }
 
@@ -304,6 +308,10 @@
         }
 
         @include tablet{
+            transform: translate(-35%, calc( var( --parallax-val-tablet  ) + (-90%) + var(--scrollTop) / 10));
+        }
+
+        @include phone{
             transform: translate(-35%, calc( var( --parallax-val-mobile  ) + (-90%) + var(--scrollTop) / 10));
         }
         
@@ -390,7 +398,7 @@
         }
 
         @include tablet{
-            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-560%) - var(--scrollTop) / 10));
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-560%) + var(--scrollTop) / 10));
         }
     
         @include phone{
@@ -410,7 +418,7 @@
         }
 
         @include tablet{
-            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-235%) - var(--scrollTop) / 10));
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-235%) + var(--scrollTop) / 10));
         }
 
         @include phone{
@@ -430,7 +438,7 @@
         }
 
         @include tablet{
-            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-115%) - var(--scrollTop) / 10));
+            transform: translate(0%, calc(var( --parallax-val-tablet  ) + (-115%) + var(--scrollTop) / 10));
         }
 
         @include phone{

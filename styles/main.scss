@@ -983,6 +983,12 @@ h2{
                 display: none;
             }
         }
+        
+        &--padding-top{
+            @include tablet{
+                padding-top: 60px !important;
+            }
+        }
 
         &--no-padding-bottom{
             padding-bottom: 0;
@@ -991,6 +997,8 @@ h2{
                 height: 300px;
             }
         }
+
+        
 
     }
 
