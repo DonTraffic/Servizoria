@@ -2,11 +2,11 @@
 
 .section-ecosystem{
     background: center / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
-    @include tablet{
-        background: right / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
+    @include laptop{
+        background: right / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg') !important;
     }
     @include phone{
-        background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg');
+        background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-2.jpg') !important;
     }
 }
 

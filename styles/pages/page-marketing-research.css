@@ -1,15 +1,15 @@
 @charset "UTF-8";
 .section-ecosystem {
-  background: 0px -200px/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg");
+  background: 0px -200px/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
 }
 @media screen and (max-width: 768px) {
   .section-ecosystem {
-    background: right/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg");
+    background: right/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
   }
 }
 @media screen and (max-width: 425px) {
   .section-ecosystem {
-    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg");
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
   }
 }
 

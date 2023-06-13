@@ -1,12 +1,12 @@
 @import './../vars.scss';
 
 .section-ecosystem{
-    background: 0px -200px / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg');
+    background: 0px -200px / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg') !important;
     @include tablet{
-        background: right / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg');
+        background: right / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg') !important;
     }
     @include phone{
-        background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg');
+        background: 85% / cover no-repeat url('./../../assets/image/section-ecosystem-3.jpg') !important;
     }
 }
 
