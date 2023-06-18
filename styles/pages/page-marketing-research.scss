@@ -45,9 +45,6 @@
             &-660{
                 max-width: 660px;
             }
-            &-1000{
-                max-width: 1000px;
-            }
         }
 
         &-max-laptop{
@@ -275,6 +272,10 @@
                 box-shadow: 0px 3px 18px rgba(116, 41, 191, 0.28);
                 border-radius: 61px;
 
+                &:hover{
+                    cursor: pointer;
+                }
+
                 &-quantitative{
                     top: 102px;
                     left: -6px;
@@ -366,6 +367,13 @@
 
         .parallax-double-semicircle-wrap{
             top: -3%; 
+        }
+
+        &--translate-left{
+            transform: translate(-30%) !important;
+            @include laptop{
+                transform: translate(-120%) !important;
+            }
         }
     }
 

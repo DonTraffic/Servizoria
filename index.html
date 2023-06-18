@@ -83,15 +83,15 @@
                 <li class="header__content-list-item"><a href="#">Контакты</a></li>
 
                 <li class="header__content-list-tel">
-                    <a class="header__content-list-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-list-tel-p">Обратный звонок</p>
+                    <a class="header__content-list-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-list-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </li>
             </ol>
 
             <div class="header__content-wrap">
                 <div class="header__content-tel">
-                    <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-tel-p">Обратный звонок</p>
+                    <a class="header__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </div>
 
                 <button class="header__content-menu linear-gradient-btn">
@@ -126,6 +126,15 @@
                 statysServices = !statysServices
             })
         })
+
+
+        function scrollFormCallback () {
+            let element = document.querySelector('#form-callback').offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
     </script>
 
     <main>
@@ -573,7 +582,7 @@
             </div>
         </section>
 
-        <section class="section-help-form">
+        <section class="section-help-form" id="form-callback">
             <div class="section-help-form__content wrapper">
                 <h2 class="section-help-form__content-h2">Не нашли нужные ресурсы?</h2>
                 <p class="section-help-form__content-p">Задайте нам вопрос и опишите вашу потребность</p>
@@ -599,7 +608,7 @@
         <section class="section-tasks">
             <h2 class="section-tasks__title wrapper">Задачи бизнеса которые мы решаем</h2>
 
-            <div class="section-tasks__slider slider slider--disable wrapper">
+            <div class="section-tasks__slider slider wrapper">
                 <button class="slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1081,7 +1090,7 @@
         <section class="section-reviews">
             <h2 class="section-reviews__title wrapper">Отзывы</h2>
 
-            <div class="section-reviews__slider slider slider--disable wrapper">
+            <div class="section-reviews__slider slider  wrapper">
                 <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1239,17 +1248,19 @@
             </div>
         </section>
 
-        <section class="section-customers wrapper">
-            <h2 class="section-customers__title">Клиенты</h2>
+        <section class="section-customers">
+            <h2 class="section-customers__title wrapper">КЛИЕНТЫ</h2>
 
-            <div class="section-customers__slider slider slider--disable" items-count='{"0":4,"425":2,"768":3}'>
-                <button class="section-customers__slider-prev slider__btn slider__btn-prev">
+            <div class="section-customers__slider slider wrapper" items-count='{"0":4,"425":2,"768":3}'>
+                <button class="slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
                     </svg>
                 </button>
+
                 <div class="section-customers__slider-line-wrap slider__line-wrap">
                     <div class="section-customers__slider-line slider__line">
+
                         <div class="section-customers__slider-line-item slider__line-item">
                             <img class="section-customers__slider-item-img" src="./assets/logo/finam.png"
                                 alt="section-customers-1">
@@ -1279,16 +1290,16 @@
                             <img class="section-customers__slider-item-img" src="./assets/logo/yandex-taxi.png"
                                 alt="section-customers-2">
                         </div>
+                        
                     </div>
                 </div>
+
                 <button class="slider__btn slider__btn-next">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-right"></use>
                     </svg>
                 </button>
             </div>
-
-
         </section>
 
         <section class="section-help-link section-help-link--black">
@@ -1455,7 +1466,7 @@
                 <li class="footer__content-list-item">Контакты</li>
             </ol>
             <div class="footer__content-tel">
-                <a class="footer__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <a class="footer__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
                 <p class="footer__content-tel-p">Обратный звонок</p>
             </div>
         </div>

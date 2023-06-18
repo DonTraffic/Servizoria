@@ -14,11 +14,7 @@
 <body>
     <header class="header">
         <div class="header__content wrapper">
-            <img
-                class="header__content-logo"
-                src="./assets/svg/logo-header.svg" 
-                alt="logo-header"
-            >
+            <img class="header__content-logo" src="./assets/svg/logo-header.svg" alt="logo-header">
 
             <ol class="header__content-list">
                 <li class="header__content-list-item header__content-list-item-services">
@@ -38,32 +34,41 @@
                                     Услуги
                                 </a>
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые исследования</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Количественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Маркетинговые
+                                            исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Количественные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Онлайн-панель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Тайный Покупатель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аудит</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Кабинетные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Кабинетные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аналитика</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Качественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Качественные
+                                            исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Тайный соискатель</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия клиента)</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">CJM (Карта путешествия
+                                            клиента)</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Здоровье бренда (BHT)</a>
+                                    </p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Ценовой мониторинг</a>
+                                    </p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Видеомониторинг</a></p>
                                 </div>
-    
+
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи клиентов</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Сбор обратной связи
+                                            клиентов</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Контакт-центр</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="#">Аудиобейджи</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="#">Тестирование персонала</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="#">Тестирование
+                                            персонала</a></p>
                                 </div>
                             </div>
                         </div>
@@ -76,21 +81,23 @@
                 <li class="header__content-list-item"><a href="#">Контакты</a></li>
 
                 <li class="header__content-list-tel">
-                    <a class="header__content-list-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-list-tel-p">Обратный звонок</p>
+                    <a class="header__content-list-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-list-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </li>
             </ol>
 
             <div class="header__content-wrap">
                 <div class="header__content-tel">
-                    <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-tel-p">Обратный звонок</p>
+                    <a class="header__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </div>
-    
+
                 <button class="header__content-menu linear-gradient-btn">
                     <div class="header__content-menu-background linear-gradient-btn__background"></div>
                     <div class="header__content-menu-background--hover linear-gradient-btn__background--hover"></div>
-                    <svg class="header__content-menu-icon"><use xlink:href="./assets/svg/sprite.svg#icon-menu"></use></svg>
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -106,17 +113,26 @@
         let servicesArrow = document.querySelector('.menu-services-btn-icon').style
 
         document.querySelector('.header__content-menu').addEventListener('click', e => {
-            statusMenu ? list.display = 'none' : list.display = 'flex' ;
+            statusMenu ? list.display = 'none' : list.display = 'flex';
             statusMenu = !statusMenu
         })
 
         document.querySelectorAll('.menu-services-btn').forEach(elem => {
             elem.addEventListener('click', e => {
-                statysServices ? services.style.display = 'none' : services.style.display = 'flex' ;
-                statysServices ? servicesArrow.transform = 'rotate(180deg)' : servicesArrow.transform = 'rotate(0deg)' ;
+                statysServices ? services.style.display = 'none' : services.style.display = 'flex';
+                statysServices ? servicesArrow.transform = 'rotate(180deg)' : servicesArrow.transform = 'rotate(0deg)';
                 statysServices = !statysServices
             })
         })
+
+
+        function scrollFormCallback () {
+            let element = document.querySelector('#form-callback').offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
     </script>
 
     <main>
@@ -505,7 +521,7 @@
 
         <section class="section-advantage">
             <div class="section-advantage__content wrapper">
-                <h2 class="section-advantage__title">Преимущества услуг от Servizoria</h2>
+                <h2 class="section-advantage__title">Преимущества услуг от СЕРВИЗОРИЯ</h2>
                 <div class="section-advantage__items">
                     <div class="section-advantage__items-item">
                         <img 
@@ -539,7 +555,7 @@
                         >
                         <div class="section-advantage__items-item-wrap">
                             <h3 class="section-advantage__items-item-title">Соответствие стандартам</h3>
-                            <p class="section-advantage__items-item-text">Servizoria является членом MSPA – международной профессиональной ассоциации провайдеров услуги “Тайный покупатель” на территории Европы</p>
+                            <p class="section-advantage__items-item-text">СЕРВИЗОРИЯ является членом MSPA – международной профессиональной ассоциации провайдеров услуги “Тайный покупатель” на территории Европы</p>
                         </div>
                     </div>
 
@@ -1216,7 +1232,7 @@
         <section class="section-reviews section-reviews--white">
             <h2 class="section-reviews__title wrapper">Отзывы</h2>
 
-            <div class="section-reviews__slider slider slider--disable wrapper">
+            <div class="section-reviews__slider slider  wrapper">
                 <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1502,7 +1518,7 @@
             })
         </script>
 
-        <section class="section-help-form">
+        <section class="section-help-form" id="form-callback">
             <div class="section-help-form__content wrapper">
                 <h2 class="section-help-form__content-h2">Не нашли нужные ресурсы?</h2>
                 <p class="section-help-form__content-p">Задайте нам вопрос и опишите вашу потребность</p>
@@ -1546,7 +1562,7 @@
                 <li class="footer__content-list-item">Контакты</li>
             </ol>
             <div class="footer__content-tel">
-                <a class="footer__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <a class="footer__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
                 <p class="footer__content-tel-p">Обратный звонок</p>
             </div>
         </div>

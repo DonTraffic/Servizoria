@@ -271,11 +271,16 @@ section{
                     text-decoration: none;
                 }
     
-                &-p{
+                &-btn{
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 25px;
                     color: $color-purple;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    
                 }
     
             }
@@ -300,11 +305,16 @@ section{
                 text-decoration: none;
             }
 
-            &-p{
+            &-btn{
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 25px;
                 color: $color-purple;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
             }
 
         }

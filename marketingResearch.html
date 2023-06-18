@@ -83,15 +83,15 @@
                 <li class="header__content-list-item"><a href="#">Контакты</a></li>
 
                 <li class="header__content-list-tel">
-                    <a class="header__content-list-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-list-tel-p">Обратный звонок</p>
+                    <a class="header__content-list-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-list-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </li>
             </ol>
 
             <div class="header__content-wrap">
                 <div class="header__content-tel">
-                    <a class="header__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
-                    <p class="header__content-tel-p">Обратный звонок</p>
+                    <a class="header__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
+                    <p class="header__content-tel-btn" onclick="scrollFormCallback()">Обратный звонок</p>
                 </div>
 
                 <button class="header__content-menu linear-gradient-btn">
@@ -126,8 +126,16 @@
                 statysServices = !statysServices
             })
         })
-    </script>
 
+
+        function scrollFormCallback () {
+            let element = document.querySelector('#form-callback').offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <main>
         <section class="section-ecosystem">
             <div class="section-ecosystem-wrap">
@@ -175,16 +183,26 @@
                         <img class="section-single__background-svg" src="/assets/svg/section-kinds-svg.svg"
                             alt="section-kinds-svg">
 
-                        <p class="section-single__background-svg-p section-single__background-svg-p-quantitative">
+                        <p class="section-single__background-svg-p section-single__background-svg-p-quantitative" onclick="scrollInSection('quantitative')">
                             Количественные</p>
-                        <p class="section-single__background-svg-p section-single__background-svg-p-quality">
+                        <p class="section-single__background-svg-p section-single__background-svg-p-quality" onclick="scrollInSection('quality')">
                             Качественные</p>
-                        <p class="section-single__background-svg-p section-single__background-svg-p-rooms">Кабинетные
-                        </p>
+                        <p class="section-single__background-svg-p section-single__background-svg-p-rooms" onclick="scrollInSection('rooms')">
+                            Кабинетные</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+            function scrollInSection (name) {
+                let element = document.querySelector('#section-' + name).offsetTop - 80;
+                window.scrollTo({
+                    top: element,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 
         <section class="section-single section-single--revert section-single--black">
             <div class="section-single-wrap section-single-wrap-tablet-relative wrapper">
@@ -296,7 +314,7 @@
 
         </section>
 
-        <section class="section-single section-single--background">
+        <section class="section-single section-single--background" id="section-quantitative">
             <div class="section-single-wrap wrapper">
                 <div class="section-single__content">
                     <h2 class="section-single__content-title">Количественные исследования</h2>
@@ -453,7 +471,7 @@
             </div>
         </section>
 
-        <section class="section-help-form">
+        <section class="section-help-form" id="form-callback">
             <div class="section-help-form__content wrapper">
                 <h2 class="section-help-form__content-h2">Не нашли нужные ресурсы?</h2>
                 <p class="section-help-form__content-p">Задайте нам вопрос и опишите вашу потребность</p>
@@ -750,9 +768,9 @@
 
         </section>
 
-        <section class="section-single section-single--black">
+        <section class="section-single section-single--black" id="section-quality">
             <div class="section-single-wrap wrapper-max">
-                <div class="section-single__content section-single__content-max-1000 wrapper">
+                <div class="section-single__content wrapper">
                     <h2 class="section-single__content-title">Качественные исследования</h2>
                     <p class="section-single__content-text">
                         Качественные методы исследования используются для того, чтобы получить наиболее полную
@@ -790,7 +808,7 @@
 
                 <div
                     class="section-single__background parallax-double-semicircle parallax-double-semicircle--no-scale-laptop phone-disable">
-                    <div class="parallax-double-semicircle-wrap">
+                    <div class="parallax-double-semicircle-wrap parallax-double-semicircle--translate-left">
                         <img style="--parallax-val: 115%;"
                             class="parallax-double-semicircle__ellipse parallax-double-semicircle__ellipse-1"
                             src="./assets/svg/section-mission-ellipse-1.svg"
@@ -1252,7 +1270,7 @@
 
         </section>
 
-        <section class="section-single section-single-no-min section-single--black">
+        <section class="section-single section-single-no-min section-single--black"  id="section-rooms">
             <div class="section-single-wrap wrapper">
                 <div class="section-single__content">
                     <h2 class="section-single__content-title">Кабинетные исследования</h2>
@@ -1414,7 +1432,7 @@
         <section class="section-reviews section-reviews--white">
             <h2 class="section-reviews__title wrapper">Отзывы</h2>
 
-            <div class="section-reviews__slider slider slider--disable wrapper">
+            <div class="section-reviews__slider slider  wrapper">
                 <button class="section-reviews__slider-prev slider__btn slider__btn-prev">
                     <svg class="icon">
                         <use xlink:href="./assets/svg/sprite.svg#icon-slider-arrow-left"></use>
@@ -1587,7 +1605,7 @@
                 <li class="footer__content-list-item">Контакты</li>
             </ol>
             <div class="footer__content-tel">
-                <a class="footer__content-tel-link" href="tel:+79221110500">+ 7 922 111 05 00</a>
+                <a class="footer__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
                 <p class="footer__content-tel-p">Обратный звонок</p>
             </div>
         </div>

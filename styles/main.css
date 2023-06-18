@@ -254,11 +254,14 @@ section {
   color: #2E2735;
   text-decoration: none;
 }
-.header__content-list-tel-p {
+.header__content-list-tel-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
   color: #7429BF;
+}
+.header__content-list-tel-btn:hover {
+  cursor: pointer;
 }
 .header__content-wrap {
   display: flex;
@@ -276,11 +279,14 @@ section {
   color: #2E2735;
   text-decoration: none;
 }
-.header__content-tel-p {
+.header__content-tel-btn {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   color: #7429BF;
+}
+.header__content-tel-btn:hover {
+  cursor: pointer;
 }
 .header__content-menu {
   padding: 16px 32px;
