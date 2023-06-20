@@ -2049,6 +2049,21 @@ h2{
 
 }
 
+.page-404{
+    height: calc(100vh - (202px + 142px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .section-help-form{
+        background-image: none;
+        width: 100%;
+        padding: 24px;
+    }
+
+}
+
 .phone-disable{
     @include phone{
         display: none;

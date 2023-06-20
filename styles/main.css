@@ -1803,6 +1803,19 @@ h2 {
   color: #fff;
 }
 
+.page-404 {
+  height: calc(100vh - 344px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-404 .section-help-form {
+  background-image: none;
+  width: 100%;
+  padding: 24px;
+}
+
 @media screen and (max-width: 425px) {
   .phone-disable {
     display: none;
