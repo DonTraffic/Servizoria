@@ -120,15 +120,23 @@
             width: 1343px;
             height: 900px;
 
-            object-fit: cover;
+            -o-object-fit: cover;
 
-            mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
-            mask-size: contain;
-            mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
-            mask-repeat: no-repeat;
+               object-fit: cover;
+
+            -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
+
+                    mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
+            -webkit-mask-size: contain;
+                    mask-size: contain;
+            -webkit-mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
+                    mask-position: right calc( 0% + (var( --scrollTop  ) / 10 ) );
+            -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
 
             @include tablet{
-                mask-position: right calc( 0% + (var( --scrollTop  ) / 20 ) );
+                -webkit-mask-position: right calc( 0% + (var( --scrollTop  ) / 20 ) );
+                        mask-position: right calc( 0% + (var( --scrollTop  ) / 20 ) );
             }
 
         }
@@ -200,27 +208,40 @@
             width: 1121px;
             height: 1100px;
 
-            object-fit: cover;
+            -o-object-fit: cover;
 
-            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
-            mask-size: contain;
-            mask-position: 50px calc( -90% + (var( --scrollTop  ) / 10 ) );
-            mask-repeat: no-repeat;
+               object-fit: cover;
+
+            -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+
+                    mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+            -webkit-mask-size: contain;
+                    mask-size: contain;
+            -webkit-mask-position: 50px calc( -90% + (var( --scrollTop  ) / 10 ) );
+                    mask-position: 50px calc( -90% + (var( --scrollTop  ) / 10 ) );
+            -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
 
             @include laptop{
                 height: 1400px;
                 right: 180px;
                 top: calc( 15% - ( var( --scrollTop  ) / 10 ) );
-                mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
-                mask-position: left calc(255% + var(--scrollTop) / 10);
-                mask-size: 165%;
+                -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+                        mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+                -webkit-mask-position: left calc(255% + var(--scrollTop) / 10);
+                        mask-position: left calc(255% + var(--scrollTop) / 10);
+                -webkit-mask-size: 165%;
+                        mask-size: 165%;
             }
 
             @include tablet{
                 top: calc( -105% - ( var( --scrollTop  ) / 10 ) );
-                mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
-                mask-position: left calc( 255% + (var( --scrollTop  ) / 10 ) );
-                mask-size: 206%;
+                -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+                        mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+                -webkit-mask-position: left calc( 255% + (var( --scrollTop  ) / 10 ) );
+                        mask-position: left calc( 255% + (var( --scrollTop  ) / 10 ) );
+                -webkit-mask-size: 206%;
+                        mask-size: 206%;
                 right: -270px;
                 height: 1620px;
                 width: 1235px;
@@ -370,7 +391,9 @@
         width: 100%;
         border-radius: 50%;
 
-        object-fit: cover;
+        -o-object-fit: cover;
+
+           object-fit: cover;
 
 
         @include laptop{
@@ -751,7 +774,8 @@
                 .parallax-triangle__img{
                     height: 120%;
                     width: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                     transform: translate(0%, calc( var( --parallax-val-tablet  ) + (var( --scrollTop  ) / 10 ) )) scale(1.1);
                 }
             }
@@ -800,7 +824,8 @@
                 .parallax-triangle__img{
                     height: 120%;
                     width: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                     transform: translate(0%, calc( var( --parallax-val-mobile  ) + (var( --scrollTop  ) / 10 ) )) scale(1.1);
                 }
             }
@@ -893,6 +918,8 @@
         right: 15%;
 
         z-index: 1;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
         max-width: fit-content;
 
         display: flex;
@@ -1075,12 +1102,17 @@
         position: inherit;
         z-index: 2;
         border-radius: 50%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     &--absolute{
         position: absolute !important;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
 
         right: -15%;

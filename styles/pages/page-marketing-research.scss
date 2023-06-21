@@ -138,6 +138,8 @@
         &-btn{
             margin-top: 40px;
             padding: 16px 48px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
             box-shadow: 0px 9px 21px rgba(45, 189, 182, 0.13);
             border-radius: 61px;
@@ -157,6 +159,10 @@
             align-items: center;
             flex-wrap: nowrap;
             padding: 12px 40px;
+
+            max-width: -webkit-max-content;
+
+            max-width: -moz-max-content;
 
             max-width: max-content;
 
@@ -239,7 +245,8 @@
         &-img{
             width: 474px;
             height: 474px;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
         }
 
         &-wrap{

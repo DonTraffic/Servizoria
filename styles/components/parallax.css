@@ -113,20 +113,20 @@
   width: 1343px;
   height: 900px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
-          mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
+  mask-image: url(./../../assets/svg/section-ecosystem-list-2-mask.svg);
   -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-size: contain;
   -webkit-mask-position: right calc(0% + var(--scrollTop) / 10);
-          mask-position: right calc(0% + var(--scrollTop) / 10);
+  mask-position: right calc(0% + var(--scrollTop) / 10);
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .parallax-bird__mask-img {
     -webkit-mask-position: right calc(0% + var(--scrollTop) / 20);
-            mask-position: right calc(0% + var(--scrollTop) / 20);
+    mask-position: right calc(0% + var(--scrollTop) / 20);
   }
 }
 .parallax-bird__ellipses {
@@ -197,15 +197,15 @@
   width: 1121px;
   height: 1100px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
-          mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+  mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
   -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-size: contain;
   -webkit-mask-position: 50px calc(-90% + var(--scrollTop) / 10);
-          mask-position: 50px calc(-90% + var(--scrollTop) / 10);
+  mask-position: 50px calc(-90% + var(--scrollTop) / 10);
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 @media screen and (max-width: 1024px) {
   .parallax-circle-2__mask-img {
@@ -213,22 +213,22 @@
     right: 180px;
     top: calc(15% - var(--scrollTop) / 10);
     -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
-            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
+    mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask--laptop.svg);
     -webkit-mask-position: left calc(255% + var(--scrollTop) / 10);
-            mask-position: left calc(255% + var(--scrollTop) / 10);
+    mask-position: left calc(255% + var(--scrollTop) / 10);
     -webkit-mask-size: 165%;
-            mask-size: 165%;
+    mask-size: 165%;
   }
 }
 @media screen and (max-width: 768px) {
   .parallax-circle-2__mask-img {
     top: calc(-105% - var(--scrollTop) / 10);
     -webkit-mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
-            mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
+    mask-image: url(./../../assets/svg/section-ecosystem-list-3-mask.svg);
     -webkit-mask-position: left calc(255% + var(--scrollTop) / 10);
-            mask-position: left calc(255% + var(--scrollTop) / 10);
+    mask-position: left calc(255% + var(--scrollTop) / 10);
     -webkit-mask-size: 206%;
-            mask-size: 206%;
+    mask-size: 206%;
     right: -270px;
     height: 1620px;
     width: 1235px;
@@ -366,7 +366,7 @@
   width: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
   .parallax-resources__img {
@@ -700,7 +700,7 @@
     height: 120%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transform: translate(0%, calc(var(--parallax-val-tablet) + var(--scrollTop) / 10)) scale(1.1);
   }
 }
@@ -743,7 +743,7 @@
     height: 120%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transform: translate(0%, calc(var(--parallax-val-mobile) + var(--scrollTop) / 10)) scale(1.1);
   }
 }
@@ -991,7 +991,7 @@
   z-index: 2;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .parallax-semicircle-rotate--absolute {
   position: absolute !important;

@@ -103,9 +103,12 @@
         display: grid;
         gap: 62px 16px;
 
+        grid-template-columns: repeat(auto-fill, minmax(300px, -webkit-max-content));
+
         grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
 
         @include laptop{
+            grid-template-columns: repeat(auto-fill, minmax(252px, -webkit-max-content));
             grid-template-columns: repeat(auto-fill, minmax(252px, max-content));
             gap: 12px;
         }
@@ -249,7 +252,8 @@
         &-item-img{
             width: 100%;
             max-height: 105px;
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
 
     }
@@ -476,6 +480,7 @@
 
         &-list{
             display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(568px, -webkit-max-content));
             grid-template-columns: repeat(auto-fill, minmax(568px, max-content));
             z-index: 2;
 

@@ -220,7 +220,7 @@
   width: 474px;
   height: 474px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .section-single__background-wrap {
   width: 554px;
