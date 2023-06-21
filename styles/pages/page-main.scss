@@ -440,6 +440,10 @@
                 max-width: 410px;
             }
 
+            @include tablet{
+                max-width: 100%;
+            }
+
             @include phone{
                 font-size: 24px;
                 margin-bottom: 12px;
@@ -458,6 +462,10 @@
 
             @include laptop{
                 max-width: 410px;
+            }
+
+            @include tablet{
+                max-width: 100%;
             }
 
             @include phone{
@@ -495,17 +503,26 @@
                 max-width: 410px;
             }
 
+            @include tablet{
+                max-width: 100%;
+                display: block;
+            }
+
         }
 
         &-map{
             display: none;
 
-            @include phone{
+            @include tablet{
                 display: block;
                 width: 100%;
                 margin-bottom: 24px;
             }
 
+        }
+
+        .no-max-width{
+            max-width: 100%;
         }
 
     }
@@ -523,7 +540,7 @@
             right: -540px;
         }
 
-        @include phone{
+        @include tablet{
             display: none;
         }
 

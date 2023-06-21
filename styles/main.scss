@@ -435,13 +435,18 @@ section{
                 gap: 8px;
             }
 
-            &-item{
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                color: $color-white-light;
+            &-item {
                 list-style: none;
-                padding: 0px 4px;
+
+                    a{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $color-white-light;
+                    padding: 0px 4px;
+                    text-decoration: none;
+
+                }
             }
 
         }
@@ -2055,6 +2060,19 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include laptop{
+        h2{
+            padding: 0 24px;
+        }
+
+        height: calc(100vh - 262px);
+    }
+
+    @include tablet{
+        height: 100%;
+        padding: 24px;
+    }
     
     .section-help-form{
         background-image: none;

@@ -396,12 +396,15 @@ section {
   }
 }
 .footer__content-list-item {
+  list-style: none;
+}
+.footer__content-list-item a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #B7ACC2;
-  list-style: none;
   padding: 0px 4px;
+  text-decoration: none;
 }
 .footer__content-tel-link {
   font-weight: 700;
@@ -1809,6 +1812,20 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .page-404 {
+    height: calc(100vh - 262px);
+  }
+  .page-404 h2 {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-404 {
+    height: 100%;
+    padding: 24px;
+  }
 }
 .page-404 .section-help-form {
   background-image: none;
