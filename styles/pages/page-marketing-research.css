@@ -1,6 +1,10 @@
 @charset "UTF-8";
 .section-ecosystem {
   background: 0px -200px/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .section-ecosystem {
@@ -8,6 +12,26 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .section-ecosystem {
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem {
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem {
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem {
+    background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-ecosystem {
     background: 85%/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
   }
@@ -298,9 +322,33 @@
   }
   .section-single .parallax-bird .parallax-bird__mask {
     transform: translate(-60%, -20%);
+    /* iPhone 6/7/8 */
+    /* iPhone 6/7/8 Plus */
+    /* iPhone X/XS/11 Pro */
+    /* iPhone XR/XS Max/11/11 Pro Max */
   }
 }
 @media screen and (max-width: 768px) and (max-width: 425px) {
+  .section-single .parallax-bird .parallax-bird__mask {
+    transform: translate(-70%, -20%);
+  }
+}
+@media only screen and (max-width: 768px) and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-single .parallax-bird .parallax-bird__mask {
+    transform: translate(-70%, -20%);
+  }
+}
+@media only screen and (max-width: 768px) and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-single .parallax-bird .parallax-bird__mask {
+    transform: translate(-70%, -20%);
+  }
+}
+@media only screen and (max-width: 768px) and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-single .parallax-bird .parallax-bird__mask {
+    transform: translate(-70%, -20%);
+  }
+}
+@media only screen and (max-width: 768px) and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-single .parallax-bird .parallax-bird__mask {
     transform: translate(-70%, -20%);
   }
