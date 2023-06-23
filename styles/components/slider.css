@@ -21,25 +21,100 @@
 }
 .slider__btn-prev {
   left: -60px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .slider__btn-prev {
     left: -15px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .slider__btn-prev {
+    left: -15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .slider__btn-prev {
+    left: -15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .slider__btn-prev {
+    left: -15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .slider__btn-prev {
+    left: -15px;
+  }
+}
 .slider__btn-next {
   right: -60px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .slider__btn-next {
     right: -15px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .slider__btn-next {
+    right: -15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .slider__btn-next {
+    right: -15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .slider__btn-next {
+    right: -15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .slider__btn-next {
+    right: -15px;
+  }
+}
 .slider__btn svg {
   width: 23px;
-  height: 49px;
+  height: 49px; /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .slider__btn svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .slider__btn svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .slider__btn svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .slider__btn svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .slider__btn svg {
     width: 15px;
     height: 26px;

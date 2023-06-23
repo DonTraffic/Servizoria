@@ -39,6 +39,10 @@ section {
 
 .header-plug {
   height: 142px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .header-plug {
@@ -46,6 +50,26 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  .header-plug {
+    height: 112px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header-plug {
+    height: 112px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header-plug {
+    height: 112px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header-plug {
+    height: 112px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header-plug {
     height: 112px;
   }
@@ -59,6 +83,10 @@ section {
   height: auto;
   z-index: 3;
   box-shadow: 0px 1px 13px rgba(116, 41, 191, 0.08);
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .header {
@@ -66,6 +94,26 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 24px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header {
+    padding: 24px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header {
+    padding: 24px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header {
+    padding: 24px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header {
     padding: 24px 15px;
   }
@@ -97,6 +145,10 @@ section {
   /* iPhone 6/7/8 Plus */
   /* iPhone X/XS/11 Pro */
   /* iPhone XR/XS Max/11/11 Pro Max */
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .header__content-list {
@@ -116,6 +168,26 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  .header__content-list {
+    top: 88px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header__content-list {
+    top: 88px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header__content-list {
+    top: 88px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header__content-list {
+    top: 88px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header__content-list {
     top: 88px;
   }
@@ -297,8 +369,32 @@ section {
 .header__content-list-tel {
   margin-top: 25px;
   display: none;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .header__content-list-tel {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header__content-list-tel {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header__content-list-tel {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header__content-list-tel {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header__content-list-tel {
     display: block;
   }
@@ -323,7 +419,33 @@ section {
   display: flex;
   gap: 36px;
 }
+.header__content-tel {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
+}
 @media screen and (max-width: 768px) {
+  .header__content-tel {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header__content-tel {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header__content-tel {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header__content-tel {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header__content-tel {
     display: none;
   }
@@ -370,8 +492,36 @@ section {
   border-radius: 0px 0px 10px 10px;
   z-index: 2;
   display: none;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .header__menu {
+    width: calc(100% - 30px);
+    right: 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .header__menu {
+    width: calc(100% - 30px);
+    right: 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .header__menu {
+    width: calc(100% - 30px);
+    right: 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .header__menu {
+    width: calc(100% - 30px);
+    right: 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .header__menu {
     width: calc(100% - 30px);
     right: 15px;
@@ -397,6 +547,10 @@ section {
 .footer {
   background-color: #18151C;
   padding: 60px 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .footer {
@@ -404,6 +558,26 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .footer {
+    padding: 40px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .footer {
+    padding: 40px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .footer {
+    padding: 40px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .footer {
     padding: 40px 15px;
   }
@@ -572,6 +746,10 @@ h2 {
   line-height: 49px;
   text-transform: uppercase;
   color: #2E2735;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   h2 {
@@ -580,6 +758,30 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   h2 {
     font-size: 24px;
     line-height: 33px;
@@ -646,6 +848,10 @@ h2 {
   height: 838px;
   bottom: 0px;
   left: -26px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-svg {
@@ -659,11 +865,39 @@ h2 {
     width: 760px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem__content-svg {
+    left: -320px;
+    width: 760px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem__content-svg {
+    left: -320px;
+    width: 760px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem__content-svg {
+    left: -320px;
+    width: 760px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-ecosystem__content-svg {
+    left: -320px;
+    width: 760px;
+  }
+}
 .section-ecosystem__content-text {
   position: absolute;
   max-width: 643px;
   right: 150px;
   top: 137px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 .section-ecosystem__content-text-title {
   color: #fff;
@@ -672,6 +906,10 @@ h2 {
   line-height: 60px;
   text-transform: uppercase;
   margin-bottom: 18px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-text-title {
@@ -686,12 +924,40 @@ h2 {
     margin-bottom: 12px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem__content-text-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem__content-text-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem__content-text-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-ecosystem__content-text-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 .section-ecosystem__content-text-desc {
   max-width: 510px;
   color: #fff;
   font-weight: 500;
   font-size: 24px;
   line-height: 33px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-text-desc {
@@ -704,6 +970,26 @@ h2 {
     font-size: 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem__content-text-desc {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem__content-text-desc {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem__content-text-desc {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-ecosystem__content-text-desc {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-text {
     max-width: 444px;
@@ -712,6 +998,34 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-ecosystem__content-text {
+    max-width: 350px;
+    left: 15px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem__content-text {
+    max-width: 350px;
+    left: 15px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem__content-text {
+    max-width: 350px;
+    left: 15px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem__content-text {
+    max-width: 350px;
+    left: 15px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-ecosystem__content-text {
     max-width: 350px;
     left: 15px;
@@ -734,6 +1048,10 @@ h2 {
   /* iPhone 6/7/8 Plus */
   /* iPhone X/XS/11 Pro */
   /* iPhone XR/XS Max/11/11 Pro Max */
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-ecosystem__content-link {
@@ -742,6 +1060,34 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-ecosystem__content-link {
+    right: 15px;
+    bottom: 65px;
+    left: auto;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-ecosystem__content-link {
+    right: 15px;
+    bottom: 65px;
+    left: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-ecosystem__content-link {
+    right: 15px;
+    bottom: 65px;
+    left: auto;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-ecosystem__content-link {
+    right: 15px;
+    bottom: 65px;
+    left: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-ecosystem__content-link {
     right: 15px;
     bottom: 65px;
@@ -814,8 +1160,32 @@ h2 {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-list {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list {
     padding: 70px 0px;
   }
@@ -827,6 +1197,10 @@ h2 {
   position: relative;
   padding: 84px 0;
   z-index: 2;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-list__content {
@@ -835,6 +1209,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-list__content {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__content {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__content {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__content {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list__content {
     padding: 0 16px;
   }
@@ -850,6 +1244,10 @@ h2 {
 }
 .section-list__content--padding-170 {
   padding: 170px 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-list__content--padding-170 {
@@ -861,10 +1259,34 @@ h2 {
     padding: 0 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__content--padding-170 {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__content--padding-170 {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__content--padding-170 {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__content--padding-170 {
+    padding: 0 16px;
+  }
+}
 .section-list__title {
   max-width: 665px;
   width: 100%;
   margin-bottom: 26px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-list__title {
@@ -877,11 +1299,39 @@ h2 {
     margin-bottom: 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__title {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__title {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__title {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__title {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
 .section-list__item {
   padding-left: 42px;
   position: relative;
   max-width: 665px;
   width: 100%;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-list__item {
@@ -893,12 +1343,58 @@ h2 {
     max-width: 100%;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__item {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__item {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__item {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__item {
+    max-width: 100%;
+  }
+}
+.section-list__item--480 {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
+}
 @media screen and (max-width: 1024px) {
   .section-list__item--480 {
     max-width: 480px;
   }
 }
 @media screen and (max-width: 768px) {
+  .section-list__item--480 {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__item--480 {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__item--480 {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__item--480 {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list__item--480 {
     max-width: 100%;
   }
@@ -967,8 +1463,32 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-list__item-btn-wrap {
+    gap: 12px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__item-btn-wrap {
+    gap: 12px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__item-btn-wrap {
+    gap: 12px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__item-btn-wrap {
+    gap: 12px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list__item-btn-wrap {
     gap: 12px;
   }
@@ -1043,6 +1563,10 @@ h2 {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 .section-list__background * {
   transition: 0.1s ease;
@@ -1055,20 +1579,128 @@ h2 {
     padding-bottom: 40px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+.section-list__background-disable-tablet {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
+}
 @media screen and (max-width: 768px) {
   .section-list__background-disable-tablet {
     display: none;
   }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__background-disable-tablet {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__background-disable-tablet {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__background-disable-tablet {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__background-disable-tablet {
+    display: none;
+  }
+}
+.section-list__background--padding-top {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .section-list__background--padding-top {
     padding-top: 60px !important;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__background--padding-top {
+    padding-top: 60px !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__background--padding-top {
+    padding-top: 60px !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__background--padding-top {
+    padding-top: 60px !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list__background--padding-top {
+    padding-top: 60px !important;
+  }
+}
 .section-list__background--no-padding-bottom {
   padding-bottom: 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-list__background--no-padding-bottom {
+    height: 300px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list__background--no-padding-bottom {
+    height: 300px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list__background--no-padding-bottom {
+    height: 300px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list__background--no-padding-bottom {
+    height: 300px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list__background--no-padding-bottom {
     height: 300px;
   }
@@ -1080,6 +1712,10 @@ h2 {
   right: auto;
   left: 50%;
   transform: translate(-50%, 0);
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .section-list--revert .section-list__background {
@@ -1089,8 +1725,44 @@ h2 {
     padding-bottom: 40px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list--revert .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list--revert .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list--revert .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list--revert .section-list__background {
+    position: initial;
+    transform: translate(0%, 0);
+    height: 350px;
+    padding-bottom: 40px;
+  }
+}
 .section-list--revert .section-list__background--no-padding-bottom {
   padding-bottom: 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
   .section-list--revert .section-list__background--no-padding-bottom {
@@ -1098,10 +1770,58 @@ h2 {
     padding-top: 20px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list--revert .section-list__background--no-padding-bottom {
+    height: 300px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list--revert .section-list__background--no-padding-bottom {
+    height: 300px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list--revert .section-list__background--no-padding-bottom {
+    height: 300px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-list--revert .section-list__background--no-padding-bottom {
+    height: 300px;
+    padding-top: 20px;
+  }
+}
 .section-list--revert .section-list__background--left-10 {
   transform: translate(-52%, 0);
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-list--revert .section-list__background--left-10 {
+    transform: translate(0);
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-list--revert .section-list__background--left-10 {
+    transform: translate(0);
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-list--revert .section-list__background--left-10 {
+    transform: translate(0);
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-list--revert .section-list__background--left-10 {
+    transform: translate(0);
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-list--revert .section-list__background--left-10 {
     transform: translate(0);
   }
@@ -1152,6 +1872,10 @@ h2 {
 .section-help-link {
   position: relative;
   padding: 92px 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-help-link {
@@ -1163,13 +1887,61 @@ h2 {
     padding: 70px 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-link {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-link {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-link {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-help-link {
+    padding: 70px 16px;
+  }
+}
 .section-help-link__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-help-link__content {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-link__content {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-link__content {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-link__content {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-link__content {
     flex-direction: column;
     align-items: end;
@@ -1178,8 +1950,32 @@ h2 {
 .section-help-link__text {
   z-index: 2;
   max-width: 560px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-link__text {
     max-width: 1000px;
   }
@@ -1198,6 +1994,10 @@ h2 {
   font-size: 24px;
   line-height: 135%;
   color: #2E2735;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-help-link__text-p {
@@ -1205,6 +2005,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-help-link__text-p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-link__text-p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-link__text-p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-link__text-p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-link__text-p {
     font-size: 16px;
   }
@@ -1272,8 +2092,32 @@ h2 {
 }
 .section-help-link--black .section-help-link__text {
   max-width: 571px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-help-link--black .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-link--black .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-link--black .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-link--black .section-help-link__text {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-link--black .section-help-link__text {
     max-width: 1000px;
   }
@@ -1291,6 +2135,10 @@ h2 {
 .section-help-form {
   padding: 100px 0px;
   background: center/cover no-repeat url("./../../assets/image/section-help-form.png");
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-help-form {
@@ -1302,9 +2150,33 @@ h2 {
     padding: 70px 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-form {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-form {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-form {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-help-form {
+    padding: 70px 16px;
+  }
+}
 .section-help-form__content-h2 {
   color: #2E2735;
   margin-bottom: 23px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-help-form__content-h2 {
@@ -1316,12 +2188,36 @@ h2 {
     margin-bottom: 16px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-help-form__content-h2 {
+    margin-bottom: 16px;
+  }
+}
 .section-help-form__content-p {
   font-weight: 500;
   font-size: 24px;
   line-height: 135%;
   color: #2E2735;
   margin-bottom: 36px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-help-form__content-p {
@@ -1334,11 +2230,67 @@ h2 {
     margin-bottom: 24px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-form__content-p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-form__content-p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-form__content-p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-help-form__content-p {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
 .section-help-form__content-form {
   display: flex;
   align-items: center;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-help-form__content-form {
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-form__content-form {
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-form__content-form {
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-form__content-form {
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-form__content-form {
     flex-direction: column;
     align-items: end;
@@ -1359,8 +2311,36 @@ h2 {
   gap: 12px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 45px 150px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-help-form__content-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-help-form__content-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-help-form__content-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-help-form__content-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-help-form__content-form-wrap {
     display: flex;
     flex-direction: column;
@@ -1406,6 +2386,10 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-company {
@@ -1413,6 +2397,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-company {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-company {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-company {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-company {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-company {
     padding: 70px 15px;
   }
@@ -1430,8 +2434,32 @@ h2 {
   height: 599px;
   -o-object-fit: cover;
   object-fit: cover;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-company__diagram {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-company__diagram {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-company__diagram {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-company__diagram {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-company__diagram {
     display: none;
   }
@@ -1440,8 +2468,32 @@ h2 {
   display: none;
   max-width: 290px;
   width: 100%;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-company__diagram--tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-company__diagram--tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-company__diagram--tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-company__diagram--tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-company__diagram--tablet {
     display: block;
   }
@@ -1450,6 +2502,10 @@ h2 {
   position: absolute;
   top: 328px;
   right: -62%;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1440px) {
   .section-company__info {
@@ -1465,6 +2521,38 @@ h2 {
     right: auto;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-company__info {
+    position: relative;
+    top: -37px;
+    left: 38px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-company__info {
+    position: relative;
+    top: -37px;
+    left: 38px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-company__info {
+    position: relative;
+    top: -37px;
+    left: 38px;
+    right: auto;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-company__info {
+    position: relative;
+    top: -37px;
+    left: 38px;
+    right: auto;
+  }
+}
 .section-company__info-title {
   font-weight: 700;
   font-size: 24px;
@@ -1472,8 +2560,32 @@ h2 {
   text-transform: uppercase;
   color: #2E2735;
   margin-bottom: 22px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-company__info-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-company__info-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-company__info-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-company__info-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-company__info-title {
     font-size: 20px;
   }
@@ -1487,6 +2599,10 @@ h2 {
 .section-cases {
   background-color: #fff;
   padding: 100px 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-cases {
@@ -1494,6 +2610,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-cases {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-cases {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-cases {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-cases {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-cases {
     padding: 70px 15px;
   }
@@ -1556,18 +2692,52 @@ h2 {
   }
 }
 .section-cases__slider-item-img {
-  height: 87px;
+  max-height: 87px;
+  height: 100%;
+  width: 50%;
   -o-object-fit: contain;
   object-fit: contain;
   border-radius: 6px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 .section-cases__slider-item-img--white {
   display: none;
 }
 @media screen and (max-width: 768px) {
   .section-cases__slider-item-img {
-    width: 152px;
-    height: 102px;
+    max-height: 102px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-cases__slider-item-img {
+    max-height: 102px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-cases__slider-item-img {
+    max-height: 102px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-cases__slider-item-img {
+    max-height: 102px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-cases__slider-item-img {
+    max-height: 102px;
+    height: 100%;
     margin-bottom: 20px;
   }
 }
@@ -1631,6 +2801,10 @@ h2 {
 .section-reviews {
   padding: 120px 0;
   background-color: #2E2735;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-reviews {
@@ -1638,6 +2812,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-reviews {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-reviews {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-reviews {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-reviews {
+    padding: 70px 15px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-reviews {
     padding: 70px 15px;
   }
@@ -1788,6 +2982,10 @@ h2 {
 
 .section-which {
   padding: 120px 0;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-which {
@@ -1795,6 +2993,26 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .section-which {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which {
+    padding: 70px 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-which {
     padding: 70px 16px;
   }
@@ -1816,6 +3034,10 @@ h2 {
   line-height: 135%;
   color: #2E2735;
   margin-bottom: 70px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-which__text {
@@ -1829,7 +3051,65 @@ h2 {
     margin-bottom: 28px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-which__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}
+.section-which-wrap {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
+}
 @media screen and (max-width: 768px) {
+  .section-which-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-which-wrap {
     display: flex;
     flex-direction: column;
@@ -1850,6 +3130,10 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(368px, max-content));
   gap: 36px 10px;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .section-which-wrap--laptop {
@@ -1861,10 +3145,54 @@ h2 {
     display: none;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which-wrap--laptop {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which-wrap--laptop {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which-wrap--laptop {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .section-which-wrap--laptop {
+    display: none;
+  }
+}
 .section-which-wrap--mobile {
   display: none;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-which-wrap--mobile {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which-wrap--mobile {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which-wrap--mobile {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which-wrap--mobile {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-which-wrap--mobile {
     display: block;
   }
@@ -1964,8 +3292,32 @@ h2 {
   line-height: 33px;
   text-align: center;
   color: #2E2735;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 768px) {
+  .section-which__item-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .section-which__item-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .section-which__item-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .section-which__item-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .section-which__item-title {
     font-size: 20px;
   }
@@ -2088,6 +3440,10 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
 }
 @media screen and (max-width: 1024px) {
   .page-404 {
@@ -2103,10 +3459,34 @@ h2 {
     padding: 24px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .page-404 {
+    height: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .page-404 {
+    height: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .page-404 {
+    height: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  .page-404 {
+    height: 100%;
+    padding: 24px;
+  }
+}
 .page-404 .section-help-form {
   background-image: none;
   width: 100%;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .phone-disable {
@@ -2141,7 +3521,33 @@ h2 {
   }
 }
 
+.tablet-disable {
+  /* iPhone 6/7/8 */
+  /* iPhone 6/7/8 Plus */
+  /* iPhone X/XS/11 Pro */
+  /* iPhone XR/XS Max/11/11 Pro Max */
+}
 @media screen and (max-width: 768px) {
+  .tablet-disable {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .tablet-disable {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .tablet-disable {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .tablet-disable {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
   .tablet-disable {
     display: none;
   }
