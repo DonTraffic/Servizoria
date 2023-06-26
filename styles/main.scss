@@ -1535,6 +1535,9 @@ h2{
                 grid-auto-rows: max-content;
                 gap: 30px 16px;
 
+                height: 355px;
+                overflow-y: scroll;
+
                 @include laptop{
                     gap: 28px 20px;
                 }

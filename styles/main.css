@@ -2646,6 +2646,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: max-content;
   gap: 30px 16px;
+  height: 355px;
+  overflow-y: scroll;
   /* iPhone 6/7/8 */
   /* iPhone 6/7/8 Plus */
   /* iPhone X/XS/11 Pro */
