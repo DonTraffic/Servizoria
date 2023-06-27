@@ -504,6 +504,12 @@ h2{
 
 }
 
+.section-anchor{
+    position: relative;
+    top: -400px;
+    height: 0px;
+}
+
 .linear-gradient-btn{
     position: relative;
     overflow: hidden;
@@ -1663,6 +1669,9 @@ h2{
         @include laptop{
             margin-bottom: 50px;
         }
+        @include tablet{
+            margin-bottom: 24px;
+        }
     }
 
     &__slider{
@@ -1671,9 +1680,10 @@ h2{
                 display: flex;
                 gap: 52px;
 
-                @include phone{
+                @include tablet{
                     flex-direction: column;
                     align-items: center;
+                    gap: 16px;
                 }
 
                 &-img{
@@ -1682,8 +1692,9 @@ h2{
                     margin: 15px;
 
                     @include phone{
-                        width: 255px;
-                        height: 360px;
+                        width: 150px;
+                        height: 200px;
+                        object-fit: contain;
                     }
 
                 }
@@ -2075,6 +2086,90 @@ h2{
         *{
             color: $color-white;
 
+        }
+    }
+
+}
+
+.section-contacts{
+    position: relative;
+    padding: 92px 0;
+
+    @include laptop{
+        padding: 42px 90px;
+    }
+
+    @include tablet{
+        padding: 70px 16px;
+    }
+
+    *{ color: $color-dark; }
+
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 135%;
+
+        b{
+            font-weight: 700;
+        }
+
+    }
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 20px 0;
+
+        &-item{
+            display: flex;
+            margin: 10px;
+
+            &-icon{
+                width: 20px;
+                height: 20px;
+                margin-right: 20px;
+            }
+
+            &-wrap{
+                max-width: 395px;
+            }
+
+            &-title, &-text{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 135%;
+            }
+            
+            &-title{
+                font-weight: 700;
+            }
+
+            &-text{
+                text-decoration: none;
+                color: $color-dark;
+            }
+
+        }
+
+    }
+
+    &__btn{
+        padding: 16px 42px;
+        margin: 42px auto 0 auto;
+        width: fit-content;
+        border-radius: 6px;
+        text-decoration: none;
+
+        &-text{
+            color: $color-white;
         }
     }
 

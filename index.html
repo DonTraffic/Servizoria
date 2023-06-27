@@ -40,16 +40,16 @@
 
                                 <div>
                                     <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html">Маркетинговые исследования</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-quality">Количественные исследования</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="./404.html">Онлайн-панель</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-quantitative-margin">Количественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="https://sboridey.ru/">Онлайн-панель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./mysteryShopper.html">Тайный Покупатель</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Аудит</a></p>
                                 </div>
 
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-rooms">Кабинетные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-rooms-margin">Кабинетные исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Аналитика</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-quantitative">Качественные исследования</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="./marketingResearch.html#section-quality-margin">Качественные исследования</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Тайный соискатель</a></p>
                                 </div>
 
@@ -61,10 +61,10 @@
                                 </div>
 
                                 <div>
-                                    <p class="header__content-list-item-menu-item"><a onclick="scrollSmooth('#form-callback')">Сбор обратной связи клиентов</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="https://spectraservice.ru/">Сбор обратной связи клиентов</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Контакт-центр</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Аудиобейджи</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="./404.html">Тестирование персонала</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="https://sreda.com.ru/">Тестирование персонала</a></p>
                                 </div>
                             </div>
                         </div>
@@ -72,9 +72,9 @@
                 </li>
                 <li class="header__content-list-item"><a onclick="scrollSmooth('#section-company')">О компании</a></li>
                 <li class="header__content-list-item"><a onclick="scrollSmooth('#section-cases')">Кейсы</a></li>
-                <li class="header__content-list-item"><a href="./404.html">Для кого</a></li>
+                <li class="header__content-list-item"><a onclick="scrollSmooth('#section-tasks')">Для кого</a></li>
                 <li class="header__content-list-item"><a href="./404.html">Блог</a></li>
-                <li class="header__content-list-item"><a href="./404.html">Контакты</a></li>
+                <li class="header__content-list-item"><a onclick="scrollSmooth('#section-contacts')">Контакты</a></li>
 
                 <li class="header__content-list-tel">
                     <a class="header__content-list-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
@@ -104,7 +104,7 @@
     <script>
         let statusMenu = false
         let statysServices = false
-        let list = document.querySelector('.header__content-list').style
+        let list = document.querySelector('.header__content-list').styleА
         let services = document.querySelector('.header__content-list-item-menu')
         let servicesArrow = document.querySelector('.menu-services-btn-icon').style
 
@@ -217,7 +217,7 @@
                         организуем независимый фото-, аудио- и видеомониторинг экспертами нашего Data центра
                         <b>Видеомониторинг</b>.</div>
                     <div class="section-list__item-btn-wrap">
-                        <a class="section-list__item-btn" href="./404.html">
+                        <a class="section-list__item-btn" href="./mysteryShopper.html">
                             Тайный покупатель
                             <svg class="section-list__item-btn-icon">
                                 <use xlink:href="./assets/svg/sprite.svg#icon-arrow-diagonal"></use>
@@ -590,7 +590,8 @@
             </div>
         </section>
 
-        <section class="section-tasks">
+        <section class="section-tasks" id="section-tasks">
+            <div class="section-anchor" id="section-tasks-margin"></div>
             <h2 class="section-tasks__title wrapper">Задачи бизнеса которые мы решаем</h2>
 
             <div class="section-tasks__slider slider wrapper">
@@ -757,6 +758,7 @@
         </section>
 
         <section class="section-cases" id="section-cases">
+            <div class="section-anchor" id="section-cases-margin"></div>
             <h2 class="section-cases__title wrapper">Кейсы</h2>
 
             <div class="section-cases__slider slider wrapper">
@@ -1618,6 +1620,7 @@
         </section>
 
         <section class="section-company" id="section-company">
+            <div class="section-anchor" id="section-company-margin"></div>
             <h2 class="section-company__title wrapper">о компании</h2>
             <div class="section-company__content wrapper">
                 <div class="section-company__content-wrap">
@@ -1744,18 +1747,78 @@
             </div>
         </section>
 
+        <section class="section-contacts wrapper" id="section-contacts">
+            <h2 class="section-contacts__title">Контакты</h2>
+            <p class="section-contacts__text">Если у вас есть вопросы или предложения, вы можете связаться с нами любым удобным для вас способом.</p>
+
+            <div class="section-contacts__items">
+                <div class="section-contacts__items-item">
+                    <svg class="section-contacts__items-item-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <div class="section-contacts__items-item-wrap">
+                        <p class="section-contacts__items-item-title">Телефон</p>
+                        <a
+                            class="section-contacts__items-item-text"
+                            href="tel:+74952680244"
+                        >+7 (495) 268 02 44</a>
+                    </div>
+                </div>
+
+                <div class="section-contacts__items-item">
+                    <svg class="section-contacts__items-item-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <div class="section-contacts__items-item-wrap">
+                        <p class="section-contacts__items-item-title">E-mail</p>
+                        <a
+                            class="section-contacts__items-item-text"
+                            href="mailto:sales@servizoria.ru"
+                        >sales@servizoria.ru</a>
+                    </div>
+                </div>
+
+                <div class="section-contacts__items-item">
+                    <svg class="section-contacts__items-item-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-adress"></use>
+                    </svg>
+                    <div class="section-contacts__items-item-wrap">
+                        <p class="section-contacts__items-item-title">Адрес</p>
+                        <a
+                            class="section-contacts__items-item-text"
+                        >г. Москва, Гамсоновский пер., д. 2, стр. 1, ЭТАЖ 2 ПОМЕЩЕНИЕ 84</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="section-contacts__text"><b>Не упустите возможность укрепить свой бизнес и увеличить прибыль вместе с нами. Нажмите на кнопку "Заказать услугу" или "Оставить заявку" и наш менеджер свяжется с вами в ближайшее время</b></p>
+
+            <a class="section-contacts__btn linear-gradient-btn" href="./404.html">
+                <div class="section-contacts__btn-background linear-gradient-btn__background"> </div>
+                <div class="section-contacts__btn-background--hover linear-gradient-btn__background--hover"></div>
+                <p class="section-contacts__btn-text linear-gradient-btn__text">
+                    Оставить заявку
+                </p>
+            </a>
+
+            <div style="position:relative; overflow:hidden; margin-top: 42px;">
+                <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                <a href="https://yandex.ru/maps/213/moscow/house/gamsonovskiy_pereulok_2s1/Z04YcAVlTUUBQFtvfXtxdntnZA==/?indoorLevel=1&ll=37.625405%2C55.707740&utm_medium=mapframe&utm_source=maps&z=17.64" style="color:#eee;font-size:12px;position:absolute;top:14px;">Гамсоновский переулок, 2с1 — Яндекс Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.625405%2C55.707740&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4MDk5MhJL0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCT0LDQvNGB0L7QvdC-0LLRgdC60LjQuSDQv9C10YDQtdGD0LvQvtC6LCAy0YExIgoNaYAWQhW51F5C&z=17.64" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 6px;"></iframe>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="footer__content wrapper">
             <img class="footer__content-logo" src="./assets/svg/logo-footer.svg" alt="logo-footer">
             <ol class="footer__content-list">
-                <li class="footer__content-list-item"><a href="./404.html">Услуги</a></li>
                 <li class="footer__content-list-item"><a onclick="scrollSmooth('#section-company')">О компании</a></li>
                 <li class="footer__content-list-item"><a onclick="scrollSmooth('#section-cases')">Кейсы</a></li>
-                <li class="footer__content-list-item"><a href="./404.html">Для кого</a></li>
+                <li class="footer__content-list-item"><a onclick="scrollSmooth('#section-tasks')">Для кого</a></li>
                 <li class="footer__content-list-item"><a href="./404.html">Блог</a></li>
-                <li class="footer__content-list-item"><a href="./404.html">Контакты</a></li>
+                <li class="footer__content-list-item"><a onclick="scrollSmooth('#section-contacts')">Контакты</a></li>
             </ol>
             <div class="footer__content-tel">
                 <a class="footer__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
