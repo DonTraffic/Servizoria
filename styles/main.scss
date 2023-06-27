@@ -2114,10 +2114,6 @@ h2{
         font-size: 24px;
         line-height: 135%;
 
-        b{
-            font-weight: 700;
-        }
-
     }
 
     &__items{
@@ -2162,14 +2158,23 @@ h2{
     }
 
     &__btn{
-        padding: 16px 42px;
         margin: 42px auto 0 auto;
         width: fit-content;
-        border-radius: 6px;
+
+        padding: 12px 40px;
+        transition: 0.4s ease;
+        border: 1px solid #7429BF;
+        border-radius: 61px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
         text-decoration: none;
+        color: #7429BF;
+        background-color: #fff;
 
         &-text{
-            color: $color-white;
+            color: $color-purple;
         }
     }
 

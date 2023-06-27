@@ -3535,9 +3535,6 @@ h2 {
   font-size: 24px;
   line-height: 135%;
 }
-.section-contacts__text b {
-  font-weight: 700;
-}
 .section-contacts__items {
   width: 100%;
   display: flex;
@@ -3570,15 +3567,23 @@ h2 {
   color: #2E2735;
 }
 .section-contacts__btn {
-  padding: 16px 42px;
   margin: 42px auto 0 auto;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 6px;
+  padding: 12px 40px;
+  transition: 0.4s ease;
+  border: 1px solid #7429BF;
+  border-radius: 61px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
   text-decoration: none;
+  color: #7429BF;
+  background-color: #fff;
 }
 .section-contacts__btn-text {
-  color: #fff;
+  color: #7429BF;
 }
 
 .page-404 {
