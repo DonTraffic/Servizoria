@@ -822,6 +822,9 @@ h2 {
 .linear-gradient-btn__text {
   z-index: 3;
 }
+.linear-gradient-btn__text:hover {
+  cursor: pointer;
+}
 .linear-gradient-btn:hover {
   cursor: pointer;
 }
@@ -3567,7 +3570,7 @@ h2 {
   color: #2E2735;
 }
 .section-contacts__btn {
-  margin: 42px auto 0 auto;
+  margin: 24px auto 0 auto;
   width: -moz-fit-content;
   width: fit-content;
   padding: 12px 40px;
@@ -3581,6 +3584,11 @@ h2 {
   text-decoration: none;
   color: #7429BF;
   background-color: #fff;
+}
+.section-contacts__btn:hover {
+  color: #fff;
+  background-color: #7429BF;
+  cursor: pointer;
 }
 .section-contacts__btn-text {
   color: #7429BF;

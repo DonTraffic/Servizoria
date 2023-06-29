@@ -543,6 +543,9 @@ h2{
 
     &__text{
         z-index: 3;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &:hover{
@@ -2158,24 +2161,31 @@ h2{
     }
 
     &__btn{
-        margin: 42px auto 0 auto;
+        margin: 24px auto 0 auto;
         width: fit-content;
 
         padding: 12px 40px;
         transition: 0.4s ease;
-        border: 1px solid #7429BF;
+        border: 1px solid $color-purple;
         border-radius: 61px;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
         text-transform: uppercase;
         text-decoration: none;
-        color: #7429BF;
-        background-color: #fff;
+        color: $color-purple;
+        background-color: $color-white;
+
+        &:hover{
+            color: $color-white;
+            background-color: $color-purple;
+            cursor: pointer;
+        }
 
         &-text{
             color: $color-purple;
         }
+
     }
 
 }

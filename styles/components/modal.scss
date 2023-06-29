@@ -1,0 +1,108 @@
+@import './../vars.scss';
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.407);
+
+    z-index: 100;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &__form{
+        position: relative;
+
+        min-height: 200px;
+        min-width: 200px;
+        background-color: $color-white;
+        border-radius: 6px;
+
+        padding: 32px;
+
+        &:hover{
+            cursor: default;
+        }
+
+        &-wrap{
+            display: flex;
+            gap: 32px;
+            align-items: center;
+
+            @include phone{
+                flex-direction: column;
+            }
+        }
+
+        &-close{
+            position: absolute;
+            right: -24px;
+            top: -38px;
+
+            font-size: 42px;
+            color: $color-white;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+
+        &-title{
+            margin-bottom: 24px;
+        }
+
+        &-input{
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.569);
+            border: 1px solid $color-purple;
+            border-radius: 27px;
+            width: 100%;
+
+            @include tablet{
+                flex-direction: column;
+                align-items: end;
+                gap: 28px;
+            }
+
+            &-wrap{
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+        }
+
+        &-btn{
+            border: 1px solid $color-purple;
+            border-radius: 50%;
+            color: $color-white;
+
+            min-width: 200px;
+            max-width: 200px;
+            min-height: 200px;
+            max-height: 200px;
+
+            &-text{
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+
+}
