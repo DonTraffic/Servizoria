@@ -1,0 +1,66 @@
+@import './../vars.scss';
+
+.section__anim{
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: inherit;
+
+    h2{
+        margin-bottom: 100px;
+    }
+
+    &-cirlcle-1{
+        position: relative;
+
+        &-img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &-svg{
+            position: absolute;
+            left: -30px;
+            top: -70px;
+            transform: translate(0%, calc( var(--scrollTop) / 10 ));
+        }
+
+    }
+
+    &-cirlcle-2{
+        position: relative;
+
+        &-img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &-svg{
+            position: absolute;
+            left: -30px;
+            top: calc((var(--scrollTop) / 10) - 175px);
+        }
+
+    }
+
+}
+
+.section__info{
+    height: 500px;
+    position: relative;
+
+    margin: 50px auto;
+
+    padding: 24px;
+
+    width: var( --scrollTop  );
+    background-color: rgb(188, 107, 188);
+}
