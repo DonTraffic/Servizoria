@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/components/slider.css">
     <link rel="stylesheet" href="./styles/components/modal.css">
     <link rel="stylesheet" href="./styles/pages/page-main.css">
+    <link rel=“canonical” href=“https://servizoria.ru” />
 </head>
 
 <body>
@@ -137,7 +138,7 @@
                             и людей</p>
                     </div>
 
-                    <a class="section-ecosystem__content-link" onclick="openModal()">
+                    <a class="section-ecosystem__content-link">
                         <div class="section-ecosystem__content-link-background"></div>
                         <div class="section-ecosystem__content-link-background--hover"></div>
                         <p class="section-ecosystem__content-link-text">Узнать подробнее</p>
@@ -1844,34 +1845,6 @@
         </form>
     
     </div>
-
-    <script>
-        let modal = document.querySelector('.modal')
-        
-        document.querySelector('.modal__form').addEventListener('click', (event) => {
-            event.stopPropagation()
-        })
-
-        modal.addEventListener('click', () => {
-            modal.style.display = 'none'
-        })
-
-        function openModal() {
-            modal.style.display = 'flex'
-        }
-
-        function downloadFiles() {
-            let inputs = modal.querySelectorAll('.modal__form-input')
-            let status = true
-
-            inputs.forEach((input) => {
-                if (!input.value) status = false 
-            })
-
-            if (status) window.location.href = './assets/download/Downloads.7z';
-        }
-
-    </script>
 
     <script>
         window.addEventListener('scroll', e => {
