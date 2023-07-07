@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servizoria</title>
+    <link rel="icon" href="./assets/logo/logo.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/components/parallax.css">
@@ -63,7 +64,7 @@
 
                                 <div>
                                     <p class="header__content-list-item-menu-item"><a href="https://spectraservice.ru/">Сбор обратной связи клиентов</a></p>
-                                    <p class="header__content-list-item-menu-item"><a href="./404.html">Контакт-центр</a></p>
+                                    <p class="header__content-list-item-menu-item"><a href="https://servizoria.ru/blog/contact-center-4human/">Контакт-центр</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="./404.html">Аудиобейджи</a></p>
                                     <p class="header__content-list-item-menu-item"><a href="https://sreda.com.ru/">Тестирование персонала</a></p>
                                 </div>
@@ -79,14 +80,14 @@
 
                 <li class="header__content-list-tel">
                     <a class="header__content-list-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
-                    <p class="header__content-list-tel-btn" onclick="scrollSmooth('#form-callback')">Обратный звонок</p>
+                    <p class="header__content-list-tel-btn" onclick="openModal('callback')">Обратный звонок</p>
                 </li>
             </ol>
 
             <div class="header__content-wrap">
                 <div class="header__content-tel">
                     <a class="header__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
-                    <p class="header__content-tel-btn" onclick="scrollSmooth('#form-callback')">Обратный звонок</p>
+                    <p class="header__content-tel-btn" onclick="openModal('callback')">Обратный звонок</p>
                 </div>
 
                 <button class="header__content-menu linear-gradient-btn">
@@ -121,15 +122,6 @@
                 statysServices = !statysServices
             })
         })
-
-
-        function scrollFormCallback () {
-            let element = document.querySelector('#form-callback').offsetTop - 80;
-            window.scrollTo({
-                top: element,
-                behavior: 'smooth'
-            });
-        }
     </script>
 
     <main>
@@ -145,7 +137,7 @@
                         </p>
                     </div>
                     
-                    <a class="section-ecosystem__content-link">
+                    <a class="section-ecosystem__content-link" onclick="openModal('callback')">
                         <div class="section-ecosystem__content-link-background"></div>
                         <div class="section-ecosystem__content-link-background--hover"></div>
                         <p class="section-ecosystem__content-link-text">Заказать услугу</p>
@@ -499,7 +491,7 @@
                     <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
                 </div>
     
-                <a class="section-help-link__btn linear-gradient-btn" onclick="scrollSmooth('#form-callback')">
+                <a class="section-help-link__btn linear-gradient-btn" onclick="openModal('callback')">
                     <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
                     <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
                     <p class="section-help-link__btn-text linear-gradient-btn__text">Получить консультацию</p>
@@ -979,7 +971,7 @@
                     <p class="section-help-link__text-p">Оставьте заявку на просчет коммерческого предложения или помощь в разработке концепции исследования. </p>
                 </div>
     
-                <a class="section-help-link__btn linear-gradient-btn" onclick="scrollSmooth('#form-callback')">
+                <a class="section-help-link__btn linear-gradient-btn" onclick="openModal('callback')">
                     <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
                     <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
                     <p class="section-help-link__btn-text linear-gradient-btn__text">Заказать бесплатный пилотный проект</p>
@@ -1099,7 +1091,7 @@
                 </div>
 
                 <div class="section-list__item">
-                    <a class="section-list__item-btn-gradient linear-gradient-btn" onclick="scrollSmooth('#form-callback')">
+                    <a class="section-list__item-btn-gradient linear-gradient-btn" onclick="openModal('callback')">
                         <div class="linear-gradient-btn__background"></div>
                         <div class="linear-gradient-btn__background--hover"></div>
                         <p class="linear-gradient-btn__text">Обсудить вашу задачу</p>
@@ -1689,7 +1681,7 @@
                     <p class="section-help-link__text-p">Мы открыты для вопросов, деловых запросови консультаций. Свяжитесь с нами сегодня, и сотрудник нашей команды поддержки свяжется с вами в ближайшее время</p>
                 </div>
     
-                <a class="section-help-link__btn linear-gradient-btn" onclick="scrollSmooth('#form-callback')">
+                <a class="section-help-link__btn linear-gradient-btn" onclick="openModal('callback')">
                     <div class="section-help-link__btn-background linear-gradient-btn__background"></div>
                     <div class="section-help-link__btn-background--hover linear-gradient-btn__background--hover"></div>
                     <p class="section-help-link__btn-text linear-gradient-btn__text">Получить консультацию</p>
@@ -1878,7 +1870,7 @@
                 </div>
             </div>
 
-            <button class="section-contacts__btn">Оставить заявку</button>
+            <button class="section-contacts__btn" onclick="openModal('callback')">Оставить заявку</button>
 
             <div style="position:relative; overflow:hidden; margin-top: 42px;">
                 <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
@@ -1887,27 +1879,45 @@
             </div>
         </section>
 
-        <div id="modal-index" class="modal">
+        <div id="modal-callback" class="modal">
 
-            <form class="modal__form" action="" method="get">
+            <form class="modal__form">
                 <!-- <span class="modal__form-close">&times;</span> -->
     
-                <h2 class="modal__form-title">Подписаться на наши новости</h2>
+                <h2 class="modal__form-title">Оставить заявку</h2>
     
                 <div class="modal__form-wrap">
                     <div class="modal__form-input-wrap">
                         <input type="text" class="modal__form-input" placeholder="Имя" required>
                         <input type="text" class="modal__form-input" placeholder="Фамилия" required>
                         <input type="text" class="modal__form-input" placeholder="Компания" required>
+                        <input type="number" class="modal__form-input" placeholder="Телефон" required>
                         <input type="email" class="modal__form-input" placeholder="Почта" required>
+
+                        <select class="modal__form-input">
+                            <option value="phone">Звонок</option>
+                            <option value="telegram">Звонок Telegram</option>
+                            <option value="watsapp">Звонок WatsApp</option>
+                        </select>
                     </div>
     
-                    <button class="modal__form-btn linear-gradient-btn" onclick="downloadFiles()">
+                    <a class="modal__form-btn linear-gradient-btn" onclick="formSubmit('callback')">
                         <div class="modal__form-btn-background linear-gradient-btn__background"></div>
                         <div class="modal__form-btn-background--hover linear-gradient-btn__background--hover"></div>
                         <p class="modal__form-btn-text linear-gradient-btn__text">Отправить</p>
-                    </button>
+                    </a>
                 </div>
+            </form>
+            
+        </div>
+
+        <div id="modal-complite" class="modal">
+
+            <form class="modal__form">
+                <!-- <span class="modal__form-close">&times;</span> -->
+    
+                <h2 class="modal__form-title">Форма отправлена</h2>
+
             </form>
             
         </div>
@@ -1931,7 +1941,7 @@
             </ol>
             <div class="footer__content-tel">
                 <a class="footer__content-tel-link" href="tel:+74952680244">+7 (495) 268 02 44</a>
-                <p class="footer__content-tel-p">Обратный звонок</p>
+                <p class="footer__content-tel-p" onclick="openModal('callback')">Обратный звонок</p>
             </div>
         </div>
     </footer>
@@ -1951,5 +1961,23 @@
     </script>
 
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/modal.js"></script>
+
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+     
+        ym(87136771, "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true,
+             webvisor:true,
+             ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87136771" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>

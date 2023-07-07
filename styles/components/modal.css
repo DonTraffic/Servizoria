@@ -15,7 +15,6 @@
 }
 .modal__form {
   position: relative;
-  min-height: 200px;
   min-width: 200px;
   background-color: #fff;
   border-radius: 6px;
@@ -77,10 +76,16 @@
   border: 1px solid #7429BF;
   border-radius: 27px;
   width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   /* iPhone 6/7/8 */
   /* iPhone 6/7/8 Plus */
   /* iPhone X/XS/11 Pro */
   /* iPhone XR/XS Max/11/11 Pro Max */
+}
+.modal__form-input:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .modal__form-input {
@@ -118,6 +123,7 @@
   }
 }
 .modal__form-input-wrap {
+  min-width: 400px;
   width: 100%;
   display: flex;
   align-items: center;

@@ -10,6 +10,11 @@
   /* iPhone X/XS/11 Pro */
   /* iPhone XR/XS Max/11/11 Pro Max */
 }
+@media screen and (max-width: 1024px) {
+  .section-ecosystem {
+    background: 0px 0px/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .section-ecosystem {
     background: right/cover no-repeat url("./../../assets/image/section-ecosystem-3.jpg") !important;
