@@ -1658,13 +1658,13 @@
     
                 <div class="modal__form-wrap">
                     <div class="modal__form-input-wrap">
-                        <input type="text" class="modal__form-input" placeholder="Имя" required>
-                        <input type="text" class="modal__form-input" placeholder="Фамилия" required>
-                        <input type="text" class="modal__form-input" placeholder="Компания" required>
-                        <input type="number" class="modal__form-input" placeholder="Телефон" required>
-                        <input type="email" class="modal__form-input" placeholder="Почта" required>
+                        <input type="text" class="modal__form-input" name="NAME" placeholder="Имя" required>
+                        <input type="text" class="modal__form-input" name="LAST_NAME" placeholder="Фамилия" required>
+                        <input type="text" class="modal__form-input" name="COMPANY_TITLE" placeholder="Компания" required>
+                        <input type="text" class="modal__form-input modal__form-input-phone" name="PHONE" placeholder="Телефон" required>
+                        <input type="email" class="modal__form-input" name="EMAIL" placeholder="Почта" required>
 
-                        <select class="modal__form-input">
+                        <select class="modal__form-input" name="COMMENTS">
                             <option value="phone">Звонок</option>
                             <option value="telegram">Звонок Telegram</option>
                             <option value="watsapp">Звонок WatsApp</option>

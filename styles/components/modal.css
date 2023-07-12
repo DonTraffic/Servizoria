@@ -130,6 +130,23 @@
   flex-direction: column;
   gap: 16px;
 }
+.modal__form-input-mask {
+  width: 100%;
+}
+.modal__form-input-mask input {
+  display: none;
+}
+.modal__form-input-mask .modal__form-input-fake {
+  display: block;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.569);
+  border: 1px solid #7429BF;
+  border-radius: 27px;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 .modal__form-btn {
   border: 1px solid #7429BF;
   border-radius: 50%;

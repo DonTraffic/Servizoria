@@ -89,6 +89,25 @@
                 gap: 16px;
             }
 
+            &-mask{
+                width: 100%;
+                
+                input{
+                    display: none;
+                }
+
+                .modal__form-input-fake{
+                    display: block;
+
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.569);
+                    border: 1px solid $color-purple;
+                    border-radius: 27px;
+                    width: 100%;
+                    appearance: none;
+                }
+            }
+
         }
 
         &-btn{
